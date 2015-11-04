@@ -8,4 +8,6 @@ Stephen Clark- Documentation <br />
 Eddie Crawford - Source Code Control/Deployment <br />
 Anna Yudina- Design Lead <br /> 
 
+<strong>File Naming Convention:</strong> "thisNamingConvention" <br />
+
 <em>This repository is a work in progress and is not yet documented.</em> <br />
