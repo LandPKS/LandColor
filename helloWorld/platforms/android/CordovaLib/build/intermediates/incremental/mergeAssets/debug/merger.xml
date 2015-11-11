@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/home/user/Dropbox/Fall 2015/CSCI4308/LandPKS/LandColor/helloWorld/platforms/android/CordovaLib/assets"/></dataSet><dataSet config="debug"><source path="/home/user/Dropbox/Fall 2015/CSCI4308/LandPKS/LandColor/helloWorld/platforms/android/CordovaLib/src/debug/assets"/></dataSet></merger>
