@@ -76,6 +76,7 @@ Whenever you see a "Check", "Run", or terminal operation, that means to run the 
 	- Run `cordova build`
 	- Run `cordova run --device`
 		- I have the Apple Developer subscription so I can deploy to iOS devices from Xcode.  I am not sure if this is needed for Cordova or not, but I will update this once I have further information.
+		- Type `q` -> <ENTER> -> `y` -> <ENTER> to successfully quit the application on the device and in the terminal
 2. Android
 	- Test
 
