@@ -78,6 +78,29 @@ Whenever you see a "Check", "Run", or terminal operation, that means to run the 
 		- I have the Apple Developer subscription so I can deploy to iOS devices from Xcode.  I am not sure if this is needed for Cordova or not, but I will update this once I have further information.
 		- Type `q` -> <ENTER> -> `y` -> <ENTER> to successfully quit the application on the device and in the terminal
 2. Android
-	- Test
-
+	- Test if `adb` is properly installed by running `adb`
+		- If `adb` command is not found you need to create a PATH variable to Android’s platform-tools directory. 
+			- **NOTE**: The location of the platform-tools directory can vary between machines.  On my Mac I found it in “/Users/Stephen/Library/Android/sdk/platform-tools/"
+			- run `cd ~` to get to your root directory.  I'm not entirely sure how necessary it is to be here but I do it just to be safe.
+			- run `nano ./bash_profile`
+			- add `export PATH=$PATH/path/to/platform-tools`
+			- type `control-o` followed by `enter` to save the document
+			- type `control-x` to exit back to the terminal
+	- Connect your Android device to your computer using a USB port
+	- run `adb devices` to ensure your device is connected and authorized
+		- If the list returned by `adb devices` is empty there is a good chance your phone is not in developer mode
+			- On your phone go to *Settings -> More -> About Device*
+			- Tap *Build Number* several times until it tells you that the device is in developer mode
+			- Go to *Settings -> More -> Developer Options* and check *USB Debugging*
+		- If the previous option has been performed correctly and has failed (still returns an empty list)
+			- Disconnect device
+			- run `adb kill-server`
+			- run `adb start-server`
+			- Reconnect device
+			- Wait a few seconds and run `adb devices` again
+		- If the device is recognized but says *Unauthorized*
+			- Ensure your device is powered on
+			- Disconnect the device and reconnect it.  A pop-up should appear on the phone asking you to authorize the computer.
+	- run `cordova build`
+	- run `cordova run --device`
 
