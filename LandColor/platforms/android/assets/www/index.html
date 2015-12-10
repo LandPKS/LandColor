@@ -15,6 +15,8 @@
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
 
+    <!-- AngularJS extension set for Apache Cordova -->
+    <script src="js/ng-cordova.min.js"></script>
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
 
@@ -23,12 +25,13 @@
   </head>
   <body ng-app="starter" class="platform-android platform-cordova platform-webview">
 
-    <ion-pane>
-      <ion-header-bar class="bar-stable">
-        <h1 class="title">Ionic Blank Starter</h1>
-      </ion-header-bar>
-      <ion-content>
-      </ion-content>
-    </ion-pane>
+  <ion-view class="has-header padding" ng-controller="imageController">
+    <button class="button button-energized" ng-click="addImage()">
+      Add image
+    </button><br><br>
+    <ion-scroll>
+      <img ng-repeat="image in images" ng-src="{{urlForImage(image)}}" height="100%" width="100%"/>
+    </ion-scroll>
+  </ion-view>
   </body>
 </html>
