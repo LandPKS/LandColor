@@ -9,6 +9,6 @@ Eddie Crawford - Source Code Control/Deployment <br />
 Anna Yudina- Design Lead <br /> 
 
 <strong>File Naming Convention:</strong> "thisNamingConvention" <br />
-<strong>Source Code Directory:</strong> /LandPKS/LandColor/LandColor/
+<strong>Source Code Directory:</strong> "~/LandPKS/LandColor/LandColor/" <br />
 
 <em>This repository is a work in progress and is not yet documented.</em> <br />
