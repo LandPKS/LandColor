@@ -3,12 +3,15 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
+
+// camera and image saving functionality: https://devdactic.com/complete-image-guide-ionic/
+
+//cameraApp will load starter and ngCordova
 var cameraApp = angular.module('starter', ['ionic', 'ngCordova'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
-    // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
-    // for form inputs)
+    // Hide default accessory bar
     if(window.cordova && window.cordova.plugins.Keyboard) {
       cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
     }
@@ -19,23 +22,23 @@ var cameraApp = angular.module('starter', ['ionic', 'ngCordova'])
 });
 
 cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordovaFile) {
-  // 1
+  // Scope array for ng-repeat (array of objects) to store images
   $scope.images = [];
 
   $scope.addImage = function() {
-    // 2
+    // cordovaCamera options
     var options = {
       destinationType : Camera.DestinationType.FILE_URI,
-      sourceType : Camera.PictureSourceType.CAMERA, // Camera.PictureSourceType.PHOTOLIBRARY
+      sourceType : Camera.PictureSourceType.CAMERA,
       allowEdit : false,
       encodingType: Camera.EncodingType.JPEG,
       popoverOptions: CameraPopoverOptions,
     };
 
-    // 3
+    // Call ngCordova module: cordovaCamera
     $cordovaCamera.getPicture(options).then(function(imageData) {
 
-      // 4
+      // Pass captured image and save to file system
       onImageSuccess(imageData);
 
       function onImageSuccess(fileURI) {
@@ -46,7 +49,7 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
         window.resolveLocalFileSystemURL(fileURI, copyFile, fail);
       }
 
-      // 5
+      // Name image with makeid()
       function copyFile(fileEntry) {
         var name = fileEntry.fullPath.substr(fileEntry.fullPath.lastIndexOf('/') + 1);
         var newName = makeid() + name;
@@ -62,7 +65,7 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
           fail);
       }
 
-      // 6
+      // Apply image to scope array of images
       function onCopySuccess(entry) {
         $scope.$apply(function () {
           $scope.images.push(entry.nativeURL);
@@ -88,10 +91,35 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
     });
   }
 
+  // Find path to data directory of LandColor application
   $scope.urlForImage = function(imageName) {
     var name = imageName.substr(imageName.lastIndexOf('/') + 1);
     var trueOrigin = cordova.file.dataDirectory + name;
     return trueOrigin;
   }
+
+
 });
 
+cameraApp.controller('rgbController',['$scope', function($scope) {
+
+$scope.createCanvas = function() {
+  var img = document.createElement('img');
+  img.src = 'img/soil.jpg';
+  var canvas = document.createElement('canvas');
+  var context = canvas.getContext('2d');
+  context.drawImage(img, 0, 0);
+  var imageData = context.getImageData(0, 0, img.width, img.height);
+  document.body.appendChild(img);
+
+  for(var i = 0; i < imageData.data.length; i += 4) {
+    var r = imageData.data[i];
+    var g = imageData.data[i + 1];
+    var b = imageData.data[i + 2];
+    var a = imageData.data[i + 3];
+    document.write("R: " + r + " G: " + g + " B: " + b + " A: " + a);
+  }
+
+}
+
+}]);
