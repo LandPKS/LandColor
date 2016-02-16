@@ -514,7 +514,7 @@
 					"-weak-lSystem",
 					"-ObjC",
 				);
-				PRODUCT_NAME = "landcolor";
+				PRODUCT_NAME = "LandColor";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -543,7 +543,7 @@
 					"-weak-lSystem",
 					"-ObjC",
 				);
-				PRODUCT_NAME = "landcolor";
+				PRODUCT_NAME = "LandColor";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
