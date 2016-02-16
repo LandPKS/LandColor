@@ -49,10 +49,10 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
         window.resolveLocalFileSystemURL(fileURI, copyFile, fail);
       }
 
-      // Name image with makeid()
+      // Name image with date/time
       function copyFile(fileEntry) {
         var name = fileEntry.fullPath.substr(fileEntry.fullPath.lastIndexOf('/') + 1);
-        var newName = makeid() + name;
+        var newName = getDate() + name;
 
         window.resolveLocalFileSystemURL(cordova.file.dataDirectory, function(fileSystem2) {
             fileEntry.copyTo(
@@ -76,50 +76,72 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
         console.log("fail: " + error.code);
       }
 
-      function makeid() {
+      function getDate() {
         var text = "";
-        var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        var d = new Date();
+        var n = d.getTime();
 
-        for (var i=0; i < 5; i++) {
-          text += possible.charAt(Math.floor(Math.random() * possible.length));
-        }
-        return text;
+        return text = n;
       }
 
     }, function(err) {
       console.log(err);
     });
-  }
+  };
 
   // Find path to data directory of LandColor application
   $scope.urlForImage = function(imageName) {
     var name = imageName.substr(imageName.lastIndexOf('/') + 1);
     var trueOrigin = cordova.file.dataDirectory + name;
     return trueOrigin;
+  };
+
+ $scope.createCanvas = function() {
+  //Create canvas element with image to get RGBA array
+  var img = document.getElementById("image");
+  var canvas = document.createElement('canvas');
+  var context = canvas.getContext('2d');
+  context.drawImage(img, 0, 0);
+  var imageData = context.getImageData(0, 0, img.width, img.height);
+   var imageData2;
+  //The size of tahe palette
+  var colorCount = 11;
+  //How "well" the median cut algorithm performs
+  var quality = 1;
+  //Need pixel array that works with quantize.js
+  var pixels = imageData.data;
+  var pixelCount = img.width * img.height;
+  var pixelArray = [];
+  for (var i = 0, offset, r, g, b, a; i < pixelCount; i = i + quality) {
+    offset = i * 4;
+    r = pixels[offset + 0];
+    g = pixels[offset + 1];
+    b = pixels[offset + 2];
+    a = pixels[offset + 3];
+    // If pixel is mostly opaque and not white
+    if (a >= 125) {
+      if (!(r > 250 && g > 250 && b > 250)) {
+        pixelArray.push([r, g, b]);
+      }
+    }
   }
+  //Quantize perform median cut algorithm, and returns a palette of the "top ten" colors in the picture
+  var cmap    = MMCQ.quantize(pixelArray, colorCount);
+  var palette = cmap? cmap.palette() : null;
+   var newLabel = document.createElement("label");
+   newLabel.appendChild(document.createTextNode(palette[0]));
+   document.getElementById("main").appendChild(newLabel);
+  return palette;
+}
 
 
 });
 
 cameraApp.controller('rgbController',['$scope', function($scope) {
 
-$scope.createCanvas = function() {
-  var img = document.createElement('img');
-  img.src = 'img/soil.jpg';
-  var canvas = document.createElement('canvas');
-  var context = canvas.getContext('2d');
-  context.drawImage(img, 0, 0);
-  var imageData = context.getImageData(0, 0, img.width, img.height);
-  document.body.appendChild(img);
+//$scope.createCanvas = function() {
 
-  for(var i = 0; i < imageData.data.length; i += 4) {
-    var r = imageData.data[i];
-    var g = imageData.data[i + 1];
-    var b = imageData.data[i + 2];
-    var a = imageData.data[i + 3];
-    document.write("R: " + r + " G: " + g + " B: " + b + " A: " + a);
-  }
 
-}
+//}
 
 }]);
