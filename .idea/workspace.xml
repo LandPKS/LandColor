@@ -6,47 +6,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/platforms/android/.gradle/2.2.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/LandColor/platforms/android/.gradle/2.2.1/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/platforms/android/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/LandColor/platforms/android/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/platforms/android/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/LandColor/platforms/android/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/org.apache.cordova.camera/www/Camera.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/org.apache.cordova.camera/www/Camera.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/org.apache.cordova.camera/www/CameraConstants.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/org.apache.cordova.camera/www/CameraConstants.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/org.apache.cordova.camera/www/ios/CameraPopoverHandle.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/org.apache.cordova.camera/www/ios/CameraPopoverHandle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/org.apache.cordova.camera/www/CameraPopoverOptions.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/org.apache.cordova.camera/www/CameraPopoverOptions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-file/www/DirectoryEntry.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-file/www/DirectoryEntry.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-file/www/DirectoryReader.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-file/www/DirectoryReader.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-file/www/Entry.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-file/www/Entry.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-file/www/File.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-file/www/File.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-file/www/FileEntry.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-file/www/FileEntry.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-file/www/FileError.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-file/www/FileError.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-file/www/FileReader.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-file/www/FileReader.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-file/www/FileSystem.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-file/www/FileSystem.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-file/www/ios/FileSystem.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-file/www/ios/FileSystem.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-file/www/FileUploadOptions.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-file/www/FileUploadOptions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-file/www/FileUploadResult.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-file/www/FileUploadResult.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-file/www/FileWriter.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-file/www/FileWriter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-file/www/Flags.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-file/www/Flags.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-file/www/LocalFileSystem.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-file/www/LocalFileSystem.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-file/www/Metadata.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-file/www/Metadata.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-file/www/ProgressEvent.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-file/www/ProgressEvent.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/js/app.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/platforms/ios/www/js/app.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/www/js/app.js" afterPath="$PROJECT_DIR$/LandColor/www/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/config.xml" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-console/www/console-via-logger.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-console/www/console-via-logger.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/platforms/ios/www/cordova_plugins.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/cordova_plugins.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-device/www/device.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-device/www/device.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-file/www/fileSystemPaths.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-file/www/fileSystemPaths.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-file/www/fileSystems-roots.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-file/www/fileSystems-roots.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-file/www/fileSystems.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-file/www/fileSystems.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/index.html" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/platforms/ios/www/index.html" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/www/index.html" afterPath="$PROJECT_DIR$/LandColor/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/ionic-plugin-keyboard/www/ios/keyboard.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/ionic-plugin-keyboard/www/ios/keyboard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/landcolor-Info.plist" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/landcolor-Info.plist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-console/www/logger.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-console/www/logger.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-file/www/requestFileSystem.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-file/www/requestFileSystem.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-file/www/resolveLocalFileSystemURI.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-file/www/resolveLocalFileSystemURI.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-splashscreen/www/splashscreen.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-splashscreen/www/splashscreen.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-statusbar/www/statusbar.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-statusbar/www/statusbar.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="LandColor.iws" />
@@ -81,8 +44,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LandColor/www/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.5925927">
-              <caret line="104" column="52" selection-start-line="104" selection-start-column="52" selection-end-line="104" selection-end-column="52" />
+            <state vertical-scroll-proportion="-64.888885">
+              <caret line="255" column="30" selection-start-line="255" selection-start-column="30" selection-end-line="255" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -91,8 +54,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LandColor/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.54825175">
-              <caret line="39" column="95" selection-start-line="39" selection-start-column="95" selection-end-line="39" selection-end-column="95" />
+            <state vertical-scroll-proportion="0.5958042">
+              <caret line="41" column="51" selection-start-line="41" selection-start-column="51" selection-end-line="41" selection-end-column="51" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#ion-scroll#0;n#ion-view#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -339,7 +302,13 @@
       <option name="project" value="LOCAL" />
       <updated>1455725790890</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="I don't want to lose your love tonight!!&#10;Draws the two canvases(sp?)">
+      <created>1455739946126</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1455739946126</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -392,7 +361,8 @@
     <MESSAGE value="Maybe" />
     <MESSAGE value="Hide it" />
     <MESSAGE value="With a little a bit of luck!" />
-    <option name="LAST_COMMIT_MESSAGE" value="With a little a bit of luck!" />
+    <MESSAGE value="I don't want to lose your love tonight!!&#10;Draws the two canvases(sp?)" />
+    <option name="LAST_COMMIT_MESSAGE" value="I don't want to lose your love tonight!!&#10;Draws the two canvases(sp?)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -480,14 +450,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LandColor/hooks/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LandColor/www/img/dafuq.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -498,18 +460,26 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/LandColor/hooks/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/LandColor/www/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.5925927">
-          <caret line="104" column="52" selection-start-line="104" selection-start-column="52" selection-end-line="104" selection-end-column="52" />
+        <state vertical-scroll-proportion="-64.888885">
+          <caret line="255" column="30" selection-start-line="255" selection-start-column="30" selection-end-line="255" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LandColor/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54825175">
-          <caret line="39" column="95" selection-start-line="39" selection-start-column="95" selection-end-line="39" selection-end-column="95" />
+        <state vertical-scroll-proportion="0.5958042">
+          <caret line="41" column="51" selection-start-line="41" selection-start-column="51" selection-end-line="41" selection-end-column="51" />
           <folding>
             <element signature="n#style#0;n#img#0;n#ion-scroll#0;n#ion-view#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>

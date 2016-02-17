@@ -256,7 +256,7 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
    console.log(soilSampleLAB);
    //Add to screen to check results
    var labLabel = document.createElement("label");
-   labLabel.appendChild(document.createTextNode(soilSampleLAB));
+   labLabel.appendChild(document.createTextNode("("+soilSampleLAB+")"));
    document.getElementById("main").appendChild(labLabel);
 
 }
