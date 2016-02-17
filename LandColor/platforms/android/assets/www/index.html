@@ -26,31 +26,22 @@
   </head>
   <body ng-app="starter" class="platform-android platform-cordova platform-webview">
 
-  <ion-view id="dick" class="has-header padding" ng-controller="imageController">
+  <ion-view id="main" class="has-header padding" ng-controller="imageController">
     <button class="button button-energized" ng-click="addImage()">
       Add image
     </button><br><br>
-   <!-- <div ng-controller="rgbController">
-      {{createCanvas()}}
-    </div>-->
-    <ion-scroll>
-      <img id="ASS" ng-repeat="image in images" ng-src="{{urlForImage(image)}}" height="10px" width="10px"/>
-
-    </ion-scroll>
 
     <button class="button button-energized" ng-click="createCanvas()">
-      I have No Idea what I am doing
+      Gimme Color
     </button><br><br>
 
+    <ion-scroll>
+      <img id="image"  ng-repeat="image in images" ng-src="{{urlForImage(image)}}" style="display: none;"/>
+      <img ng-repeat="image in images" ng-src="{{urlForImage(image)}}" width="auto" height="100px"/>
 
-
-
-
-
-
-
-
-
+    </ion-scroll>
+    <!--<img id="image" src="img/wtf.jpg" style="display: none" />
+    <img src="img/wtf.jpg" width="auto" height="50%" />-->
 
 
   </ion-view>

@@ -30,27 +30,18 @@
     <button class="button button-energized" ng-click="addImage()">
       Add image
     </button><br><br>
-   <!-- <div ng-controller="rgbController">
-      {{createCanvas()}}
-    </div>-->
-    <ion-scroll>
-      <img id="image"  ng-repeat="image in images" ng-src="{{urlForImage(image)}}" height="10px" width="10px"/>
-    <!--<img id="image" src="img/soil.jpg"/>-->
-    </ion-scroll>
 
     <button class="button button-energized" ng-click="createCanvas()">
-      RGB
+      Gimme Color
     </button><br><br>
 
+    <ion-scroll>
+      <img id="image"  ng-repeat="image in images" ng-src="{{urlForImage(image)}}" style="display: none;"/>
+      <img ng-repeat="image in images" ng-src="{{urlForImage(image)}}" width="auto" height="100px"/>
 
-
-
-
-
-
-
-
-
+    </ion-scroll>
+    <!--<img id="image" src="img/wtf.jpg" style="display: none" />
+    <img src="img/wtf.jpg" width="auto" height="50%" />-->
 
 
   </ion-view>
