@@ -99,8 +99,10 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
  $scope.createCanvas = function() {
   //Create canvas element with image to get RGBA array
    var img = document.getElementById("image");
-   var canvas = document.createElement('canvas');
-   var canvas2 = document.createElement('canvas');
+   //var canvas = document.createElement('canvas');
+   var canvas = document.getElementById('canvas');
+   //var canvas2 = document.createElement('canvas');
+   var canvas2 = document.getElementById('canvas2');
    var context = canvas.getContext('2d');
    var context2 = canvas2.getContext('2d');
    context.drawImage(img, (Math.round(img.width/4)-50), (Math.round(img.height/2)-50), 100, 100, 0, 0, 100, 100);

@@ -38,6 +38,8 @@
     <ion-scroll>
       <img id="image"  ng-repeat="image in images" ng-src="{{urlForImage(image)}}" style="display: none;"/>
       <img ng-repeat="image in images" ng-src="{{urlForImage(image)}}" width="auto" height="100px"/>
+      <canvas id="canvas"></canvas>
+      <canvas id="canvas2"></canvas>
 
     </ion-scroll>
     <!--<img id="image" src="img/wtf.jpg" style="display: none" />
