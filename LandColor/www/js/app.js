@@ -256,8 +256,11 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
    console.log(soilSampleLAB);
    //Add to screen to check results
    var labLabel = document.createElement("label");
-   labLabel.appendChild(document.createTextNode("("+soilSampleLAB+")"));
+   labLabel.appendChild(document.createTextNode("L: "+soilSampleLAB[0].toFixed(2)+" a*: "+soilSampleLAB[1].toFixed(2)+" b*: "+soilSampleLAB[2].toFixed(2)+" R: "+rSample.toFixed(2)+" G: "+gSample.toFixed(2)+" B: "+bSample.toFixed(2)+"   " ));
    document.getElementById("main").appendChild(labLabel);
+   var cardLabel = document.createElement("label");
+   labLabel.appendChild(document.createTextNode(" Card:  R: "+paletteCard[0][0]+" G: "+paletteCard[0][1]+" B: "+paletteCard[0][1]));
+   document.getElementById("main").appendChild(cardLabel);
 
 }
 
