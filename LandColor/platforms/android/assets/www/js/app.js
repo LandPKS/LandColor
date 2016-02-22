@@ -105,16 +105,12 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
    var canvas2 = document.getElementById('canvas2');
    var context = canvas.getContext('2d');
    var context2 = canvas2.getContext('2d');
-   context.drawImage(img, (Math.round(img.width/4)-50), (Math.round(img.height/2)-50), 100, 100, 0, 0, 100, 100);
-   context2.drawImage(img, (Math.round(3*img.width/4)-50), (Math.round(img.height/2)-50), 100, 100, 0, 0, 100, 100);
-   console.log(Math.round(3*img.width/4)-50);
-   console.log(Math.round(img.width/4)-50);
-   console.log(Math.round(img.height/2)-50);
-
+   context.drawImage(img, (Math.round(img.width/4)-75), (Math.round(img.height/2)-75), 150, 150, 0, 0, 150, 150);
+   context2.drawImage(img, (Math.round(3*img.width/4)-75), (Math.round(img.height/2)-75), 150, 150, 0, 0, 150, 150);
 
   //Get Pixel Arrays of Calibration Card and Soil Sample
-   var imageDataCard = context.getImageData(0,0,100,100);
-   var imageDataSample = context2.getImageData(0,0,100,100);
+   var imageDataCard = context.getImageData(0,0,150,150);
+   var imageDataSample = context2.getImageData(0,0,150,150);
    console.log(imageDataCard);
    console.log(imageDataSample);
 
@@ -126,7 +122,7 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
 
    var pixelCard = imageDataCard.data;
    var pixelSample = imageDataSample.data;
-   var pixelCount = 10000;
+   var pixelCount = 22500;
    //Function to get Palette
    var getPalette = function(pixels,pixelCount,quality,colorCount) {
      var pixelArray =[];
@@ -156,6 +152,7 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
    console.log(paletteCard[0]);
    var paletteSample = getPalette(pixelSample,pixelCount,quality,colorCount);
    console.log(paletteSample[0]);
+
    var rCorrection = 210.15/paletteCard[0][0];
    var gCorrection = 213.95/paletteCard[0][1];
    var bCorrection = 218.42/paletteCard[0][2];
@@ -254,13 +251,19 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
 
    var soilSampleLAB = RGBtoLAB(rSample,gSample,bSample);
    console.log(soilSampleLAB);
+   $scope.cardPalette = paletteCard;
+
+   $scope.samplePalette = paletteSample;
+
+   $scope.sampleRGB = [rSample,gSample,bSample];
    //Add to screen to check results
-   var labLabel = document.createElement("label");
-   labLabel.appendChild(document.createTextNode("L: "+soilSampleLAB[0].toFixed(2)+" a*: "+soilSampleLAB[1].toFixed(2)+" b*: "+soilSampleLAB[2].toFixed(2)+" R: "+rSample.toFixed(2)+" G: "+gSample.toFixed(2)+" B: "+bSample.toFixed(2)+"   " ));
-   document.getElementById("main").appendChild(labLabel);
-   var cardLabel = document.createElement("label");
-   labLabel.appendChild(document.createTextNode(" Card:  R: "+paletteCard[0][0]+" G: "+paletteCard[0][1]+" B: "+paletteCard[0][1]));
-   document.getElementById("main").appendChild(cardLabel);
+   //var labLabel = document.createElement("p");
+   //labLabel.appendChild(document.createTextNode("L: "+soilSampleLAB[0].toFixed(2)+" a*: "+soilSampleLAB[1].toFixed(2)+" b*: "+soilSampleLAB[2].toFixed(2)+" R: "+rSample.toFixed(2)+" G: "+gSample.toFixed(2)+" B: "+bSample.toFixed(2)+"   " ));
+   //document.getElementById("main").appendChild(labLabel);
+   //var cardLabel = document.createElement("p");
+   //labLabel.appendChild(document.createTextNode(" Card:  R: "+paletteCard[0][0]+" G: "+paletteCard[0][1]+" B: "+paletteCard[0][1]+" Holla at ya boy"));
+   //document.getElementById("main").appendChild(cardLabel);
+
 
 }
 
