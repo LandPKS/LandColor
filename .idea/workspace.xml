@@ -1,626 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="17c19270-ad93-4897-a891-31cdbe893a3c" name="Default" comment="Hide it">
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\.bowerrc" afterPath="$PROJECT_DIR$/LandColor/.bowerrc" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\.editorconfig" afterPath="$PROJECT_DIR$/LandColor/.editorconfig" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\.gitignore" afterPath="$PROJECT_DIR$/LandColor/.gitignore" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\bower.json" afterPath="$PROJECT_DIR$/LandColor/bower.json" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\config.xml" afterPath="$PROJECT_DIR$/LandColor/config.xml" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\gulpfile.js" afterPath="$PROJECT_DIR$/LandColor/gulpfile.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\hooks\README.md" afterPath="$PROJECT_DIR$/LandColor/hooks/README.md" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\hooks\after_prepare\010_add_platform_class.js" afterPath="$PROJECT_DIR$/LandColor/hooks/after_prepare/010_add_platform_class.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\ionic.project" afterPath="$PROJECT_DIR$/LandColor/ionic.project" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\package.json" afterPath="$PROJECT_DIR$/LandColor/package.json" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\.gitignore" afterPath="$PROJECT_DIR$/LandColor/platforms/android/.gitignore" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\AndroidManifest.xml" afterPath="$PROJECT_DIR$/LandColor/platforms/android/AndroidManifest.xml" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\CordovaLib\AndroidManifest.xml" afterPath="$PROJECT_DIR$/LandColor/platforms/android/CordovaLib/AndroidManifest.xml" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\CordovaLib\build.gradle" afterPath="$PROJECT_DIR$/LandColor/platforms/android/CordovaLib/build.gradle" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\CordovaLib\cordova.gradle" afterPath="$PROJECT_DIR$/LandColor/platforms/android/CordovaLib/cordova.gradle" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\CordovaLib\project.properties" afterPath="$PROJECT_DIR$/LandColor/platforms/android/CordovaLib/project.properties" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\CordovaLib\src\org\apache\cordova\AuthenticationToken.java" afterPath="$PROJECT_DIR$/LandColor/platforms/android/CordovaLib/src/org/apache/cordova/AuthenticationToken.java" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\CordovaLib\src\org\apache\cordova\CallbackContext.java" afterPath="$PROJECT_DIR$/LandColor/platforms/android/CordovaLib/src/org/apache/cordova/CallbackContext.java" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\CordovaLib\src\org\apache\cordova\Config.java" afterPath="$PROJECT_DIR$/LandColor/platforms/android/CordovaLib/src/org/apache/cordova/Config.java" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\CordovaLib\src\org\apache\cordova\ConfigXmlParser.java" afterPath="$PROJECT_DIR$/LandColor/platforms/android/CordovaLib/src/org/apache/cordova/ConfigXmlParser.java" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\CordovaLib\src\org\apache\cordova\CordovaActivity.java" afterPath="$PROJECT_DIR$/LandColor/platforms/android/CordovaLib/src/org/apache/cordova/CordovaActivity.java" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\CordovaLib\src\org\apache\cordova\CordovaArgs.java" afterPath="$PROJECT_DIR$/LandColor/platforms/android/CordovaLib/src/org/apache/cordova/CordovaArgs.java" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\CordovaLib\src\org\apache\cordova\CordovaBridge.java" afterPath="$PROJECT_DIR$/LandColor/platforms/android/CordovaLib/src/org/apache/cordova/CordovaBridge.java" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\CordovaLib\src\org\apache\cordova\CordovaClientCertRequest.java" afterPath="$PROJECT_DIR$/LandColor/platforms/android/CordovaLib/src/org/apache/cordova/CordovaClientCertRequest.java" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\CordovaLib\src\org\apache\cordova\CordovaDialogsHelper.java" afterPath="$PROJECT_DIR$/LandColor/platforms/android/CordovaLib/src/org/apache/cordova/CordovaDialogsHelper.java" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\CordovaLib\src\org\apache\cordova\CordovaHttpAuthHandler.java" afterPath="$PROJECT_DIR$/LandColor/platforms/android/CordovaLib/src/org/apache/cordova/CordovaHttpAuthHandler.java" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\CordovaLib\src\org\apache\cordova\CordovaInterface.java" afterPath="$PROJECT_DIR$/LandColor/platforms/android/CordovaLib/src/org/apache/cordova/CordovaInterface.java" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\CordovaLib\src\org\apache\cordova\CordovaInterfaceImpl.java" afterPath="$PROJECT_DIR$/LandColor/platforms/android/CordovaLib/src/org/apache/cordova/CordovaInterfaceImpl.java" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\CordovaLib\src\org\apache\cordova\CordovaPlugin.java" afterPath="$PROJECT_DIR$/LandColor/platforms/android/CordovaLib/src/org/apache/cordova/CordovaPlugin.java" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\CordovaLib\src\org\apache\cordova\CordovaPreferences.java" afterPath="$PROJECT_DIR$/LandColor/platforms/android/CordovaLib/src/org/apache/cordova/CordovaPreferences.java" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\CordovaLib\src\org\apache\cordova\CordovaResourceApi.java" afterPath="$PROJECT_DIR$/LandColor/platforms/android/CordovaLib/src/org/apache/cordova/CordovaResourceApi.java" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\CordovaLib\src\org\apache\cordova\CordovaWebView.java" afterPath="$PROJECT_DIR$/LandColor/platforms/android/CordovaLib/src/org/apache/cordova/CordovaWebView.java" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\CordovaLib\src\org\apache\cordova\CordovaWebViewEngine.java" afterPath="$PROJECT_DIR$/LandColor/platforms/android/CordovaLib/src/org/apache/cordova/CordovaWebViewEngine.java" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\CordovaLib\src\org\apache\cordova\CordovaWebViewImpl.java" afterPath="$PROJECT_DIR$/LandColor/platforms/android/CordovaLib/src/org/apache/cordova/CordovaWebViewImpl.java" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\CordovaLib\src\org\apache\cordova\CoreAndroid.java" afterPath="$PROJECT_DIR$/LandColor/platforms/android/CordovaLib/src/org/apache/cordova/CoreAndroid.java" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\CordovaLib\src\org\apache\cordova\ExposedJsApi.java" afterPath="$PROJECT_DIR$/LandColor/platforms/android/CordovaLib/src/org/apache/cordova/ExposedJsApi.java" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\CordovaLib\src\org\apache\cordova\ICordovaClientCertRequest.java" afterPath="$PROJECT_DIR$/LandColor/platforms/android/CordovaLib/src/org/apache/cordova/ICordovaClientCertRequest.java" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\CordovaLib\src\org\apache\cordova\ICordovaCookieManager.java" afterPath="$PROJECT_DIR$/LandColor/platforms/android/CordovaLib/src/org/apache/cordova/ICordovaCookieManager.java" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\CordovaLib\src\org\apache\cordova\ICordovaHttpAuthHandler.java" afterPath="$PROJECT_DIR$/LandColor/platforms/android/CordovaLib/src/org/apache/cordova/ICordovaHttpAuthHandler.java" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\CordovaLib\src\org\apache\cordova\LOG.java" afterPath="$PROJECT_DIR$/LandColor/platforms/android/CordovaLib/src/org/apache/cordova/LOG.java" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\CordovaLib\src\org\apache\cordova\NativeToJsMessageQueue.java" afterPath="$PROJECT_DIR$/LandColor/platforms/android/CordovaLib/src/org/apache/cordova/NativeToJsMessageQueue.java" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\CordovaLib\src\org\apache\cordova\PluginEntry.java" afterPath="$PROJECT_DIR$/LandColor/platforms/android/CordovaLib/src/org/apache/cordova/PluginEntry.java" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\CordovaLib\src\org\apache\cordova\PluginManager.java" afterPath="$PROJECT_DIR$/LandColor/platforms/android/CordovaLib/src/org/apache/cordova/PluginManager.java" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\CordovaLib\src\org\apache\cordova\PluginResult.java" afterPath="$PROJECT_DIR$/LandColor/platforms/android/CordovaLib/src/org/apache/cordova/PluginResult.java" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\CordovaLib\src\org\apache\cordova\Whitelist.java" afterPath="$PROJECT_DIR$/LandColor/platforms/android/CordovaLib/src/org/apache/cordova/Whitelist.java" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\CordovaLib\src\org\apache\cordova\engine\SystemCookieManager.java" afterPath="$PROJECT_DIR$/LandColor/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemCookieManager.java" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\CordovaLib\src\org\apache\cordova\engine\SystemExposedJsApi.java" afterPath="$PROJECT_DIR$/LandColor/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemExposedJsApi.java" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\CordovaLib\src\org\apache\cordova\engine\SystemWebChromeClient.java" afterPath="$PROJECT_DIR$/LandColor/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemWebChromeClient.java" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\CordovaLib\src\org\apache\cordova\engine\SystemWebView.java" afterPath="$PROJECT_DIR$/LandColor/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemWebView.java" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\CordovaLib\src\org\apache\cordova\engine\SystemWebViewClient.java" afterPath="$PROJECT_DIR$/LandColor/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemWebViewClient.java" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\CordovaLib\src\org\apache\cordova\engine\SystemWebViewEngine.java" afterPath="$PROJECT_DIR$/LandColor/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemWebViewEngine.java" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\cordova-js-src\android\nativeapiprovider.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/platform_www/cordova-js-src/android/nativeapiprovider.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\cordova-js-src\android\promptbasednativeapi.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/platform_www/cordova-js-src/android/promptbasednativeapi.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\cordova-js-src\exec.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/platform_www/cordova-js-src/exec.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\cordova-js-src\platform.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/platform_www/cordova-js-src/platform.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\cordova-js-src\plugin\android\app.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/platform_www/cordova-js-src/plugin/android/app.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\cordova.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/platform_www/cordova.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\cordova_plugins.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/cordova_plugins.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\css\style.css" afterPath="$PROJECT_DIR$/LandColor/www/css/style.css" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\img\ionic.png" afterPath="$PROJECT_DIR$/LandColor/www/img/ionic.png" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\index.html" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/index.html" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\js\app.js" afterPath="$PROJECT_DIR$/LandColor/www/js/app.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\css\ionic.css" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/css/ionic.css" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\css\ionic.min.css" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/css/ionic.min.css" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\fonts\ionicons.eot" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/fonts/ionicons.eot" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\fonts\ionicons.svg" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/fonts/ionicons.svg" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\fonts\ionicons.ttf" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/fonts/ionicons.ttf" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\fonts\ionicons.woff" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/fonts/ionicons.woff" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\js\angular-ui\angular-ui-router.js" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/js/angular-ui/angular-ui-router.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\js\angular-ui\angular-ui-router.min.js" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/js/angular-ui/angular-ui-router.min.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\js\angular\angular-animate.js" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/js/angular/angular-animate.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\js\angular\angular-animate.min.js" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/js/angular/angular-animate.min.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\js\angular\angular-resource.js" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/js/angular/angular-resource.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\js\angular\angular-resource.min.js" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/js/angular/angular-resource.min.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\js\angular\angular-sanitize.js" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/js/angular/angular-sanitize.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\js\angular\angular-sanitize.min.js" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/js/angular/angular-sanitize.min.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\js\angular\angular.js" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/js/angular/angular.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\js\angular\angular.min.js" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/js/angular/angular.min.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\js\ionic-angular.js" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/js/ionic-angular.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\js\ionic-angular.min.js" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/js/ionic-angular.min.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\js\ionic.bundle.js" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/js/ionic.bundle.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\js\ionic.bundle.min.js" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/js/ionic.bundle.min.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\js\ionic.js" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/js/ionic.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\js\ionic.min.js" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/js/ionic.min.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\scss\_action-sheet.scss" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/scss/_action-sheet.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\scss\_animations.scss" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/scss/_animations.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\scss\_backdrop.scss" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/scss/_backdrop.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\scss\_badge.scss" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/scss/_badge.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\scss\_bar.scss" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/scss/_bar.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\scss\_button-bar.scss" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/scss/_button-bar.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\scss\_button.scss" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/scss/_button.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\scss\_checkbox.scss" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/scss/_checkbox.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\scss\_form.scss" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/scss/_form.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\scss\_grid.scss" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/scss/_grid.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\scss\_items.scss" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/scss/_items.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\scss\_list.scss" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/scss/_list.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\scss\_loading.scss" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/scss/_loading.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\scss\_menu.scss" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/scss/_menu.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\scss\_mixins.scss" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/scss/_mixins.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\scss\_modal.scss" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/scss/_modal.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\scss\_platform.scss" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/scss/_platform.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\scss\_popover.scss" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/scss/_popover.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\scss\_popup.scss" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/scss/_popup.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\scss\_progress.scss" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/scss/_progress.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\scss\_radio.scss" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/scss/_radio.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\scss\_range.scss" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/scss/_range.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\scss\_refresher.scss" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/scss/_refresher.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\scss\_reset.scss" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/scss/_reset.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\scss\_scaffolding.scss" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/scss/_scaffolding.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\scss\_select.scss" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/scss/_select.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\scss\_slide-box.scss" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/scss/_slide-box.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\scss\_spinner.scss" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/scss/_spinner.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\scss\_tabs.scss" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/scss/_tabs.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\scss\_toggle.scss" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/scss/_toggle.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\scss\_transitions.scss" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/scss/_transitions.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\scss\_type.scss" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/scss/_type.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\scss\_util.scss" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/scss/_util.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\scss\_variables.scss" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/scss/_variables.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\scss\ionic.scss" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/scss/ionic.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\scss\ionicons\_ionicons-font.scss" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/scss/ionicons/_ionicons-font.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\scss\ionicons\_ionicons-icons.scss" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/scss/ionicons/_ionicons-icons.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\scss\ionicons\_ionicons-variables.scss" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/scss/ionicons/_ionicons-variables.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\scss\ionicons\ionicons.scss" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/scss/ionicons/ionicons.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\lib\ionic\version.json" afterPath="$PROJECT_DIR$/LandColor/www/lib/ionic/version.json" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\plugins\cordova-plugin-device\www\device.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-device/www/device.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\plugins\cordova-plugin-splashscreen\www\splashscreen.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-splashscreen/www/splashscreen.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\plugins\cordova-plugin-statusbar\www\statusbar.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-statusbar/www/statusbar.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\plugins\cordova-plugin-whitelist\whitelist.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/plugins/cordova-plugin-whitelist/whitelist.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\assets\www\plugins\ionic-plugin-keyboard\www\android\keyboard.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/plugins/ionic-plugin-keyboard/www/android/keyboard.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\build.gradle" afterPath="$PROJECT_DIR$/LandColor/platforms/android/build.gradle" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\android_sdk_version" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/android_sdk_version" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\build" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/build" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\build.bat" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/build.bat" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\check_reqs" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/check_reqs" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\check_reqs.bat" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/check_reqs.bat" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\clean" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/clean" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\clean.bat" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/clean.bat" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\defaults.xml" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/defaults.xml" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\lib\android_sdk_version.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/lib/android_sdk_version.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\lib\appinfo.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/lib/appinfo.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\lib\build.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/lib/build.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\lib\check_reqs.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/lib/check_reqs.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\lib\device.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/lib/device.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\lib\emulator.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/lib/emulator.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\lib\exec.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/lib/exec.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\lib\install-device" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/lib/install-device" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\lib\install-device.bat" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/lib/install-device.bat" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\lib\install-emulator" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/lib/install-emulator" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\lib\install-emulator.bat" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/lib/install-emulator.bat" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\lib\list-devices" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/lib/list-devices" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\lib\list-devices.bat" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/lib/list-devices.bat" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\lib\list-emulator-images" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/lib/list-emulator-images" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\lib\list-emulator-images.bat" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/lib/list-emulator-images.bat" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\lib\list-started-emulators" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/lib/list-started-emulators" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\lib\list-started-emulators.bat" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/lib/list-started-emulators.bat" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\lib\log.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/lib/log.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\lib\plugin-build.gradle" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/lib/plugin-build.gradle" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\lib\retry.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/lib/retry.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\lib\run.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/lib/run.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\lib\spawn.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/lib/spawn.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\lib\start-emulator" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/lib/start-emulator" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\lib\start-emulator.bat" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/lib/start-emulator.bat" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\log" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/log" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\log.bat" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/log.bat" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\nopt\LICENSE" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/nopt/node_modules/abbrev/LICENSE" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\nopt\lib\nopt.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/nopt/lib/nopt.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\nopt\node_modules\abbrev\LICENSE" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/nopt/LICENSE" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\nopt\node_modules\abbrev\abbrev.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/nopt/node_modules/abbrev/abbrev.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\nopt\node_modules\abbrev\package.json" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/nopt/node_modules/abbrev/package.json" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\nopt\package.json" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/nopt/package.json" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\q\CONTRIBUTING.md" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/q/CONTRIBUTING.md" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\q\LICENSE" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/q/LICENSE" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\q\README.md" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/q/README.md" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\q\benchmark\compare-with-callbacks.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/q/benchmark/compare-with-callbacks.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\q\benchmark\scenarios.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/q/benchmark/scenarios.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\q\package.json" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/q/package.json" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\q\q.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/q/q.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\q\queue.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/q/queue.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\shelljs\.documentup.json" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/shelljs/.documentup.json" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\shelljs\.jshintrc" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/shelljs/.jshintrc" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\shelljs\.npmignore" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/shelljs/.npmignore" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\shelljs\.travis.yml" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/shelljs/.travis.yml" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\shelljs\LICENSE" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/shelljs/LICENSE" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\shelljs\README.md" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/shelljs/README.md" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\shelljs\bin\shjs" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/shelljs/bin/shjs" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\shelljs\global.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/shelljs/global.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\shelljs\make.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/shelljs/make.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\shelljs\package.json" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/shelljs/package.json" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\shelljs\scripts\generate-docs.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/shelljs/scripts/generate-docs.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\shelljs\scripts\run-tests.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/shelljs/scripts/run-tests.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\shelljs\shell.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/shelljs/shell.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\shelljs\src\cat.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/shelljs/src/cat.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\shelljs\src\cd.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/shelljs/src/cd.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\shelljs\src\chmod.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/shelljs/src/chmod.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\shelljs\src\common.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/shelljs/src/common.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\shelljs\src\cp.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/shelljs/src/cp.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\shelljs\src\dirs.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/shelljs/src/dirs.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\shelljs\src\echo.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/shelljs/src/echo.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\shelljs\src\error.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/shelljs/src/error.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\shelljs\src\exec.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/shelljs/src/exec.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\shelljs\src\find.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/shelljs/src/find.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\shelljs\src\grep.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/shelljs/src/grep.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\shelljs\src\ls.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/shelljs/src/ls.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\shelljs\src\mkdir.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/shelljs/src/mkdir.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\shelljs\src\mv.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/shelljs/src/mv.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\shelljs\src\popd.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/shelljs/src/popd.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\shelljs\src\pushd.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/shelljs/src/pushd.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\shelljs\src\pwd.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/shelljs/src/pwd.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\shelljs\src\rm.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/shelljs/src/rm.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\shelljs\src\sed.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/shelljs/src/sed.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\shelljs\src\tempdir.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/shelljs/src/tempdir.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\shelljs\src\test.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/shelljs/src/test.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\shelljs\src\to.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/shelljs/src/to.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\shelljs\src\toEnd.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/shelljs/src/toEnd.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\shelljs\src\which.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/shelljs/src/which.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\which\LICENSE" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/which/LICENSE" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\which\README.md" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/which/README.md" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\which\bin\which" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/which/bin/which" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\which\package.json" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/which/package.json" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\node_modules\which\which.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/which/which.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\run" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/run" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\run.bat" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/run.bat" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\version" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/version" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\cordova\version.bat" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/version.bat" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\platform_www\cordova-js-src\android\nativeapiprovider.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/cordova-js-src/android/nativeapiprovider.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\platform_www\cordova-js-src\android\promptbasednativeapi.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/cordova-js-src/android/promptbasednativeapi.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\platform_www\cordova-js-src\exec.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/cordova-js-src/exec.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\platform_www\cordova-js-src\platform.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/cordova-js-src/platform.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\platform_www\cordova-js-src\plugin\android\app.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/cordova-js-src/plugin/android/app.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\platform_www\cordova.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/cordova.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\project.properties" afterPath="$PROJECT_DIR$/LandColor/platforms/android/project.properties" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\res\drawable-hdpi\icon.png" afterPath="$PROJECT_DIR$/LandColor/platforms/android/res/drawable-hdpi/icon.png" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\res\drawable-land-hdpi\screen.png" afterPath="$PROJECT_DIR$/LandColor/platforms/android/res/drawable-land-hdpi/screen.png" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\res\drawable-land-ldpi\screen.png" afterPath="$PROJECT_DIR$/LandColor/platforms/android/res/drawable-land-ldpi/screen.png" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\res\drawable-land-mdpi\screen.png" afterPath="$PROJECT_DIR$/LandColor/platforms/android/res/drawable-land-mdpi/screen.png" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\res\drawable-land-xhdpi\screen.png" afterPath="$PROJECT_DIR$/LandColor/platforms/android/res/drawable-land-xhdpi/screen.png" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\res\drawable-ldpi\icon.png" afterPath="$PROJECT_DIR$/LandColor/platforms/android/res/drawable-ldpi/icon.png" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\res\drawable-mdpi\icon.png" afterPath="$PROJECT_DIR$/LandColor/platforms/android/res/drawable-mdpi/icon.png" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\res\drawable-port-hdpi\screen.png" afterPath="$PROJECT_DIR$/LandColor/platforms/android/res/drawable-port-hdpi/screen.png" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\res\drawable-port-ldpi\screen.png" afterPath="$PROJECT_DIR$/LandColor/platforms/android/res/drawable-port-ldpi/screen.png" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\res\drawable-port-mdpi\screen.png" afterPath="$PROJECT_DIR$/LandColor/platforms/android/res/drawable-port-mdpi/screen.png" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\res\drawable-port-xhdpi\screen.png" afterPath="$PROJECT_DIR$/LandColor/platforms/android/res/drawable-port-xhdpi/screen.png" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\res\drawable-xhdpi\icon.png" afterPath="$PROJECT_DIR$/LandColor/platforms/android/res/drawable-xhdpi/icon.png" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\res\values\strings.xml" afterPath="$PROJECT_DIR$/LandColor/platforms/android/res/values/strings.xml" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\res\xml\config.xml" afterPath="$PROJECT_DIR$/LandColor/platforms/android/res/xml/config.xml" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\settings.gradle" afterPath="$PROJECT_DIR$/LandColor/platforms/android/settings.gradle" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\src\com\ionicframework\landcolor954191\MainActivity.java" afterPath="$PROJECT_DIR$/LandColor/platforms/android/src/com/ionicframework/landcolor954191/MainActivity.java" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\src\io\ionic\keyboard\IonicKeyboard.java" afterPath="$PROJECT_DIR$/LandColor/platforms/android/src/io/ionic/keyboard/IonicKeyboard.java" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\src\org\apache\cordova\device\Device.java" afterPath="$PROJECT_DIR$/LandColor/platforms/android/src/org/apache/cordova/device/Device.java" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\src\org\apache\cordova\splashscreen\SplashScreen.java" afterPath="$PROJECT_DIR$/LandColor/platforms/android/src/org/apache/cordova/splashscreen/SplashScreen.java" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\src\org\apache\cordova\statusbar\StatusBar.java" afterPath="$PROJECT_DIR$/LandColor/platforms/android/src/org/apache/cordova/statusbar/StatusBar.java" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\android\src\org\apache\cordova\whitelist\WhitelistPlugin.java" afterPath="$PROJECT_DIR$/LandColor/platforms/android/src/org/apache/cordova/whitelist/WhitelistPlugin.java" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\.gitignore" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/.gitignore" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\Classes\CDV.h" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/Classes/CDV.h" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\Classes\CDVAvailability.h" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/Classes/CDVAvailability.h" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\Classes\CDVAvailabilityDeprecated.h" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/Classes/CDVAvailabilityDeprecated.h" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\Classes\CDVCommandDelegate.h" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/Classes/CDVCommandDelegate.h" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\Classes\CDVCommandDelegateImpl.h" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.h" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\Classes\CDVCommandDelegateImpl.m" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.m" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\Classes\CDVCommandQueue.h" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/Classes/CDVCommandQueue.h" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\Classes\CDVCommandQueue.m" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/Classes/CDVCommandQueue.m" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\Classes\CDVConfigParser.h" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/Classes/CDVConfigParser.h" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\Classes\CDVConfigParser.m" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/Classes/CDVConfigParser.m" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\Classes\CDVDebug.h" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/Classes/CDVDebug.h" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\Classes\CDVHandleOpenURL.h" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/Classes/CDVHandleOpenURL.h" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\Classes\CDVHandleOpenURL.m" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/Classes/CDVHandleOpenURL.m" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\Classes\CDVInvokedUrlCommand.h" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.h" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\Classes\CDVInvokedUrlCommand.m" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.m" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\Classes\CDVJSON.h" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/Classes/CDVJSON.h" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\Classes\CDVJSON.m" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/Classes/CDVJSON.m" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\Classes\CDVJSON_private.h" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/Classes/CDVJSON_private.h" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\Classes\CDVJSON_private.m" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/Classes/CDVJSON_private.m" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\Classes\CDVLocalStorage.h" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/Classes/CDVLocalStorage.h" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\Classes\CDVLocalStorage.m" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/Classes/CDVLocalStorage.m" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\Classes\CDVPlugin.h" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/Classes/CDVPlugin.h" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\Classes\CDVPlugin.m" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/Classes/CDVPlugin.m" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\Classes\CDVPluginResult.h" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/Classes/CDVPluginResult.h" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\Classes\CDVPluginResult.m" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/Classes/CDVPluginResult.m" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\Classes\CDVScreenOrientationDelegate.h" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/Classes/CDVScreenOrientationDelegate.h" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\Classes\CDVShared.h" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/Classes/CDVShared.h" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\Classes\CDVTimer.h" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/Classes/CDVTimer.h" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\Classes\CDVTimer.m" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/Classes/CDVTimer.m" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\Classes\CDVURLProtocol.h" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/Classes/CDVURLProtocol.h" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\Classes\CDVURLProtocol.m" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/Classes/CDVURLProtocol.m" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\Classes\CDVUserAgentUtil.h" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.h" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\Classes\CDVUserAgentUtil.m" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.m" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\Classes\CDVViewController.h" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/Classes/CDVViewController.h" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\Classes\CDVViewController.m" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/Classes/CDVViewController.m" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\Classes\CDVWebViewDelegate.h" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.h" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\Classes\CDVWebViewDelegate.m" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.m" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\Classes\CDVWhitelist.h" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/Classes/CDVWhitelist.h" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\Classes\CDVWhitelist.m" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/Classes/CDVWhitelist.m" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\Classes\NSArray+Comparisons.h" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.h" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\Classes\NSArray+Comparisons.m" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.m" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\Classes\NSData+Base64.h" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/Classes/NSData+Base64.h" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\Classes\NSData+Base64.m" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/Classes/NSData+Base64.m" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\Classes\NSDictionary+Extensions.h" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.h" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\Classes\NSDictionary+Extensions.m" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.m" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\Classes\NSMutableArray+QueueAdditions.h" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.h" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\Classes\NSMutableArray+QueueAdditions.m" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.m" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\Classes\UIDevice+Extensions.h" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.h" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\Classes\UIDevice+Extensions.m" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.m" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\CordovaLib.xcodeproj\project.pbxproj" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/CordovaLib.xcodeproj/project.pbxproj" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\CordovaLib_Prefix.pch" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/CordovaLib_Prefix.pch" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\VERSION" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/VERSION" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\CordovaLib\cordova.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/cordova.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\apple_ios_version" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/apple_ios_version" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\apple_osx_version" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/apple_osx_version" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\apple_xcode_version" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/apple_xcode_version" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\build" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/build" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\build-debug.xcconfig" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/build-debug.xcconfig" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\build-extras.xcconfig" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/build-extras.xcconfig" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\build-release.xcconfig" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/build-release.xcconfig" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\build.xcconfig" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/build.xcconfig" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\check_reqs" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/check_reqs" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\check_reqs.bat" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/check_reqs.bat" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\clean" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/clean" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\clean.bat" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/clean.bat" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\defaults.xml" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/defaults.xml" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\lib\build.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/lib/build.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\lib\check_reqs.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/lib/check_reqs.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\lib\clean.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/lib/clean.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\lib\copy-www-build-step.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/lib/copy-www-build-step.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\lib\list-devices" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/lib/list-devices" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\lib\list-emulator-images" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/lib/list-emulator-images" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\lib\list-started-emulators" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/lib/list-started-emulators" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\lib\run.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/lib/run.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\lib\spawn.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/lib/spawn.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\lib\start-emulator" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/lib/start-emulator" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\lib\versions.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/lib/versions.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\log" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/log" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\LICENSE" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/once/node_modules/wrappy/LICENSE" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\README.md" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/README.md" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\common.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/common.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\glob.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/glob.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\inflight\.eslintrc" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/inflight/.eslintrc" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\inflight\LICENSE" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/inflight/LICENSE" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\inflight\README.md" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/inflight/README.md" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\inflight\inflight.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/inflight/inflight.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\inflight\node_modules\wrappy\LICENSE" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/once/LICENSE" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\inflight\node_modules\wrappy\README.md" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/once/node_modules/wrappy/README.md" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\inflight\node_modules\wrappy\package.json" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/once/node_modules/wrappy/package.json" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\inflight\node_modules\wrappy\test\basic.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/once/node_modules/wrappy/test/basic.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\inflight\node_modules\wrappy\wrappy.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/once/node_modules/wrappy/wrappy.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\inflight\package.json" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/inflight/package.json" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\inflight\test.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/inflight/test.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\inherits\LICENSE" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/inherits/LICENSE" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\inherits\README.md" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/inherits/README.md" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\inherits\inherits.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/inherits/inherits.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\inherits\inherits_browser.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/inherits/inherits_browser.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\inherits\package.json" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/inherits/package.json" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\inherits\test.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/inherits/test.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\minimatch\LICENSE" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/minimatch/LICENSE" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\minimatch\README.md" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/minimatch/README.md" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\minimatch\browser.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/minimatch/browser.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\minimatch\minimatch.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/minimatch/minimatch.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\.npmignore" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/.npmignore" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\.travis.yml" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/.travis.yml" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\README.md" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/README.md" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\example.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/example.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\index.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/index.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\node_modules\balanced-match\.npmignore" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/.npmignore" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\node_modules\balanced-match\.travis.yml" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/.travis.yml" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\node_modules\balanced-match\Makefile" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/Makefile" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\node_modules\balanced-match\README.md" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/README.md" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\node_modules\balanced-match\example.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/example.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\node_modules\balanced-match\index.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/index.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\node_modules\balanced-match\package.json" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/package.json" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\node_modules\balanced-match\test\balanced.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/test/balanced.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\node_modules\concat-map\.travis.yml" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/.travis.yml" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\node_modules\concat-map\LICENSE" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/LICENSE" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\node_modules\concat-map\README.markdown" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/README.markdown" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\node_modules\concat-map\example\map.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/example/map.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\node_modules\concat-map\index.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/index.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\node_modules\concat-map\package.json" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/package.json" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\node_modules\concat-map\test\map.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/test/map.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\package.json" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/package.json" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\test\bash-comparison.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/test/bash-comparison.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\test\bash-results.txt" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/test/bash-results.txt" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\test\cases.txt" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/test/cases.txt" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\test\dollar.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/test/dollar.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\test\empty-option.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/test/empty-option.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\test\generate.sh" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/test/generate.sh" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\test\negative-increment.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/test/negative-increment.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\test\nested.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/test/nested.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\test\order.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/test/order.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\test\pad.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/test/pad.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\test\same-type.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/test/same-type.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\test\sequence.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/test/sequence.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\minimatch\package.json" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/minimatch/package.json" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\once\LICENSE" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/inflight/node_modules/wrappy/LICENSE" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\once\README.md" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/once/README.md" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\once\node_modules\wrappy\LICENSE" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/LICENSE" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\once\node_modules\wrappy\README.md" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/inflight/node_modules/wrappy/README.md" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\once\node_modules\wrappy\package.json" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/inflight/node_modules/wrappy/package.json" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\once\node_modules\wrappy\test\basic.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/inflight/node_modules/wrappy/test/basic.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\once\node_modules\wrappy\wrappy.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/inflight/node_modules/wrappy/wrappy.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\once\once.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/once/once.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\once\package.json" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/once/package.json" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\once\test\once.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/once/test/once.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\path-is-absolute\index.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/path-is-absolute/index.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\path-is-absolute\license" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/path-is-absolute/license" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\path-is-absolute\package.json" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/path-is-absolute/package.json" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\node_modules\path-is-absolute\readme.md" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/node_modules/path-is-absolute/readme.md" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\package.json" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/package.json" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\glob\sync.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/glob/sync.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\nopt\LICENSE" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/nopt/node_modules/abbrev/LICENSE" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\nopt\lib\nopt.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/nopt/lib/nopt.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\nopt\node_modules\abbrev\LICENSE" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/nopt/LICENSE" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\nopt\node_modules\abbrev\abbrev.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/nopt/node_modules/abbrev/abbrev.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\nopt\node_modules\abbrev\package.json" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/nopt/node_modules/abbrev/package.json" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\nopt\package.json" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/nopt/package.json" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\q\LICENSE" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/q/LICENSE" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\q\package.json" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/q/package.json" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\q\q.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/q/q.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\q\queue.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/q/queue.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\shelljs\LICENSE" afterPath="$PROJECT_DIR$/LandColor/platforms/android/cordova/node_modules/shelljs/LICENSE" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\shelljs\package.json" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/shelljs/package.json" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\node_modules\shelljs\shell.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/node_modules/shelljs/shell.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\run" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/run" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\run.bat" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/run.bat" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\version" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/version" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\cordova\version.bat" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/cordova/version.bat" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor.xcodeproj\project.pbxproj" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor.xcodeproj/project.pbxproj" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\.gitignore" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/.gitignore" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\Classes\AppDelegate.h" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/Classes/AppDelegate.h" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\Classes\AppDelegate.m" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/Classes/AppDelegate.m" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\Classes\MainViewController.h" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/Classes/MainViewController.h" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\Classes\MainViewController.m" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/Classes/MainViewController.m" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\Classes\MainViewController.xib" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/Classes/MainViewController.xib" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\Plugins\README" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/Plugins/README" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\Plugins\cordova-plugin-console\CDVLogger.h" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/Plugins/cordova-plugin-console/CDVLogger.h" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\Plugins\cordova-plugin-console\CDVLogger.m" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/Plugins/cordova-plugin-console/CDVLogger.m" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\Plugins\cordova-plugin-device\CDVDevice.h" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/Plugins/cordova-plugin-device/CDVDevice.h" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\Plugins\cordova-plugin-device\CDVDevice.m" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/Plugins/cordova-plugin-device/CDVDevice.m" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\Plugins\cordova-plugin-splashscreen\CDVSplashScreen.h" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/Plugins/cordova-plugin-splashscreen/CDVSplashScreen.h" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\Plugins\cordova-plugin-splashscreen\CDVSplashScreen.m" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/Plugins/cordova-plugin-splashscreen/CDVSplashScreen.m" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\Plugins\cordova-plugin-splashscreen\CDVViewController+SplashScreen.h" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/Plugins/cordova-plugin-splashscreen/CDVViewController+SplashScreen.h" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\Plugins\cordova-plugin-splashscreen\CDVViewController+SplashScreen.m" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/Plugins/cordova-plugin-splashscreen/CDVViewController+SplashScreen.m" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\Plugins\cordova-plugin-statusbar\CDVStatusBar.h" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/Plugins/cordova-plugin-statusbar/CDVStatusBar.h" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\Plugins\cordova-plugin-statusbar\CDVStatusBar.m" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/Plugins/cordova-plugin-statusbar/CDVStatusBar.m" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\Plugins\ionic-plugin-keyboard\IonicKeyboard.h" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/Plugins/ionic-plugin-keyboard/IonicKeyboard.h" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\Plugins\ionic-plugin-keyboard\IonicKeyboard.m" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/Plugins/ionic-plugin-keyboard/IonicKeyboard.m" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\Plugins\ionic-plugin-keyboard\UIWebViewExtension.h" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/Plugins/ionic-plugin-keyboard/UIWebViewExtension.h" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\Plugins\ionic-plugin-keyboard\UIWebViewExtension.m" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/Plugins/ionic-plugin-keyboard/UIWebViewExtension.m" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\Resources\icons\icon-40.png" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/Resources/icons/icon-40.png" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\Resources\icons\icon-40@2x.png" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/Resources/icons/icon-40@2x.png" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\Resources\icons\icon-50.png" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/Resources/icons/icon-50.png" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\Resources\icons\icon-50@2x.png" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/Resources/icons/icon-50@2x.png" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\Resources\icons\icon-60.png" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/Resources/icons/icon-60.png" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\Resources\icons\icon-60@2x.png" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/Resources/icons/icon-60@2x.png" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\Resources\icons\icon-60@3x.png" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/Resources/icons/icon-60@3x.png" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\Resources\icons\icon-72.png" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/Resources/icons/icon-72.png" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\Resources\icons\icon-72@2x.png" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/Resources/icons/icon-72@2x.png" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\Resources\icons\icon-76.png" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/Resources/icons/icon-76.png" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\Resources\icons\icon-76@2x.png" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/Resources/icons/icon-76@2x.png" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\Resources\icons\icon-small.png" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/Resources/icons/icon-small.png" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\Resources\icons\icon-small@2x.png" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/Resources/icons/icon-small@2x.png" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\Resources\icons\icon.png" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/Resources/icons/icon.png" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\Resources\icons\icon@2x.png" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/Resources/icons/icon@2x.png" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\Resources\splash\Default-568h@2x~iphone.png" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/Resources/splash/Default-568h@2x~iphone.png" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\Resources\splash\Default-667h.png" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/Resources/splash/Default-667h.png" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\Resources\splash\Default-736h.png" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/Resources/splash/Default-736h.png" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\Resources\splash\Default-Landscape-736h.png" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/Resources/splash/Default-Landscape-736h.png" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\Resources\splash\Default-Landscape@2x~ipad.png" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/Resources/splash/Default-Landscape@2x~ipad.png" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\Resources\splash\Default-Landscape~ipad.png" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/Resources/splash/Default-Landscape~ipad.png" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\Resources\splash\Default-Portrait@2x~ipad.png" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/Resources/splash/Default-Portrait@2x~ipad.png" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\Resources\splash\Default-Portrait~ipad.png" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/Resources/splash/Default-Portrait~ipad.png" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\Resources\splash\Default@2x~iphone.png" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/Resources/splash/Default@2x~iphone.png" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\Resources\splash\Default~iphone.png" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/Resources/splash/Default~iphone.png" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\config.xml" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/config.xml" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\landcolor-Info.plist" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/landcolor-Info.plist" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\landcolor-Prefix.pch" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/landcolor-Prefix.pch" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\landcolor\main.m" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/landcolor/main.m" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\platform_www\cordova-js-src\exec.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/platform_www/cordova-js-src/exec.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\platform_www\cordova-js-src\platform.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/platform_www/cordova-js-src/platform.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\platform_www\cordova.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/platform_www/cordova.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\cordova.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/CordovaLib/cordova.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\cordova_plugins.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/cordova_plugins.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\css\style.css" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/css/style.css" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\img\ionic.png" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/img/ionic.png" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\index.html" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/index.html" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\js\app.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/js/app.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\css\ionic.css" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/css/ionic.css" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\css\ionic.min.css" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/css/ionic.min.css" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\fonts\ionicons.eot" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/fonts/ionicons.eot" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\fonts\ionicons.svg" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/fonts/ionicons.svg" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\fonts\ionicons.ttf" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/fonts/ionicons.ttf" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\fonts\ionicons.woff" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/fonts/ionicons.woff" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\js\angular-ui\angular-ui-router.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/js/angular-ui/angular-ui-router.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\js\angular-ui\angular-ui-router.min.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/js/angular-ui/angular-ui-router.min.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\js\angular\angular-animate.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/js/angular/angular-animate.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\js\angular\angular-animate.min.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/js/angular/angular-animate.min.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\js\angular\angular-resource.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/js/angular/angular-resource.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\js\angular\angular-resource.min.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/js/angular/angular-resource.min.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\js\angular\angular-sanitize.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/js/angular/angular-sanitize.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\js\angular\angular-sanitize.min.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/js/angular/angular-sanitize.min.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\js\angular\angular.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/js/angular/angular.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\js\angular\angular.min.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/js/angular/angular.min.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\js\ionic-angular.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/js/ionic-angular.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\js\ionic-angular.min.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/js/ionic-angular.min.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\js\ionic.bundle.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/js/ionic.bundle.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\js\ionic.bundle.min.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/js/ionic.bundle.min.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\js\ionic.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/js/ionic.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\js\ionic.min.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/js/ionic.min.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\scss\_action-sheet.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/scss/_action-sheet.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\scss\_animations.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/scss/_animations.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\scss\_backdrop.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/scss/_backdrop.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\scss\_badge.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/scss/_badge.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\scss\_bar.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/scss/_bar.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\scss\_button-bar.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/scss/_button-bar.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\scss\_button.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/scss/_button.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\scss\_checkbox.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/scss/_checkbox.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\scss\_form.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/scss/_form.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\scss\_grid.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/scss/_grid.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\scss\_items.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/scss/_items.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\scss\_list.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/scss/_list.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\scss\_loading.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/scss/_loading.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\scss\_menu.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/scss/_menu.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\scss\_mixins.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/scss/_mixins.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\scss\_modal.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/scss/_modal.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\scss\_platform.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/scss/_platform.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\scss\_popover.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/scss/_popover.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\scss\_popup.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/scss/_popup.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\scss\_progress.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/scss/_progress.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\scss\_radio.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/scss/_radio.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\scss\_range.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/scss/_range.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\scss\_refresher.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/scss/_refresher.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\scss\_reset.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/scss/_reset.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\scss\_scaffolding.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/scss/_scaffolding.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\scss\_select.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/scss/_select.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\scss\_slide-box.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/scss/_slide-box.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\scss\_spinner.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/scss/_spinner.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\scss\_tabs.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/scss/_tabs.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\scss\_toggle.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/scss/_toggle.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\scss\_transitions.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/scss/_transitions.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\scss\_type.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/scss/_type.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\scss\_util.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/scss/_util.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\scss\_variables.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/scss/_variables.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\scss\ionic.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/scss/ionic.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\scss\ionicons\_ionicons-font.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/scss/ionicons/_ionicons-font.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\scss\ionicons\_ionicons-icons.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/scss/ionicons/_ionicons-icons.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\scss\ionicons\_ionicons-variables.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/scss/ionicons/_ionicons-variables.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\scss\ionicons\ionicons.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/scss/ionicons/ionicons.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\lib\ionic\version.json" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/lib/ionic/version.json" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\plugins\cordova-plugin-console\www\console-via-logger.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-console/www/console-via-logger.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\plugins\cordova-plugin-console\www\logger.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/cordova-plugin-console/www/logger.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\plugins\cordova-plugin-device\www\device.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/plugins/cordova-plugin-device/www/device.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\plugins\cordova-plugin-splashscreen\www\splashscreen.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/plugins/cordova-plugin-splashscreen/www/splashscreen.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\plugins\cordova-plugin-statusbar\www\statusbar.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/plugins/cordova-plugin-statusbar/www/statusbar.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\ios\www\plugins\ionic-plugin-keyboard\www\ios\keyboard.js" afterPath="$PROJECT_DIR$/LandColor/platforms/ios/www/plugins/ionic-plugin-keyboard/www/ios/keyboard.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\platforms\platforms.json" afterPath="$PROJECT_DIR$/LandColor/platforms/platforms.json" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\scss\ionic.app.scss" afterPath="$PROJECT_DIR$/LandColor/scss/ionic.app.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\css\style.css" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/css/style.css" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\img\ionic.png" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/img/ionic.png" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\index.html" afterPath="$PROJECT_DIR$/LandColor/www/index.html" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\js\app.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/js/app.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\css\ionic.css" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/css/ionic.css" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\css\ionic.min.css" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/css/ionic.min.css" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\fonts\ionicons.eot" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/fonts/ionicons.eot" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\fonts\ionicons.svg" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/fonts/ionicons.svg" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\fonts\ionicons.ttf" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/fonts/ionicons.ttf" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\fonts\ionicons.woff" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/fonts/ionicons.woff" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\js\angular-ui\angular-ui-router.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/js/angular-ui/angular-ui-router.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\js\angular-ui\angular-ui-router.min.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/js/angular-ui/angular-ui-router.min.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\js\angular\angular-animate.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/js/angular/angular-animate.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\js\angular\angular-animate.min.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/js/angular/angular-animate.min.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\js\angular\angular-resource.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/js/angular/angular-resource.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\js\angular\angular-resource.min.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/js/angular/angular-resource.min.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\js\angular\angular-sanitize.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/js/angular/angular-sanitize.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\js\angular\angular-sanitize.min.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/js/angular/angular-sanitize.min.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\js\angular\angular.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/js/angular/angular.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\js\angular\angular.min.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/js/angular/angular.min.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\js\ionic-angular.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/js/ionic-angular.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\js\ionic-angular.min.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/js/ionic-angular.min.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\js\ionic.bundle.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/js/ionic.bundle.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\js\ionic.bundle.min.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/js/ionic.bundle.min.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\js\ionic.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/js/ionic.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\js\ionic.min.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/js/ionic.min.js" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\scss\_action-sheet.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/scss/_action-sheet.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\scss\_animations.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/scss/_animations.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\scss\_backdrop.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/scss/_backdrop.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\scss\_badge.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/scss/_badge.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\scss\_bar.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/scss/_bar.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\scss\_button-bar.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/scss/_button-bar.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\scss\_button.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/scss/_button.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\scss\_checkbox.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/scss/_checkbox.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\scss\_form.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/scss/_form.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\scss\_grid.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/scss/_grid.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\scss\_items.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/scss/_items.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\scss\_list.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/scss/_list.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\scss\_loading.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/scss/_loading.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\scss\_menu.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/scss/_menu.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\scss\_mixins.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/scss/_mixins.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\scss\_modal.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/scss/_modal.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\scss\_platform.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/scss/_platform.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\scss\_popover.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/scss/_popover.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\scss\_popup.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/scss/_popup.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\scss\_progress.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/scss/_progress.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\scss\_radio.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/scss/_radio.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\scss\_range.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/scss/_range.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\scss\_refresher.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/scss/_refresher.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\scss\_reset.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/scss/_reset.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\scss\_scaffolding.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/scss/_scaffolding.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\scss\_select.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/scss/_select.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\scss\_slide-box.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/scss/_slide-box.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\scss\_spinner.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/scss/_spinner.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\scss\_tabs.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/scss/_tabs.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\scss\_toggle.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/scss/_toggle.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\scss\_transitions.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/scss/_transitions.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\scss\_type.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/scss/_type.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\scss\_util.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/scss/_util.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\scss\_variables.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/scss/_variables.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\scss\ionic.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/scss/ionic.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\scss\ionicons\_ionicons-font.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/scss/ionicons/_ionicons-font.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\scss\ionicons\_ionicons-icons.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/scss/ionicons/_ionicons-icons.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\scss\ionicons\_ionicons-variables.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/scss/ionicons/_ionicons-variables.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\scss\ionicons\ionicons.scss" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/scss/ionicons/ionicons.scss" />
-      <change type="MOVED" beforePath="C:\Users\Nick\WebstormProjects\LandColor\www\lib\ionic\version.json" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/lib/ionic/version.json" />
+    <list default="true" id="17c19270-ad93-4897-a891-31cdbe893a3c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/platforms/android/.gradle/2.2.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/LandColor/platforms/android/.gradle/2.2.1/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/platforms/android/.gradle/2.2.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/LandColor/platforms/android/.gradle/2.2.1/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/platforms/android/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/LandColor/platforms/android/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/platforms/android/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/LandColor/platforms/android/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/js/app.js" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/www/js/app.js" afterPath="$PROJECT_DIR$/LandColor/www/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/index.html" afterPath="$PROJECT_DIR$/LandColor/platforms/android/assets/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/www/index.html" afterPath="$PROJECT_DIR$/LandColor/www/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="LandColor.iws" />
@@ -642,11 +31,53 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LandColor/hooks/README.md">
+          <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
+            <state split_layout="FIRST">
+              <first_editor vertical-scroll-proportion="0.0">
+                <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/LandColor/www/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.46112117">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="112" column="54" selection-start-line="112" selection-start-column="54" selection-end-line="112" selection-end-column="54" />
+              <folding>
+                <element signature="e#5410#7318#0" expanded="false" />
+                <element signature="e#5444#6376#0" expanded="false" />
+                <element signature="e#6417#7221#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LandColor/www/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#ion-scroll#0;n#ion-view#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="quantize.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LandColor/www/js/quantize.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -658,7 +89,16 @@
     <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/LandColor/www/index.html" />
+        <option value="$PROJECT_DIR$/LandColor/www/js/app.js" />
+      </list>
+    </option>
+  </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
   </component>
@@ -666,8 +106,9 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="8" />
-    <option name="width" value="1932" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -693,7 +134,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -711,133 +151,103 @@
               <option name="myItemId" value="LandColor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LandColor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LandColor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LandColor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LandColor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LandColor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LandColor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LandColor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LandColor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LandColor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LandColor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LandColor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LandColor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
-    <property name="last_opened_file_path" value="A:/Program Files/nodejs/node.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Nick\WebstormProjects\LandColor\LandColor\www\img" />
       <recent name="C:\Users\Nick\WebstormProjects\LandColor\LandColor" />
     </key>
-  </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.gitignore</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -870,6 +280,23 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-options />
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-directory />
+      <recursive>false</recursive>
       <method />
     </configuration>
   </component>
@@ -890,34 +317,81 @@
       <option name="project" value="LOCAL" />
       <updated>1449456986184</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="With a little a bit of luck!">
+      <created>1455725790890</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1455725790890</updated>
+    </task>
+    <task id="LOCAL-00003" summary="I don't want to lose your love tonight!!&#10;Draws the two canvases(sp?)">
+      <created>1455739946126</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1455739946126</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Fixed canvas size.">
+      <created>1455740522644</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1455740522644</updated>
+    </task>
+    <task id="LOCAL-00005" summary="They be like smoov. Can you teach me how to dougie?&#10;No, but I can give you RGB values for sample and card.&#10;">
+      <created>1456096111544</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1456096111544</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Much better emoji button.">
+      <created>1456096308986</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1456096308986</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
+  <component name="TodoView" selected-index="3">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="8" y="0" width="1932" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Jenkins" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25052193" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32946146" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Jenkins" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.096354164" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32944608" sideWeight="0.4913232" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32944608" sideWeight="0.50867677" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29543245" sideWeight="0.49566162" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16156283" sideWeight="0.4913232" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32944608" sideWeight="0.8416486" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -925,18 +399,272 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Maybe" />
     <MESSAGE value="Hide it" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hide it" />
+    <MESSAGE value="With a little a bit of luck!" />
+    <MESSAGE value="I don't want to lose your love tonight!!&#10;Draws the two canvases(sp?)" />
+    <MESSAGE value="Fixed canvas size." />
+    <MESSAGE value="They be like smoov. Can you teach me how to dougie?&#10;No, but I can give you RGB values for sample and card.&#10;" />
+    <MESSAGE value="Much better emoji button." />
+    <option name="LAST_COMMIT_MESSAGE" value="Much better emoji button." />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/LandColor/hooks/README.md">
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor vertical-scroll-proportion="0.0">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LandColor/www/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.46112117">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#5410#7318#0" expanded="false" />
+            <element signature="e#5444#6376#0" expanded="false" />
+            <element signature="e#6417#7221#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LandColor/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#ion-scroll#0;n#ion-view#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LandColor/www/js/quantize.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LandColor/hooks/README.md">
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor vertical-scroll-proportion="0.0">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LandColor/www/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="255" column="30" selection-start-line="255" selection-start-column="30" selection-end-line="255" selection-end-column="30" />
+          <folding>
+            <element signature="e#5410#7318#0" expanded="false" />
+            <element signature="e#5444#6376#0" expanded="false" />
+            <element signature="e#6417#7221#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LandColor/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#ion-scroll#0;n#ion-view#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LandColor/www/js/quantize.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LandColor/hooks/README.md">
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor vertical-scroll-proportion="0.0">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LandColor/www/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="255" column="30" selection-start-line="255" selection-start-column="30" selection-end-line="255" selection-end-column="30" />
+          <folding>
+            <element signature="e#5410#7318#0" expanded="false" />
+            <element signature="e#5444#6376#0" expanded="false" />
+            <element signature="e#6417#7221#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LandColor/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#ion-scroll#0;n#ion-view#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LandColor/hooks/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LandColor/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#ion-scroll#0;n#ion-view#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LandColor/www/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding>
+            <element signature="e#5410#7318#0" expanded="false" />
+            <element signature="e#5444#6376#0" expanded="false" />
+            <element signature="e#6417#7221#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LandColor/www/js/quantize.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LandColor/hooks/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LandColor/www/img/soil.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LandColor/www/img/c3.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LandColor/www/img/card.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LandColor/www/img/c1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LandColor/www/img/c10.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LandColor/www/img/dafuq.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LandColor/www/img/wtf.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LandColor/www/js/quantize.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LandColor/hooks/README.md">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor vertical-scroll-proportion="0.0">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LandColor/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#ion-scroll#0;n#ion-view#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LandColor/www/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="112" column="54" selection-start-line="112" selection-start-column="54" selection-end-line="112" selection-end-column="54" />
+          <folding>
+            <element signature="e#5410#7318#0" expanded="false" />
+            <element signature="e#5444#6376#0" expanded="false" />
+            <element signature="e#6417#7221#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
