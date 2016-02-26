@@ -21,71 +21,93 @@ var cameraApp = angular.module('starter', ['ionic', 'ngCordova'])
   });
 });
 
-cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordovaFile) {
+cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordovaFile, $ionicActionSheet) {
   // Scope array for ng-repeat (array of objects) to store images
   $scope.images = [];
 
   $scope.addImage = function() {
-    // cordovaCamera options
     var options = {
+      //quality: 96 // Quality of the saved image, range of 0 - 100
       destinationType : Camera.DestinationType.FILE_URI,
-      sourceType : Camera.PictureSourceType.CAMERA,
-      allowEdit : false,
+      allowEdit : false, //Allow simple editing of image before selection
       encodingType: Camera.EncodingType.JPEG,
-      popoverOptions: CameraPopoverOptions,
+      popoverOptions: CameraPopoverOptions // iOS-only options that specify popover location in iPad
+      //correctOrientation: true, // correct camera captured images in case wrong orientation
+      //cameraDirection: 0 // Back = 0, Front-facing = 1
     };
+    // prompt user for Camera or Gallery
+    $ionicActionSheet.show({
+      buttons: [
+        { text: '<i class="icon ion-camera"></i>Camera' },
+        { text: '<i class="icon ion-images"></i>Photo Gallery' }
+      ],
+      cancelText: 'Cancel',
+      cancel: function () {
+        return true;
+      },
+      buttonClicked: function (index) {
+        switch (index) {
+          case 0:
+            options.sourceType = Camera.PictureSourceType.CAMERA;
+            break;
+          case 1:
+            options.sourceType = Camera.PictureSourceType.PHOTOLIBRARY;
+            break;
+        }
+        // Call ngCordova module: cordovaCamera to bring up camera
+        $cordovaCamera.getPicture(options).then(function(imageData) {
 
-    // Call ngCordova module: cordovaCamera
-    $cordovaCamera.getPicture(options).then(function(imageData) {
+          // Pass captured image and save to file system
+          onImageSuccess(imageData);
 
-      // Pass captured image and save to file system
-      onImageSuccess(imageData);
+          function onImageSuccess(fileURI) {
+            createFileEntry(fileURI);
+          }
 
-      function onImageSuccess(fileURI) {
-        createFileEntry(fileURI);
-      }
+          function createFileEntry(fileURI) {
+            window.resolveLocalFileSystemURL(fileURI, copyFile, fail);
+          }
 
-      function createFileEntry(fileURI) {
-        window.resolveLocalFileSystemURL(fileURI, copyFile, fail);
-      }
+          // Name image with date/time
+          function copyFile(fileEntry) {
+            var name = fileEntry.fullPath.substr(fileEntry.fullPath.lastIndexOf('/') + 1);
+            var newName = getDate() + name;
 
-      // Name image with date/time
-      function copyFile(fileEntry) {
-        var name = fileEntry.fullPath.substr(fileEntry.fullPath.lastIndexOf('/') + 1);
-        var newName = getDate() + name;
+            window.resolveLocalFileSystemURL(cordova.file.dataDirectory, function(fileSystem2) {
+                fileEntry.copyTo(
+                  fileSystem2,
+                  newName,
+                  onCopySuccess,
+                  fail
+                );
+              },
+              fail);
+          }
 
-        window.resolveLocalFileSystemURL(cordova.file.dataDirectory, function(fileSystem2) {
-            fileEntry.copyTo(
-              fileSystem2,
-              newName,
-              onCopySuccess,
-              fail
-            );
-          },
-          fail);
-      }
+          // Apply image to scope array of images
+          function onCopySuccess(entry) {
+            $scope.$apply(function () {
+              $scope.images.push(entry.nativeURL);
+            });
+          }
 
-      // Apply image to scope array of images
-      function onCopySuccess(entry) {
-        $scope.$apply(function () {
-          $scope.images.push(entry.nativeURL);
+          function fail(error) {
+            console.log("fail: " + error.code);
+          }
+          // **not working**
+          function getDate() {
+            var text = "";
+            var d = new Date();
+            var n = d.getTime();
+
+            return text = n;
+          }
+
+        }, function (err) {
+          console.log(err);
         });
+        return true;
       }
-
-      function fail(error) {
-        console.log("fail: " + error.code);
-      }
-
-      function getDate() {
-        var text = "";
-        var d = new Date();
-        var n = d.getTime();
-
-        return text = n;
-      }
-
-    }, function(err) {
-      console.log(err);
     });
   };
 
@@ -269,12 +291,3 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
 
 
 });
-
-cameraApp.controller('rgbController',['$scope', function($scope) {
-
-//$scope.createCanvas = function() {
-
-
-//}
-
-}]);
