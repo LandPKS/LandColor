@@ -21,71 +21,93 @@ var cameraApp = angular.module('starter', ['ionic', 'ngCordova'])
   });
 });
 
-cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordovaFile) {
+cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordovaFile, $ionicActionSheet) {
   // Scope array for ng-repeat (array of objects) to store images
   $scope.images = [];
 
   $scope.addImage = function() {
-    // cordovaCamera options
     var options = {
+      //quality: 96 // Quality of the saved image, range of 0 - 100
       destinationType : Camera.DestinationType.FILE_URI,
-      sourceType : Camera.PictureSourceType.CAMERA,
-      allowEdit : false,
+      allowEdit : false, //Allow simple editing of image before selection
       encodingType: Camera.EncodingType.JPEG,
-      popoverOptions: CameraPopoverOptions,
+      popoverOptions: CameraPopoverOptions // iOS-only options that specify popover location in iPad
+      //correctOrientation: true, // correct camera captured images in case wrong orientation
+      //cameraDirection: 0 // Back = 0, Front-facing = 1
     };
+    // prompt user for Camera or Gallery
+    $ionicActionSheet.show({
+      buttons: [
+        { text: '<i class="icon ion-camera"></i>Camera' },
+        { text: '<i class="icon ion-images"></i>Photo Gallery' }
+      ],
+      cancelText: 'Cancel',
+      cancel: function () {
+        return true;
+      },
+      buttonClicked: function (index) {
+        switch (index) {
+          case 0:
+            options.sourceType = Camera.PictureSourceType.CAMERA;
+            break;
+          case 1:
+            options.sourceType = Camera.PictureSourceType.PHOTOLIBRARY;
+            break;
+        }
+        // Call ngCordova module: cordovaCamera to bring up camera
+        $cordovaCamera.getPicture(options).then(function(imageData) {
 
-    // Call ngCordova module: cordovaCamera
-    $cordovaCamera.getPicture(options).then(function(imageData) {
+          // Pass captured image and save to file system
+          onImageSuccess(imageData);
 
-      // Pass captured image and save to file system
-      onImageSuccess(imageData);
+          function onImageSuccess(fileURI) {
+            createFileEntry(fileURI);
+          }
 
-      function onImageSuccess(fileURI) {
-        createFileEntry(fileURI);
-      }
+          function createFileEntry(fileURI) {
+            window.resolveLocalFileSystemURL(fileURI, copyFile, fail);
+          }
 
-      function createFileEntry(fileURI) {
-        window.resolveLocalFileSystemURL(fileURI, copyFile, fail);
-      }
+          // Name image with date/time
+          function copyFile(fileEntry) {
+            var name = fileEntry.fullPath.substr(fileEntry.fullPath.lastIndexOf('/') + 1);
+            var newName = getDate() + name;
 
-      // Name image with date/time
-      function copyFile(fileEntry) {
-        var name = fileEntry.fullPath.substr(fileEntry.fullPath.lastIndexOf('/') + 1);
-        var newName = getDate() + name;
+            window.resolveLocalFileSystemURL(cordova.file.dataDirectory, function(fileSystem2) {
+                fileEntry.copyTo(
+                  fileSystem2,
+                  newName,
+                  onCopySuccess,
+                  fail
+                );
+              },
+              fail);
+          }
 
-        window.resolveLocalFileSystemURL(cordova.file.dataDirectory, function(fileSystem2) {
-            fileEntry.copyTo(
-              fileSystem2,
-              newName,
-              onCopySuccess,
-              fail
-            );
-          },
-          fail);
-      }
+          // Apply image to scope array of images
+          function onCopySuccess(entry) {
+            $scope.$apply(function () {
+              $scope.images.push(entry.nativeURL);
+            });
+          }
 
-      // Apply image to scope array of images
-      function onCopySuccess(entry) {
-        $scope.$apply(function () {
-          $scope.images.push(entry.nativeURL);
+          function fail(error) {
+            console.log("fail: " + error.code);
+          }
+          // **not working**
+          function getDate() {
+            var text = "";
+            var d = new Date();
+            var n = d.getTime();
+
+            return text = n;
+          }
+
+        }, function (err) {
+          console.log(err);
         });
+        return true;
       }
-
-      function fail(error) {
-        console.log("fail: " + error.code);
-      }
-
-      function getDate() {
-        var text = "";
-        var d = new Date();
-        var n = d.getTime();
-
-        return text = n;
-      }
-
-    }, function(err) {
-      console.log(err);
     });
   };
 
@@ -105,12 +127,12 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
    var canvas2 = document.getElementById('canvas2');
    var context = canvas.getContext('2d');
    var context2 = canvas2.getContext('2d');
-   context.drawImage(img, (Math.round(img.width/4)-75), (Math.round(img.height/2)-75), 150, 150, 0, 0, 150, 150);
-   context2.drawImage(img, (Math.round(3*img.width/4)-75), (Math.round(img.height/2)-75), 150, 150, 0, 0, 150, 150);
+   context.drawImage(img, (Math.round(img.width/4)-100), (Math.round(img.height/2)-100), 200, 200, 0, 0, 200, 200);
+   context2.drawImage(img, (Math.round(3*img.width/4)-100), (Math.round(img.height/2)-100), 200, 200, 0, 0, 200, 200);
 
   //Get Pixel Arrays of Calibration Card and Soil Sample
-   var imageDataCard = context.getImageData(0,0,150,150);
-   var imageDataSample = context2.getImageData(0,0,150,150);
+   var imageDataCard = context.getImageData(0,0,200,200);
+   var imageDataSample = context2.getImageData(0,0,200,200);
    console.log(imageDataCard);
    console.log(imageDataSample);
 
@@ -122,7 +144,7 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
 
    var pixelCard = imageDataCard.data;
    var pixelSample = imageDataSample.data;
-   var pixelCount = 22500;
+   var pixelCount = 40000;
    //Function to get Palette
    var getPalette = function(pixels,pixelCount,quality,colorCount) {
      var pixelArray =[];
@@ -147,18 +169,10 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
    };
 
 
-
    var paletteCard = getPalette(pixelCard,pixelCount,quality,colorCount);
    console.log(paletteCard[0]);
    var paletteSample = getPalette(pixelSample,pixelCount,quality,colorCount);
    console.log(paletteSample[0]);
-
-   var rCorrection = 210.15/paletteCard[0][0];
-   var gCorrection = 213.95/paletteCard[0][1];
-   var bCorrection = 218.42/paletteCard[0][2];
-   var rSample = rCorrection*paletteSample[0][0];
-   var gSample = gCorrection*paletteSample[0][1];
-   var bSample = bCorrection*paletteSample[0][2];
 
    function RGBtoLAB(r, g, b){
 
@@ -248,14 +262,38 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
      lab = XYZtoLAB(xyz[0], xyz[1], xyz[2]);
      return lab;
    }
+   function cardRGBLab(palette,number){
+     r = palette[number][0];
+     g = palette[number][1];
+     b = palette[number][2];
+     var rgb = [r,g,b];
+     var lab = RGBtoLAB(r,g,b);
+     return{
+       rgb : rgb,
+       lab : lab
+     };
+   }
+   function sampleRGBLab(paletteCard,numberCard,paletteSample,numberSample){
+     var rCorrection = 210.15/paletteCard[numberCard][0];
+     var gCorrection = 213.95/paletteCard[numberCard][1];
+     var bCorrection = 218.42/paletteCard[numberCard][2];
+     var r = rCorrection*paletteSample[numberSample][0];
+     var g = gCorrection*paletteSample[numberSample][1];
+     var b = bCorrection*paletteSample[numberSample][2];
+     var lab = RGBtoLAB(r,g,b);
+     var rgb=[r,g,b];
+     var rgbRaw=[paletteSample[numberSample][0],paletteSample[numberSample][2],paletteSample[numberSample][2]];
+     return{
+       rgb : rgb,
+       lab : lab,
+       rgbRaw : rgbRaw
+     };
+   }
 
-   var soilSampleLAB = RGBtoLAB(rSample,gSample,bSample);
-   console.log(soilSampleLAB);
-   $scope.cardPalette = paletteCard;
-
-   $scope.samplePalette = paletteSample;
-
-   $scope.sampleRGB = [rSample,gSample,bSample];
+   var card = cardRGBLab(paletteCard,0);
+   $scope.card = "Lab: " + card.lab + " RGB: "+ card.rgb;
+   var sample = sampleRGBLab(paletteCard,0,paletteSample,0);
+   $scope.sample ="Lab: " + sample.lab + " RGB: "+ sample.rgb + " Raw: "+ sample.rgbRaw;
    //Add to screen to check results
    //var labLabel = document.createElement("p");
    //labLabel.appendChild(document.createTextNode("L: "+soilSampleLAB[0].toFixed(2)+" a*: "+soilSampleLAB[1].toFixed(2)+" b*: "+soilSampleLAB[2].toFixed(2)+" R: "+rSample.toFixed(2)+" G: "+gSample.toFixed(2)+" B: "+bSample.toFixed(2)+"   " ));
@@ -269,12 +307,3 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
 
 
 });
-
-cameraApp.controller('rgbController',['$scope', function($scope) {
-
-//$scope.createCanvas = function() {
-
-
-//}
-
-}]);
