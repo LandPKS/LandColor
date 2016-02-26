@@ -13,6 +13,10 @@
                             "count": 1
                         },
                         {
+                            "xml": "<feature name=\"File\"><param name=\"android-package\" value=\"org.apache.cordova.file.FileUtils\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
                             "xml": "<feature name=\"SplashScreen\"><param name=\"android-package\" value=\"org.apache.cordova.splashscreen.SplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
                             "count": 1
                         },
@@ -31,9 +35,15 @@
                         {
                             "xml": "<feature name=\"Camera\"><param name=\"android-package\" value=\"org.apache.cordova.camera.CameraLauncher\" /></feature>",
                             "count": 1
-                        },
+                        }
+                    ]
+                }
+            },
+            "config.xml": {
+                "parents": {
+                    "/*": [
                         {
-                            "xml": "<feature name=\"File\"><param name=\"android-package\" value=\"org.apache.cordova.file.FileUtils\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "xml": "<preference name=\"AndroidPersistentFileLocation\" value=\"Internal\" />",
                             "count": 1
                         }
                     ]
@@ -48,16 +58,6 @@
                         }
                     ]
                 }
-            },
-            "config.xml": {
-                "parents": {
-                    "/*": [
-                        {
-                            "xml": "<preference name=\"AndroidPersistentFileLocation\" value=\"Internal\" />",
-                            "count": 1
-                        }
-                    ]
-                }
             }
         }
     },
@@ -66,6 +66,9 @@
             "PACKAGE_NAME": "com.ionicframework.landcolor954191"
         },
         "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.ionicframework.landcolor954191"
+        },
+        "cordova-plugin-file": {
             "PACKAGE_NAME": "com.ionicframework.landcolor954191"
         },
         "cordova-plugin-splashscreen": {
@@ -81,9 +84,6 @@
             "PACKAGE_NAME": "com.ionicframework.landcolor954191"
         },
         "org.apache.cordova.camera": {
-            "PACKAGE_NAME": "com.ionicframework.landcolor954191"
-        },
-        "cordova-plugin-file": {
             "PACKAGE_NAME": "com.ionicframework.landcolor954191"
         }
     },
