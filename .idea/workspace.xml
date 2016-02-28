@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="17c19270-ad93-4897-a891-31cdbe893a3c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/www/js/app.js" afterPath="$PROJECT_DIR$/LandColor/www/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/www/index.html" afterPath="$PROJECT_DIR$/LandColor/www/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="LandColor.iws" />
@@ -41,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LandColor/www/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-21.148148">
-              <caret line="306" column="1" selection-start-line="306" selection-start-column="1" selection-end-line="306" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.8623482">
+              <caret line="310" column="0" selection-start-line="310" selection-start-column="0" selection-end-line="310" selection-end-column="0" />
               <folding>
                 <element signature="e#1006#3723#0" expanded="false" />
               </folding>
@@ -53,10 +52,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LandColor/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.40419582">
+            <state vertical-scroll-proportion="-3.8679245">
               <caret line="35" column="49" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
               <folding>
                 <element signature="n#style#0;n#ion-scroll#0;n#div#0;n#ion-view#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -88,8 +87,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/LandColor/www/templates/image-popover.html" />
-        <option value="$PROJECT_DIR$/LandColor/www/js/app.js" />
         <option value="$PROJECT_DIR$/LandColor/www/index.html" />
+        <option value="$PROJECT_DIR$/LandColor/www/js/app.js" />
       </list>
     </option>
   </component>
@@ -312,7 +311,13 @@
       <option name="project" value="LOCAL" />
       <updated>1456622205193</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="NICE. Working scroll for images. Click image =&gt; Displays color.">
+      <created>1456624669392</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1456624669392</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -700,23 +705,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LandColor/www/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.148148">
-          <caret line="306" column="1" selection-start-line="306" selection-start-column="1" selection-end-line="306" selection-end-column="1" />
-          <folding>
-            <element signature="e#1006#3723#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LandColor/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40419582">
+        <state vertical-scroll-proportion="-3.8679245">
           <caret line="35" column="49" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
           <folding>
             <element signature="n#style#0;n#ion-scroll#0;n#div#0;n#ion-view#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#ion-scroll#0;n#div#0;n#ion-view#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LandColor/www/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8623482">
+          <caret line="310" column="0" selection-start-line="310" selection-start-column="0" selection-end-line="310" selection-end-column="0" />
+          <folding>
+            <element signature="e#1006#3723#0" expanded="false" />
           </folding>
         </state>
       </provider>

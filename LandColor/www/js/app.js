@@ -289,7 +289,7 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
      var b = bCorrection*paletteSample[numberSample][2];
      var lab = RGBtoLAB(r,g,b);
      var rgb=[r.toFixed(2), g.toFixed(2), b.toFixed(2)];
-     var rgbRaw=[paletteSample[numberSample][0],paletteSample[numberSample][2],paletteSample[numberSample][2]];
+     var rgbRaw=[paletteSample[numberSample][0],paletteSample[numberSample][1],paletteSample[numberSample][2]];
      return{
        rgb : rgb,
        lab : lab,
