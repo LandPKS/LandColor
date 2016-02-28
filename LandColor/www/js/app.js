@@ -21,7 +21,7 @@ var cameraApp = angular.module('starter', ['ionic', 'ngCordova'])
   });
 });
 
-cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordovaFile, $ionicActionSheet) {
+cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordovaFile, $ionicActionSheet ) {
   // Scope array for ng-repeat (array of objects) to store images
   $scope.images = [];
 
@@ -118,9 +118,17 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
     return trueOrigin;
   };
 
- $scope.createCanvas = function() {
+  $scope.showColor = function(image) {
+    var img = new Image();
+    img.src = image;
+    $scope.createCanvas(img);
+  };
+
+
+ $scope.createCanvas = function(image) {
   //Create canvas element with image to get RGBA array
-   var img = document.getElementById("image");
+    var img = image;
+   //var img = document.getElementById("image");
    //var canvas = document.createElement('canvas');
    var canvas = document.getElementById('canvas');
    //var canvas2 = document.createElement('canvas');
@@ -170,9 +178,8 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
 
 
    var paletteCard = getPalette(pixelCard,pixelCount,quality,colorCount);
-   console.log(paletteCard[0]);
    var paletteSample = getPalette(pixelSample,pixelCount,quality,colorCount);
-   console.log(paletteSample[0]);
+
 
    function RGBtoLAB(r, g, b){
 
@@ -294,13 +301,7 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
    $scope.card = "Lab: " + card.lab + " RGB: "+ card.rgb;
    var sample = sampleRGBLab(paletteCard,0,paletteSample,0);
    $scope.sample ="Lab: " + sample.lab + " RGB: "+ sample.rgb + " Raw: "+ sample.rgbRaw;
-   //Add to screen to check results
-   //var labLabel = document.createElement("p");
-   //labLabel.appendChild(document.createTextNode("L: "+soilSampleLAB[0].toFixed(2)+" a*: "+soilSampleLAB[1].toFixed(2)+" b*: "+soilSampleLAB[2].toFixed(2)+" R: "+rSample.toFixed(2)+" G: "+gSample.toFixed(2)+" B: "+bSample.toFixed(2)+"   " ));
-   //document.getElementById("main").appendChild(labLabel);
-   //var cardLabel = document.createElement("p");
-   //labLabel.appendChild(document.createTextNode(" Card:  R: "+paletteCard[0][0]+" G: "+paletteCard[0][1]+" B: "+paletteCard[0][1]+" Holla at ya boy"));
-   //document.getElementById("main").appendChild(cardLabel);
+
 
 
 }
