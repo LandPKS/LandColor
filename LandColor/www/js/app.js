@@ -263,7 +263,7 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
        var a = (500 * (x - y));
        var b = (200 * (y - z));
        // Return LAB values in an array
-       return [l, a, b];
+       return [l.toFixed(2), a.toFixed(2), b.toFixed(2)];
      }
      xyz = RGBtoXYZ(r, g, b);
      lab = XYZtoLAB(xyz[0], xyz[1], xyz[2]);
@@ -288,7 +288,7 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
      var g = gCorrection*paletteSample[numberSample][1];
      var b = bCorrection*paletteSample[numberSample][2];
      var lab = RGBtoLAB(r,g,b);
-     var rgb=[r,g,b];
+     var rgb=[r.toFixed(2), g.toFixed(2), b.toFixed(2)];
      var rgbRaw=[paletteSample[numberSample][0],paletteSample[numberSample][2],paletteSample[numberSample][2]];
      return{
        rgb : rgb,

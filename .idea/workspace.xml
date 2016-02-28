@@ -41,26 +41,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LandColor/www/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36707154">
-              <caret line="118" column="4" selection-start-line="118" selection-start-column="4" selection-end-line="118" selection-end-column="4" />
+            <state vertical-scroll-proportion="-21.148148">
+              <caret line="306" column="1" selection-start-line="306" selection-start-column="1" selection-end-line="306" selection-end-column="1" />
               <folding>
                 <element signature="e#1006#3723#0" expanded="false" />
-                <element signature="e#6317#8225#0" expanded="false" />
-                <element signature="e#8264#8469#0" expanded="false" />
-                <element signature="e#8545#9142#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LandColor/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.3773584">
-              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.40419582">
+              <caret line="35" column="49" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
               <folding>
                 <element signature="n#style#0;n#ion-scroll#0;n#div#0;n#ion-view#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#ion-scroll#0;n#div#0;n#ion-view#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -309,7 +306,13 @@
       <option name="project" value="LOCAL" />
       <updated>1456467923181</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="NICE. Working scroll for images. Click image =&gt; Displays color.">
+      <created>1456622205193</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1456622205193</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -323,21 +326,21 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Jenkins" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13177083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32944608" sideWeight="0.4913232" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32944608" sideWeight="0.50867677" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29543245" sideWeight="0.49566162" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16156283" sideWeight="0.4913232" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16156283" sideWeight="0.4913232" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -367,7 +370,8 @@
     <MESSAGE value="They be like smoov. Can you teach me how to dougie?&#10;No, but I can give you RGB values for sample and card.&#10;" />
     <MESSAGE value="Much better emoji button." />
     <MESSAGE value="I don't want to set the world on fire... Did some things with whats outputted to screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="I don't want to set the world on fire... Did some things with whats outputted to screen" />
+    <MESSAGE value="NICE. Working scroll for images. Click image =&gt; Displays color." />
+    <option name="LAST_COMMIT_MESSAGE" value="NICE. Working scroll for images. Click image =&gt; Displays color." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -396,9 +400,6 @@
           <caret line="122" column="46" selection-start-line="122" selection-start-column="46" selection-end-line="122" selection-end-column="46" />
           <folding>
             <element signature="e#1006#3723#0" expanded="false" />
-            <element signature="e#6317#8225#0" expanded="false" />
-            <element signature="e#8264#8469#0" expanded="false" />
-            <element signature="e#8545#9142#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -434,9 +435,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#1006#3723#0" expanded="false" />
-            <element signature="e#6317#8225#0" expanded="false" />
-            <element signature="e#8264#8469#0" expanded="false" />
-            <element signature="e#8545#9142#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -480,9 +478,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#1006#3723#0" expanded="false" />
-            <element signature="e#6317#8225#0" expanded="false" />
-            <element signature="e#8264#8469#0" expanded="false" />
-            <element signature="e#8545#9142#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -526,9 +521,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#1006#3723#0" expanded="false" />
-            <element signature="e#6317#8225#0" expanded="false" />
-            <element signature="e#8264#8469#0" expanded="false" />
-            <element signature="e#8545#9142#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -572,9 +564,6 @@
           <caret line="255" column="30" selection-start-line="255" selection-start-column="30" selection-end-line="255" selection-end-column="30" />
           <folding>
             <element signature="e#1006#3723#0" expanded="false" />
-            <element signature="e#6317#8225#0" expanded="false" />
-            <element signature="e#8264#8469#0" expanded="false" />
-            <element signature="e#8545#9142#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -618,9 +607,6 @@
           <caret line="255" column="30" selection-start-line="255" selection-start-column="30" selection-end-line="255" selection-end-column="30" />
           <folding>
             <element signature="e#1006#3723#0" expanded="false" />
-            <element signature="e#6317#8225#0" expanded="false" />
-            <element signature="e#8264#8469#0" expanded="false" />
-            <element signature="e#8545#9142#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -661,9 +647,6 @@
           <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
           <folding>
             <element signature="e#1006#3723#0" expanded="false" />
-            <element signature="e#6317#8225#0" expanded="false" />
-            <element signature="e#8264#8469#0" expanded="false" />
-            <element signature="e#8545#9142#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -717,26 +700,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LandColor/www/index.html">
+    <entry file="file://$PROJECT_DIR$/LandColor/www/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.3773584">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        <state vertical-scroll-proportion="-21.148148">
+          <caret line="306" column="1" selection-start-line="306" selection-start-column="1" selection-end-line="306" selection-end-column="1" />
           <folding>
-            <element signature="n#style#0;n#ion-scroll#0;n#div#0;n#ion-view#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#ion-scroll#0;n#div#0;n#ion-view#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#1006#3723#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LandColor/www/js/app.js">
+    <entry file="file://$PROJECT_DIR$/LandColor/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36707154">
-          <caret line="118" column="4" selection-start-line="118" selection-start-column="4" selection-end-line="118" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.40419582">
+          <caret line="35" column="49" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
           <folding>
-            <element signature="e#1006#3723#0" expanded="false" />
-            <element signature="e#6317#8225#0" expanded="false" />
-            <element signature="e#8264#8469#0" expanded="false" />
-            <element signature="e#8545#9142#0" expanded="false" />
+            <element signature="n#style#0;n#ion-scroll#0;n#div#0;n#ion-view#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#ion-scroll#0;n#div#0;n#ion-view#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
