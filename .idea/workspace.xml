@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="17c19270-ad93-4897-a891-31cdbe893a3c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/www/js/app.js" afterPath="$PROJECT_DIR$/LandColor/www/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LandColor/www/index.html" afterPath="$PROJECT_DIR$/LandColor/www/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="LandColor.iws" />
@@ -43,10 +44,14 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LandColor/www/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8623482">
-              <caret line="310" column="0" selection-start-line="310" selection-start-column="0" selection-end-line="310" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.65047234">
+              <caret line="157" column="20" selection-start-line="157" selection-start-column="20" selection-end-line="157" selection-end-column="20" />
               <folding>
-                <element signature="e#1006#3723#0" expanded="false" />
+                <element signature="e#1613#3730#0" expanded="false" />
+                <element signature="e#7479#9420#0" expanded="false" />
+                <element signature="e#7513#8445#0" expanded="false" />
+                <element signature="e#9459#9664#0" expanded="false" />
+                <element signature="e#9740#10372#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -55,8 +60,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LandColor/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.8679245">
-              <caret line="35" column="49" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
+            <state vertical-scroll-proportion="-7.075472">
+              <caret line="36" column="109" selection-start-line="36" selection-start-column="109" selection-end-line="36" selection-end-column="109" />
               <folding>
                 <element signature="n#style#0;n#ion-scroll#0;n#div#0;n#ion-view#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#ion-scroll#0;n#div#0;n#ion-view#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -317,7 +322,13 @@
       <option name="project" value="LOCAL" />
       <updated>1456624669392</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="NICE. Working scroll for images. Click image =&gt; Displays color.">
+      <created>1456629547108</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1456629547108</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -336,7 +347,6 @@
       <window_info id="Jenkins" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13177083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32944608" sideWeight="0.4913232" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32944608" sideWeight="0.50867677" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29543245" sideWeight="0.49566162" order="7" side_tool="false" content_ui="tabs" />
@@ -346,6 +356,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -380,7 +391,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -402,9 +413,52 @@
     <entry file="file://$PROJECT_DIR$/LandColor/www/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="310" column="0" selection-start-line="310" selection-start-column="0" selection-end-line="310" selection-end-column="0" />
+          <folding>
+            <element signature="e#1613#3730#0" expanded="false" />
+            <element signature="e#7479#9420#0" expanded="false" />
+            <element signature="e#7513#8445#0" expanded="false" />
+            <element signature="e#9459#9664#0" expanded="false" />
+            <element signature="e#9740#10372#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LandColor/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#ion-scroll#0;n#div#0;n#ion-view#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#ion-scroll#0;n#div#0;n#ion-view#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LandColor/hooks/README.md">
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor vertical-scroll-proportion="0.0">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LandColor/www/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="122" column="46" selection-start-line="122" selection-start-column="46" selection-end-line="122" selection-end-column="46" />
           <folding>
-            <element signature="e#1006#3723#0" expanded="false" />
+            <element signature="e#1613#3730#0" expanded="false" />
+            <element signature="e#7479#9420#0" expanded="false" />
+            <element signature="e#7513#8445#0" expanded="false" />
+            <element signature="e#9459#9664#0" expanded="false" />
+            <element signature="e#9740#10372#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -439,7 +493,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1006#3723#0" expanded="false" />
+            <element signature="e#1613#3730#0" expanded="false" />
+            <element signature="e#7479#9420#0" expanded="false" />
+            <element signature="e#7513#8445#0" expanded="false" />
+            <element signature="e#9459#9664#0" expanded="false" />
+            <element signature="e#9740#10372#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -482,7 +540,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1006#3723#0" expanded="false" />
+            <element signature="e#1613#3730#0" expanded="false" />
+            <element signature="e#7479#9420#0" expanded="false" />
+            <element signature="e#7513#8445#0" expanded="false" />
+            <element signature="e#9459#9664#0" expanded="false" />
+            <element signature="e#9740#10372#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -525,7 +587,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1006#3723#0" expanded="false" />
+            <element signature="e#1613#3730#0" expanded="false" />
+            <element signature="e#7479#9420#0" expanded="false" />
+            <element signature="e#7513#8445#0" expanded="false" />
+            <element signature="e#9459#9664#0" expanded="false" />
+            <element signature="e#9740#10372#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -568,7 +634,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="255" column="30" selection-start-line="255" selection-start-column="30" selection-end-line="255" selection-end-column="30" />
           <folding>
-            <element signature="e#1006#3723#0" expanded="false" />
+            <element signature="e#1613#3730#0" expanded="false" />
+            <element signature="e#7479#9420#0" expanded="false" />
+            <element signature="e#7513#8445#0" expanded="false" />
+            <element signature="e#9459#9664#0" expanded="false" />
+            <element signature="e#9740#10372#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -611,7 +681,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="255" column="30" selection-start-line="255" selection-start-column="30" selection-end-line="255" selection-end-column="30" />
           <folding>
-            <element signature="e#1006#3723#0" expanded="false" />
+            <element signature="e#1613#3730#0" expanded="false" />
+            <element signature="e#7479#9420#0" expanded="false" />
+            <element signature="e#7513#8445#0" expanded="false" />
+            <element signature="e#9459#9664#0" expanded="false" />
+            <element signature="e#9740#10372#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -651,7 +725,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
           <folding>
-            <element signature="e#1006#3723#0" expanded="false" />
+            <element signature="e#1613#3730#0" expanded="false" />
+            <element signature="e#7479#9420#0" expanded="false" />
+            <element signature="e#7513#8445#0" expanded="false" />
+            <element signature="e#9459#9664#0" expanded="false" />
+            <element signature="e#9740#10372#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -686,14 +764,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LandColor/hooks/README.md">
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-        <state />
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
         <state split_layout="FIRST">
@@ -707,8 +785,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/LandColor/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.8679245">
-          <caret line="35" column="49" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
+        <state vertical-scroll-proportion="-7.075472">
+          <caret line="36" column="109" selection-start-line="36" selection-start-column="109" selection-end-line="36" selection-end-column="109" />
           <folding>
             <element signature="n#style#0;n#ion-scroll#0;n#div#0;n#ion-view#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#ion-scroll#0;n#div#0;n#ion-view#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -718,10 +796,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/LandColor/www/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8623482">
-          <caret line="310" column="0" selection-start-line="310" selection-start-column="0" selection-end-line="310" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.65047234">
+          <caret line="157" column="20" selection-start-line="157" selection-start-column="20" selection-end-line="157" selection-end-column="20" />
           <folding>
-            <element signature="e#1006#3723#0" expanded="false" />
+            <element signature="e#1613#3730#0" expanded="false" />
+            <element signature="e#7479#9420#0" expanded="false" />
+            <element signature="e#7513#8445#0" expanded="false" />
+            <element signature="e#9459#9664#0" expanded="false" />
+            <element signature="e#9740#10372#0" expanded="false" />
           </folding>
         </state>
       </provider>

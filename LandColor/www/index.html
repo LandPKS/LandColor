@@ -33,11 +33,11 @@
   </button><br><br>
 
   <div>
-    <ion-scroll direction="x" scrollbar-x="True" style="height:200px; min-height: 200px; overflow: scroll; white-space: nowrap;">
-      <img id="image" ng-repeat="image in images" ng-src="{{urlForImage(image)}}" ng-click="showColor(image)" style="height:200px; padding: 5px 5px 5px 5px;"/>
+    <ion-scroll direction="x" scrollbar-x="true" style="height:200px; min-height: 200px; overflow: scroll; white-space: nowrap;">
+      <img id="image" ng-repeat="image in images" ng-src="{{urlForImage(image)}}" ng-click="sampleActionSheet(image)" style="height:200px; padding: 5px 5px 5px 5px;"/>
     </ion-scroll>
   </div>
-  <h4>Card|Sample</h4>
+
   <canvas id="canvas" width="100px" height="100px"></canvas>
   <canvas id="canvas2" width="100px" height="100px"></canvas>
   <br>
@@ -47,10 +47,6 @@
   <h4>Sample</h4>
   {{sample}}
   <br>
-
-  <!--<img id="image" src="img/wtf.jpg" style="display: none" />
-  <img src="img/wtf.jpg" width="auto" height="50%" />-->
-
 
 </ion-view>
 
