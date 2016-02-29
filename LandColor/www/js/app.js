@@ -130,7 +130,7 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
   };
   $scope.showConfirm = function(imageURL) {
     var confirmPopup = $ionicPopup.confirm({
-      title: 'Delete Image',
+      title: '<i class="icon ion-sad-outline"></i> Delete Image',
       template: 'Are you sure you want to delete this image?'
     });
 
