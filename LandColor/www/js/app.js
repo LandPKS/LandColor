@@ -26,7 +26,6 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
   $scope.images = [];
 
   $scope.addImage = function() {
-    console.log("Step 1");
     var options = {
       //quality: 96 // Quality of the saved image, range of 0 - 100
       destinationType : Camera.DestinationType.FILE_URI,
