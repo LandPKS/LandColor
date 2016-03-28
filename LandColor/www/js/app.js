@@ -7,7 +7,7 @@
 // camera and image saving functionality: https://devdactic.com/complete-image-guide-ionic/
 
 //cameraApp will load starter and ngCordova
-var cameraApp = angular.module('starter', ['ionic', 'ngCordova'])
+var cameraApp = angular.module('starter', ['ionic', 'ngCordova', 'ngIOS9UIWebViewPatch'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -344,13 +344,17 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
    }
 
    var card = cardRGBLab(paletteCard,0);
-   $scope.card = "Lab: " + card.lab + " RGB: "+ card.rgb;
+   //$scope.card = "Lab: " + card.lab + " RGB: "+ card.rgb;
+   $scope.card = "RGB: "+ card.rgb;
    var sample = sampleRGBLab(paletteCard,0,paletteSample,0);
-   $scope.sample ="Lab: " + sample.lab + " RGB: "+ sample.rgb + " Raw: "+ sample.rgbRaw;
+   //$scope.sample ="Lab: " + sample.lab + " RGB: "+ sample.rgb + " Raw: "+ sample.rgbRaw;
+   $scope.sample =  " RGB: "+ sample.rgbRaw;
+   //$scope.items.push({rCard: card.rgb[0], gCard: card.rgb[1], bCard: card.rgb[2], rSample: sample.rgbRaw[0], gSample: sample.rgbRaw[1], bSample: sample.rgbRaw[2]});
+};
+
+ //$scope.items=[];
 
 
-
-}
 
 
 });
