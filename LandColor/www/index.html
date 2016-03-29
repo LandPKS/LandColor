@@ -17,6 +17,8 @@
 
   <!-- AngularJS extension set for Apache Cordova -->
   <script src="js/ng-cordova.min.js"></script>
+  <!-- Angular iOS9 Patch --> 
+  <script src="js/angular-ios9-uiwebview.patch"></script>
   <!-- cordova script (this will be a 404 during development) -->
   <script src="cordova.js"></script>
 
@@ -37,6 +39,7 @@
       <img id="image" ng-repeat="image in images" ng-src="{{urlForImage(image)}}" ng-click="sampleActionSheet(image)" style="height:200px; padding: 5px 5px 5px 5px;"/>
     </ion-scroll>
   </div>
+
 
   <canvas id="canvas" width="100px" height="100px"></canvas>
   <canvas id="canvas2" width="100px" height="100px"></canvas>
