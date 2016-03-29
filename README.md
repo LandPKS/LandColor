@@ -11,4 +11,6 @@ Anna Yudina- Design Lead <br />
 <strong>File Naming Convention:</strong> "thisNamingConvention" <br />
 <strong>Source Code Directory:</strong> "~/LandPKS/LandColor/LandColor/" <br />
 
+LandColor/plugins and LandColor/platforms directories have been added to the .gitignore file and therefore will not be part of the remote repositories. This is due to the amount of changes for these directories between different machines.
+
 <em>This repository is a work in progress and is not yet documented.</em> <br />
