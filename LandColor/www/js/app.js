@@ -21,9 +21,42 @@ var cameraApp = angular.module('starter', ['ionic', 'ngCordova', 'ngIOS9UIWebVie
   });
 });
 
+
+
 cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordovaFile, $ionicActionSheet, $ionicPopup ) {
   // Scope array for ng-repeat (array of objects) to store images
   $scope.images = [];
+
+
+  $scope.init = function(){
+    $scope.cardButton = {
+    label: "Card",
+    state: true
+    };
+    $scope.soilButton = {
+    label: "Soil",
+    state: false
+    };
+  }
+
+  $scope.toggle = function (buttonType) {
+    if(buttonType === "Card"){
+      if($scope.cardButton.state === false){
+        $scope.cardButton.state = true;
+        $scope.soilButton.state = false;
+        console.log("card false to true");
+      } 
+    } else {
+      if($scope.soilButton.state === false){
+        $scope.cardButton.state = false;
+        $scope.soilButton.state = true;
+        console.log("soil false to true");
+      } 
+
+
+    }
+  };
+
 
   $scope.addImage = function() {
     var options = {
@@ -123,6 +156,15 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
     img.src = imageURL;
     $scope.createCanvas(img);
   };
+
+  $scope.touchMe = function(event){
+    var x = event.offsetX;
+    var y = event.offsetY;
+    $scope.x = x;
+    $scope.y = y;
+    console.log(x);
+    console.log(y);
+  }
 
   $scope.deleteImage=function(imageURL){
     var index = $scope.images.indexOf(imageURL);
