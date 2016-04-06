@@ -29,6 +29,11 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
 
 
   $scope.init = function(){
+    $scope.xCard=100;
+    $scope.yCard=100;
+    $scope.xSoil=100;
+    $scope.ySoil=100;
+
     $scope.cardButton = {
     label: "Card",
     state: true
@@ -157,10 +162,7 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
     $scope.createCanvas(img);
   };
 
-  $scope.xCard=100;
-  $scope.yCard=100;
-  $scope.xSoil=100;
-  $scope.ySoil=100;
+
   $scope.touchMe = function(event,imageURL){
     var img = new Image();
     img.src = imageURL;
@@ -169,12 +171,7 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
     var imgContainer = document.getElementById("mainPic");
     var conHeight= imgContainer.clientHeight;
     var conWidth= imgContainer.clientWidth;
-    $scope.xCardPixel = ogWidth*($scope.xCard/conWidth);
-    $scope.yCardPixel = ogHeight*($scope.yCard/conHeight);
-    $scope.xSoilPixel = ogWidth*($scope.xSoil/conWidth);
-    $scope.ySoilPixel = ogHeight*($scope.ySoil/conHeight);
-
-    $scope.createCanvases(img);
+   
     if($scope.cardButton.state === true){
        var x = event.offsetX;
        var y = event.offsetY;
@@ -186,7 +183,12 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
       $scope.xSoil = x;
       $scope.ySoil = y;
     }
+    $scope.xCardPixel = ogWidth*($scope.xCard/conWidth);
+    $scope.yCardPixel = ogHeight*($scope.yCard/conHeight);
+    $scope.xSoilPixel = ogWidth*($scope.xSoil/conWidth);
+    $scope.ySoilPixel = ogHeight*($scope.ySoil/conHeight);
 
+    $scope.createCanvases(img);
   };
 
   $scope.deleteImage=function(imageURL){

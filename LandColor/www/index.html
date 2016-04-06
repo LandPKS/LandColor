@@ -34,7 +34,7 @@
     Add image
   </button><br><br>
 
-  <img id="mainPic" ng-repeat="image in images" ng-src="{{urlForImage(image)}}" ng-click="touchMe($event,image)" style="max-height:90%; max-width:90% padding: 5px 5px 5px 5px;"/>
+  <img class="pic" id="mainPic" ng-repeat="image in images" ng-src="{{urlForImage(image)}}" ng-click="touchMe($event,image)" style="max-height:90%; max-width:90% padding: 5px 5px 5px 5px;"/>
   <br>
   {{xCard}}
   {{yCard}}
