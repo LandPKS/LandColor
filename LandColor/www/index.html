@@ -17,7 +17,7 @@
 
   <!-- AngularJS extension set for Apache Cordova -->
   <script src="js/ng-cordova.min.js"></script>
-  <!-- Angular iOS9 Patch --> 
+  <!-- Angular iOS9 Patch -->
   <script src="js/angular-ios9-uiwebview.patch.js"></script>
   <!-- cordova script (this will be a 404 during development) -->
   <script src="cordova.js"></script>
@@ -34,7 +34,8 @@
     Add image
   </button><br><br>
 
-  <img id="image" ng-repeat="image in images" ng-src="{{urlForImage(image)}}" ng-click="touchMe($event)" style="height:200px; padding: 5px 5px 5px 5px;"/>
+  <img ng-repeat="image in images" ng-src="{{urlForImage(image)}}" ng-click="touchMe($event,image)" style="max-height:25%; padding: 5px 5px 5px 5px;"/>
+
   <br>
   {{xCard}}
   {{yCard}}

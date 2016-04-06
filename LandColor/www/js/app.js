@@ -45,13 +45,13 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
         $scope.cardButton.state = true;
         $scope.soilButton.state = false;
         console.log("card false to true");
-      } 
+      }
     } else {
       if($scope.soilButton.state === false){
         $scope.cardButton.state = false;
         $scope.soilButton.state = true;
         console.log("soil false to true");
-      } 
+      }
 
 
     }
@@ -157,19 +157,27 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
     $scope.createCanvas(img);
   };
 
-  $scope.touchMe = function(event){
+  $scope.xCard=100;
+  $scope.yCard=100;
+  $scope.xSoil=100;
+  $scope.ySoil=100;
+  $scope.touchMe = function(event,imageURL){
+    var img = new Image();
+    img.src = imageURL;
+    $scope.createCanvases(img);
     if($scope.cardButton.state === true){
-      var x = event.offsetX;
-      var y = event.offsetY;
+       var x = event.offsetX;
+       var y = event.offsetY;
       $scope.xCard = x;
       $scope.yCard = y;
     } else {
-      var x = event.offsetX;
-      var y = event.offsetY;
+       var x = event.offsetX;
+       var y = event.offsetY;
       $scope.xSoil = x;
       $scope.ySoil = y;
     }
-  }
+
+  };
 
   $scope.deleteImage=function(imageURL){
     var index = $scope.images.indexOf(imageURL);
@@ -218,6 +226,16 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
   };
 
 
+  $scope.createCanvases = function(image){
+    //Create canvas element with image to get RGBA array
+
+    var cardCanvas = document.getElementById('canvas');
+    var soilCanvas = document.getElementById('canvas2');
+    var cardContext = cardCanvas.getContext('2d');
+    var soilContext = soilCanvas.getContext('2d');
+    cardContext.drawImage(image, $scope.xCard-100, $scope.yCard-100, 200, 200, 0, 0, 200, 200);
+    soilContext.drawImage(image, $scope.xSoil-100, $scope.ySoil-100, 200, 200, 0, 0, 200, 200);
+  };
  $scope.createCanvas = function(image) {
   //Create canvas element with image to get RGBA array
     var img = image;
@@ -234,9 +252,6 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
   //Get Pixel Arrays of Calibration Card and Soil Sample
    var imageDataCard = context.getImageData(0,0,200,200);
    var imageDataSample = context2.getImageData(0,0,200,200);
-   console.log(imageDataCard);
-   console.log(imageDataSample);
-
   //The size of the palette
    var colorCount = 11;
   //How "well" the median cut algorithm performs
@@ -399,7 +414,6 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
    //$scope.items.push({rCard: card.rgb[0], gCard: card.rgb[1], bCard: card.rgb[2], rSample: sample.rgbRaw[0], gSample: sample.rgbRaw[1], bSample: sample.rgbRaw[2]});
 };
 
- //$scope.items=[];
 
 
 
