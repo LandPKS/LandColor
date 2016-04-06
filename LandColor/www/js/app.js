@@ -156,12 +156,6 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
     return trueOrigin;
   };
 
-  $scope.showColor = function(imageURL) {
-    var img = new Image();
-    img.src = imageURL;
-    $scope.createCanvas(img);
-  };
-
 
   $scope.touchMe = function(event,imageURL){
     var img = new Image();
@@ -190,55 +184,6 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
 
     $scope.getColor(img);
   };
-
-  $scope.deleteImage=function(imageURL){
-    var index = $scope.images.indexOf(imageURL);
-    $scope.images.splice(index, 1);
-  };
-  $scope.showConfirm = function(imageURL) {
-    var confirmPopup = $ionicPopup.confirm({
-      title: '<i class="icon ion-sad-outline"></i> Delete Image',
-      template: 'Are you sure you want to delete this image?'
-    });
-
-    confirmPopup.then(function(res) {
-      if(res) {
-        $scope.deleteImage(imageURL);
-      } else {
-        return true;
-      }
-    });
-  };
-
-  $scope.sampleActionSheet=function(imageURL){
-    var hideSheet = $ionicActionSheet.show({
-      buttons: [
-        { text: '<i class="icon ion-android-color-palette"></i>Get Color' }
-      ],
-      destructiveText: '<i class="icon ion-trash-a"></i>Delete',
-      cancelText: 'Cancel',
-      cancel: function() {
-        return true;
-      },
-      destructiveButtonClicked: function(){
-        $scope.showConfirm(imageURL);
-        return true;
-
-      },
-      buttonClicked: function(index) {
-        if(index === 0){
-          $scope.showColor(imageURL);
-          return true;
-        }
-      }
-    });
-    $timeout(function() {
-      hideSheet();
-    }, 2000);
-  };
-
-
-
 
  $scope.getColor = function(image) {
    var cardCanvas = document.getElementById('canvas');
