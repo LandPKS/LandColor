@@ -29,13 +29,12 @@
 <body ng-app="starter">
 
 <ion-view id="main" class="has-header padding" ng-controller="imageController">
-
+<ion-scroll zooming="true" direction="y" style="height: 100%">
   <button class="button button-energized" ng-click="addImage()">
     Add image
   </button><br><br>
 
-  <img ng-repeat="image in images" ng-src="{{urlForImage(image)}}" ng-click="touchMe($event,image)" style="max-height:25%; padding: 5px 5px 5px 5px;"/>
-
+  <img id="mainPic" ng-repeat="image in images" ng-src="{{urlForImage(image)}}" ng-click="touchMe($event,image)" style="max-height:90%; max-width:90% padding: 5px 5px 5px 5px;"/>
   <br>
   {{xCard}}
   {{yCard}}
@@ -62,7 +61,7 @@
   <h4>Sample</h4>
   {{sample}}
   <br>
-
+</ion-scroll>
 </ion-view>
 
 
