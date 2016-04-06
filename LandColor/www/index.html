@@ -36,8 +36,11 @@
 
   <img id="image" ng-repeat="image in images" ng-src="{{urlForImage(image)}}" ng-click="touchMe($event)" style="height:200px; padding: 5px 5px 5px 5px;"/>
   <br>
-  {{x}}
-  {{y}}
+  {{xCard}}
+  {{yCard}}
+  ,
+  {{xSoil}}
+  {{ySoil}}
   <br>
 <div ng-init="init()">
     <button ng-click="toggle(cardButton.label)" ng-class="{on:cardButton.state}">
@@ -48,7 +51,6 @@
     </button>
 </div>
 
-  <button ng-click="toggle()" ng-class="{on:b.state}" ng-repeat="b in btns">{{b.label}}</button>
   <br>
   <canvas id="canvas" width="100px" height="100px"></canvas>
   <canvas id="canvas2" width="100px" height="100px"></canvas>

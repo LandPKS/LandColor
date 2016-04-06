@@ -158,12 +158,17 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
   };
 
   $scope.touchMe = function(event){
-    var x = event.offsetX;
-    var y = event.offsetY;
-    $scope.x = x;
-    $scope.y = y;
-    console.log(x);
-    console.log(y);
+    if($scope.cardButton.state === true){
+      var x = event.offsetX;
+      var y = event.offsetY;
+      $scope.xCard = x;
+      $scope.yCard = y;
+    } else {
+      var x = event.offsetX;
+      var y = event.offsetY;
+      $scope.xSoil = x;
+      $scope.ySoil = y;
+    }
   }
 
   $scope.deleteImage=function(imageURL){
