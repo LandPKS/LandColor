@@ -18,42 +18,50 @@
   <!-- AngularJS extension set for Apache Cordova -->
   <script src="js/ng-cordova.min.js"></script>
   <!-- Angular iOS9 Patch -->
-  <script src="js/angular-ios9-uiwebview.patch.js"></script>
+  <script src="js/angular-ios9-uiwebview.patch"></script>
   <!-- cordova script (this will be a 404 during development) -->
   <script src="cordova.js"></script>
 
   <!-- your app's js -->
   <script src="js/app.js"></script>
   <script src="js/quantize.js"></script>
+
 </head>
 <body ng-app="starter">
 
-<ion-view id="main" class="has-header padding" ng-controller="imageController">
-<ion-scroll zooming="true" direction="y" style="height: 100%">
-  <button class="button button-energized" ng-click="addImage()">
-    Add image
-  </button><br><br>
+<ion-side-menus>
 
-  <img class="pic" id="mainPic" ng-repeat="image in images" ng-src="{{urlForImage(image)}}" ng-click="touchMe($event,image)"/>
+  <ion-side-menu-content ng-controller="NavCtrl">
+    <ion-nav-bar class="bar-balanced">
+      <ion-nav-back-button class="button-icon ion-arrow-left-c"></ion-nav-back-button>
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" ng-click="showMenu()"></button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view animation="slide-left-right"></ion-nav-view>
+  </ion-side-menu-content>
 
-<div ng-init="init()">
-    <button ng-click="toggle(cardButton.label)" ng-class="{on:cardButton.state}">
-        {{cardButton.label}}
-    </button>
-     <button ng-click="toggle(soilButton.label)" ng-class="{on:soilButton.state}">
-        {{soilButton.label}}
-    </button>
-</div>
+  <ion-side-menu side="left">
+    <ion-header-bar class="bar bar-header bar-stable">
+      <h1 class="title">Menu</h1>
+    </ion-header-bar>
+    <ion-content has-header="true">
+      <ul class="list">
+        <li>
+          <a class="item" menu-close nav-clear href="#/tab/home">Home</a>
+        </li>
+        <li>
+          <a class="item" menu-close href="#/tab/facts2">Photo Gallery</a>
+        </li>
+        <li>
+          <a class="item" icon="ion"menu-close href="#/tab/facts3">Analyzed Photos</a>
+        </li>
+      </ul>
+    </ion-content>
+  </ion-side-menu>
 
-  <br>
-  <canvas id="canvas" width="100px" height="100px"></canvas>
-  <canvas id="canvas2" width="100px" height="100px"></canvas>
-  <br>
-  <h4>Sample Color</h4>
-  {{sample}}
-  <br>
-</ion-scroll>
-</ion-view>
+</ion-side-menus>
+
 
 
 </body>
