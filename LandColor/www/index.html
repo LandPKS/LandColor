@@ -34,7 +34,7 @@
     Add image
   </button><br><br>
 
-  <img class="pic" id="mainPic" ng-repeat="image in images" ng-src="{{urlForImage(image)}}" ng-click="touchMe($event,image)" style="max-height:90%; max-width:90% padding: 5px 5px 5px 5px;"/>
+  <img class="pic" id="mainPic" ng-repeat="image in images" ng-src="{{urlForImage(image)}}" ng-click="touchMe($event,image)"/>
 
 <div ng-init="init()">
     <button ng-click="toggle(cardButton.label)" ng-class="{on:cardButton.state}">
@@ -49,7 +49,7 @@
   <canvas id="canvas" width="100px" height="100px"></canvas>
   <canvas id="canvas2" width="100px" height="100px"></canvas>
   <br>
-   <h4>Sample</h4>
+  <h4>Sample Color</h4>
   {{sample}}
   <br>
 </ion-scroll>

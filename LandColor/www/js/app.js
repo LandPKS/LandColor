@@ -26,7 +26,7 @@ var cameraApp = angular.module('starter', ['ionic', 'ngCordova', 'ngIOS9UIWebVie
 cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordovaFile, $ionicActionSheet, $ionicPopup ) {
   // Scope array for ng-repeat (array of objects) to store images
   $scope.images = [];
-
+  $scope.iOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
 
   $scope.init = function(){
     $scope.xCard=100;
@@ -71,8 +71,8 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
       encodingType: Camera.EncodingType.JPEG,
       popoverOptions: CameraPopoverOptions, // iOS-only options that specify popover location in iPad
       //targetHeight: 2000,
-      //targetWidth: 2000
-      correctOrientation: true // correct camera captured images in case wrong orientation
+      //targetWidth: 2000 
+      correctOrientation: $scope.iOS // correct camera captured images in case wrong orientation
       //cameraDirection: 0 // Back = 0, Front-facing = 1
     };
     // prompt user for Camera or Gallery
