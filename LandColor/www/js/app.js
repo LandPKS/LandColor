@@ -69,8 +69,10 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
       destinationType : Camera.DestinationType.FILE_URI,
       allowEdit : false, //Allow simple editing of image before selection
       encodingType: Camera.EncodingType.JPEG,
-      popoverOptions: CameraPopoverOptions // iOS-only options that specify popover location in iPad
-      //correctOrientation: true, // correct camera captured images in case wrong orientation
+      popoverOptions: CameraPopoverOptions, // iOS-only options that specify popover location in iPad
+      //targetHeight: 2000,
+      //targetWidth: 2000
+      correctOrientation: true // correct camera captured images in case wrong orientation
       //cameraDirection: 0 // Back = 0, Front-facing = 1
     };
     // prompt user for Camera or Gallery
