@@ -3,3 +3,5 @@
 
 LandColor/platforms/
 LandColor/plugins/
+.idea/
+.idea*
