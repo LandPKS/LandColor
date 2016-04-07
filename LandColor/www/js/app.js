@@ -21,9 +21,47 @@ var cameraApp = angular.module('starter', ['ionic', 'ngCordova', 'ngIOS9UIWebVie
   });
 });
 
+
+
 cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordovaFile, $ionicActionSheet, $ionicPopup ) {
   // Scope array for ng-repeat (array of objects) to store images
   $scope.images = [];
+
+
+  $scope.init = function(){
+    $scope.xCard=100;
+    $scope.yCard=100;
+    $scope.xSoil=100;
+    $scope.ySoil=100;
+
+    $scope.cardButton = {
+    label: "Card",
+    state: true
+    };
+    $scope.soilButton = {
+    label: "Soil",
+    state: false
+    };
+  }
+
+  $scope.toggle = function (buttonType) {
+    if(buttonType === "Card"){
+      if($scope.cardButton.state === false){
+        $scope.cardButton.state = true;
+        $scope.soilButton.state = false;
+        console.log("card false to true");
+      }
+    } else {
+      if($scope.soilButton.state === false){
+        $scope.cardButton.state = false;
+        $scope.soilButton.state = true;
+        console.log("soil false to true");
+      }
+
+
+    }
+  };
+
 
   $scope.addImage = function() {
     var options = {
@@ -31,8 +69,10 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
       destinationType : Camera.DestinationType.FILE_URI,
       allowEdit : false, //Allow simple editing of image before selection
       encodingType: Camera.EncodingType.JPEG,
-      popoverOptions: CameraPopoverOptions // iOS-only options that specify popover location in iPad
-      //correctOrientation: true, // correct camera captured images in case wrong orientation
+      popoverOptions: CameraPopoverOptions, // iOS-only options that specify popover location in iPad
+      //targetHeight: 2000,
+      //targetWidth: 2000
+      correctOrientation: true // correct camera captured images in case wrong orientation
       //cameraDirection: 0 // Back = 0, Front-facing = 1
     };
     // prompt user for Camera or Gallery
@@ -118,78 +158,46 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
     return trueOrigin;
   };
 
-  $scope.showColor = function(imageURL) {
+
+  $scope.touchMe = function(event,imageURL){
     var img = new Image();
     img.src = imageURL;
-    $scope.createCanvas(img);
+    var ogHeight = img.height;
+    var ogWidth = img.width;
+    var imgContainer = document.getElementById("mainPic");
+    var conHeight= imgContainer.clientHeight;
+    var conWidth= imgContainer.clientWidth;
+
+    if($scope.cardButton.state === true){
+       var x = event.offsetX;
+       var y = event.offsetY;
+      $scope.xCard = x;
+      $scope.yCard = y;
+    } else {
+       var x = event.offsetX;
+       var y = event.offsetY;
+      $scope.xSoil = x;
+      $scope.ySoil = y;
+    }
+    $scope.xCardPixel = ogWidth*($scope.xCard/conWidth);
+    $scope.yCardPixel = ogHeight*($scope.yCard/conHeight);
+    $scope.xSoilPixel = ogWidth*($scope.xSoil/conWidth);
+    $scope.ySoilPixel = ogHeight*($scope.ySoil/conHeight);
+
+    $scope.getColor(img);
   };
 
-  $scope.deleteImage=function(imageURL){
-    var index = $scope.images.indexOf(imageURL);
-    $scope.images.splice(index, 1);
-  };
-  $scope.showConfirm = function(imageURL) {
-    var confirmPopup = $ionicPopup.confirm({
-      title: '<i class="icon ion-sad-outline"></i> Delete Image',
-      template: 'Are you sure you want to delete this image?'
-    });
-
-    confirmPopup.then(function(res) {
-      if(res) {
-        $scope.deleteImage(imageURL);
-      } else {
-        return true;
-      }
-    });
-  };
-
-  $scope.sampleActionSheet=function(imageURL){
-    var hideSheet = $ionicActionSheet.show({
-      buttons: [
-        { text: '<i class="icon ion-android-color-palette"></i>Get Color' }
-      ],
-      destructiveText: '<i class="icon ion-trash-a"></i>Delete',
-      cancelText: 'Cancel',
-      cancel: function() {
-        return true;
-      },
-      destructiveButtonClicked: function(){
-        $scope.showConfirm(imageURL);
-        return true;
-
-      },
-      buttonClicked: function(index) {
-        if(index === 0){
-          $scope.showColor(imageURL);
-          return true;
-        }
-      }
-    });
-    $timeout(function() {
-      hideSheet();
-    }, 2000);
-  };
-
-
- $scope.createCanvas = function(image) {
-  //Create canvas element with image to get RGBA array
-    var img = image;
-   //var img = document.getElementById("image");
-   //var canvas = document.createElement('canvas');
-   var canvas = document.getElementById('canvas');
-   //var canvas2 = document.createElement('canvas');
-   var canvas2 = document.getElementById('canvas2');
-   var context = canvas.getContext('2d');
-   var context2 = canvas2.getContext('2d');
-   context.drawImage(img, (Math.round(img.width/4)-100), (Math.round(img.height/2)-100), 200, 200, 0, 0, 200, 200);
-   context2.drawImage(img, (Math.round(3*img.width/4)-100), (Math.round(img.height/2)-100), 200, 200, 0, 0, 200, 200);
+ $scope.getColor = function(image) {
+   var cardCanvas = document.getElementById('canvas');
+   var soilCanvas = document.getElementById('canvas2');
+   var cardContext = cardCanvas.getContext('2d');
+   var soilContext = soilCanvas.getContext('2d');
+   cardContext.drawImage(image, $scope.xCardPixel-100, $scope.yCardPixel-100, 200, 200, 0, 0, 200, 200);
+   soilContext.drawImage(image, $scope.xSoilPixel-100, $scope.ySoilPixel-100, 200, 200, 0, 0, 200, 200);
 
   //Get Pixel Arrays of Calibration Card and Soil Sample
-   var imageDataCard = context.getImageData(0,0,200,200);
-   var imageDataSample = context2.getImageData(0,0,200,200);
-   console.log(imageDataCard);
-   console.log(imageDataSample);
-
+   var imageDataCard = cardContext.getImageData(0,0,200,200);
+   var imageDataSample = soilContext.getImageData(0,0,200,200);
   //The size of the palette
    var colorCount = 11;
   //How "well" the median cut algorithm performs
@@ -345,14 +353,13 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
 
    var card = cardRGBLab(paletteCard,0);
    //$scope.card = "Lab: " + card.lab + " RGB: "+ card.rgb;
-   $scope.card = "RGB: "+ card.rgb;
+   //$scope.card = "RGB: "+ card.rgb;
    var sample = sampleRGBLab(paletteCard,0,paletteSample,0);
-   //$scope.sample ="Lab: " + sample.lab + " RGB: "+ sample.rgb + " Raw: "+ sample.rgbRaw;
-   $scope.sample =  " RGB: "+ sample.rgbRaw;
+   $scope.sample ="Lab: " + sample.lab;
+   //$scope.sample =  " RGB: "+ sample.rgbRaw;
    //$scope.items.push({rCard: card.rgb[0], gCard: card.rgb[1], bCard: card.rgb[2], rSample: sample.rgbRaw[0], gSample: sample.rgbRaw[1], bSample: sample.rgbRaw[2]});
 };
 
- //$scope.items=[];
 
 
 

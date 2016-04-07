@@ -1,1 +1,9 @@
 /* Empty. Add your own CSS if you like */
+button.on {
+    background-color: lightgreen;
+}
+
+img.pic {
+	padding: 5px 5px 5px 5px;
+	width: 95%;
+}

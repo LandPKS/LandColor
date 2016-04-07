@@ -17,8 +17,8 @@
 
   <!-- AngularJS extension set for Apache Cordova -->
   <script src="js/ng-cordova.min.js"></script>
-  <!-- Angular iOS9 Patch --> 
-  <script src="js/angular-ios9-uiwebview.patch"></script>
+  <!-- Angular iOS9 Patch -->
+  <script src="js/angular-ios9-uiwebview.patch.js"></script>
   <!-- cordova script (this will be a 404 during development) -->
   <script src="cordova.js"></script>
 
@@ -29,28 +29,30 @@
 <body ng-app="starter">
 
 <ion-view id="main" class="has-header padding" ng-controller="imageController">
-
+<ion-scroll zooming="true" direction="y" style="height: 100%">
   <button class="button button-energized" ng-click="addImage()">
     Add image
   </button><br><br>
 
-  <div>
-    <ion-scroll direction="x" scrollbar-x="true" style="height:200px; min-height: 200px; overflow: scroll; white-space: nowrap;">
-      <img id="image" ng-repeat="image in images" ng-src="{{urlForImage(image)}}" ng-click="sampleActionSheet(image)" style="height:200px; padding: 5px 5px 5px 5px;"/>
-    </ion-scroll>
-  </div>
+  <img class="pic" id="mainPic" ng-repeat="image in images" ng-src="{{urlForImage(image)}}" ng-click="touchMe($event,image)" style="max-height:90%; max-width:90% padding: 5px 5px 5px 5px;"/>
 
+<div ng-init="init()">
+    <button ng-click="toggle(cardButton.label)" ng-class="{on:cardButton.state}">
+        {{cardButton.label}}
+    </button>
+     <button ng-click="toggle(soilButton.label)" ng-class="{on:soilButton.state}">
+        {{soilButton.label}}
+    </button>
+</div>
 
+  <br>
   <canvas id="canvas" width="100px" height="100px"></canvas>
   <canvas id="canvas2" width="100px" height="100px"></canvas>
   <br>
-  <h4>Card</h4>
-  {{card}}
-  <br>
-  <h4>Sample</h4>
+   <h4>Sample</h4>
   {{sample}}
   <br>
-
+</ion-scroll>
 </ion-view>
 
 
