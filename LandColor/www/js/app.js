@@ -21,7 +21,12 @@ var cameraApp = angular.module('starter', ['ionic', 'ngCordova', 'ngIOS9UIWebVie
   });
 });
 
-cameraApp.config(function($stateProvider, $urlRouterProvider) {
+cameraApp.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider ) {
+
+  //forces tabs to be on bottom
+  $ionicConfigProvider.tabs.position("bottom");
+  //forces navbar title to be in center
+  $ionicConfigProvider.navBar.alignTitle('center');
 
   $stateProvider
     .state('photos', {
