@@ -21,6 +21,60 @@ var cameraApp = angular.module('starter', ['ionic', 'ngCordova', 'ngIOS9UIWebVie
   });
 });
 
+cameraApp.config(function($stateProvider, $urlRouterProvider) {
+
+  $stateProvider
+    .state('photos', {
+      url: "/photos",
+      abstract: true,
+      templateUrl: "templates/photos.html"
+    })
+    .state('tabs', {
+      url: "/tab",
+      abstract: true,
+      templateUrl: "templates/tabs.html"
+    })
+    .state('tabs.home', {
+      url: "/home",
+      views: {
+        'home-tab': {
+          templateUrl: "templates/home.html",
+          controller: 'HomeTabCtrl'
+        }
+      }
+    })
+    .state('tabs.about', {
+      url: "/about",
+      views: {
+        'about-tab': {
+          templateUrl: "templates/about.html"
+        }
+      }
+    })
+    .state('tabs.tutorial', {
+      url: "/tutorial",
+      views: {
+        'tutorial-tab': {
+          templateUrl: "templates/tutorial.html"
+        }
+      }
+    });
+
+  $urlRouterProvider.otherwise("/tab/home");
+
+})
+cameraApp.controller('NavCtrl', function($scope, $ionicSideMenuDelegate) {
+  $scope.showMenu = function () {
+    $ionicSideMenuDelegate.toggleLeft();
+  };
+  $scope.showRightMenu = function () {
+    $ionicSideMenuDelegate.toggleRight();
+  };
+})
+cameraApp.controller('HomeTabCtrl', function($scope) {
+});
+
+
 
 
 cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordovaFile, $ionicActionSheet, $ionicPopup ) {
@@ -71,7 +125,7 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
       encodingType: Camera.EncodingType.JPEG,
       popoverOptions: CameraPopoverOptions, // iOS-only options that specify popover location in iPad
       //targetHeight: 2000,
-      //targetWidth: 2000 
+      //targetWidth: 2000
       correctOrientation: $scope.iOS // correct camera captured images in case wrong orientation
       //cameraDirection: 0 // Back = 0, Front-facing = 1
     };

@@ -1,0 +1,29 @@
+<ion-view id="main" class="has-header padding" ng-controller="imageController" title="LandColor">
+    <ion-content>
+      <ion-scroll zooming="true" direction="y" style="height: 100%">
+        <button class="button button-energized" ng-click="addImage()">
+          Add image
+        </button><br><br>
+
+        <img class="pic" id="mainPic" ng-repeat="image in images" ng-src="{{urlForImage(image)}}" ng-click="touchMe($event,image)"/>
+
+        <div ng-init="init()">
+          <button ng-click="toggle(cardButton.label)" ng-class="{on:cardButton.state}">
+            {{cardButton.label}}
+          </button>
+          <button ng-click="toggle(soilButton.label)" ng-class="{on:soilButton.state}">
+            {{soilButton.label}}
+          </button>
+        </div>
+
+        <br>
+        <canvas id="canvas" width="100px" height="100px"></canvas>
+        <canvas id="canvas2" width="100px" height="100px"></canvas>
+        <br>
+        <h4>Sample Color</h4>
+        {{sample}}
+        <br>
+      </ion-scroll>
+
+    </ion-content>
+</ion-view>
