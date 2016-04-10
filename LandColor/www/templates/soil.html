@@ -1,0 +1,23 @@
+<ion-view id="main" class="has-header padding" ng-controller="imageController" title="Select Soil">
+  <ion-content>
+    <div ng-init="init()">
+
+      <button ng-click="toggle(cardButton.label)" ng-class="{on:cardButton.state}">
+        {{cardButton.label}}
+      </button>
+      <button ng-click="toggle(soilButton.label)" ng-class="{on:soilButton.state}">
+        {{soilButton.label}}
+      </button>
+    </div>
+
+    <br>
+    <canvas id="canvas" width="100px" height="100px" ng-click="toggle(cardButton.label)"></canvas>
+    <canvas id="canvas2" width="100px" height="100px" ng-click="toggle(soilButton.label)"></canvas>
+    <br>
+    {{sample}}
+    <br>
+    <img class="pic" id="mainPic" ng-repeat="image in images" ng-src="{{urlForImage(image)}}" ng-click="touchMe($event,image)"/>
+
+    <a class="button icon ion-checkmark" ui-sref="results">Done</a>
+  </ion-content>
+  </ion-view>

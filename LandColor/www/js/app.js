@@ -31,8 +31,19 @@ cameraApp.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvid
   $stateProvider
     .state('photos', {
       url: "/photos",
-      abstract: true,
       templateUrl: "templates/photos.html"
+    })
+    .state('card', {
+      url: "/card",
+      templateUrl: "templates/card.html"
+    })
+    .state('soil', {
+      url: "/soil",
+      templateUrl: "templates/soil.html"
+    })
+    .state('results', {
+      url: "/results",
+      templateUrl: "templates/results.html"
     })
     .state('tabs', {
       url: "/tab",
@@ -101,7 +112,11 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
     label: "Soil",
     state: false
     };
-  }
+  };
+
+  $scope.wtf = function(){
+    $state.go('card');
+  };
 
   $scope.toggle = function (buttonType) {
     if(buttonType === "Card"){
@@ -116,13 +131,12 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
         $scope.soilButton.state = true;
         console.log("soil false to true");
       }
-
-
     }
   };
 
 
   $scope.addImage = function() {
+
     var options = {
       //quality: 96 // Quality of the saved image, range of 0 - 100
       destinationType : Camera.DestinationType.FILE_URI,
@@ -208,6 +222,7 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
         return true;
       }
     });
+    $state.go('card');
   };
 
   // Find path to data directory of LandColor application
