@@ -35,15 +35,18 @@ cameraApp.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvid
     })
     .state('card', {
       url: "/card",
-      templateUrl: "templates/card.html"
+      templateUrl: "templates/card.html",
+      controller: 'imageController'
     })
     .state('soil', {
       url: "/soil",
-      templateUrl: "templates/soil.html"
+      templateUrl: "templates/soil.html",
+      controller: 'imageController'
     })
     .state('results', {
       url: "/results",
-      templateUrl: "templates/results.html"
+      templateUrl: "templates/results.html",
+      controller: 'imageController'
     })
     .state('tabs', {
       url: "/tab",
@@ -55,7 +58,7 @@ cameraApp.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvid
       views: {
         'home-tab': {
           templateUrl: "templates/home.html",
-          controller: 'HomeTabCtrl'
+          controller: 'imageController'
         }
       }
     })
@@ -87,13 +90,11 @@ cameraApp.controller('NavCtrl', function($scope, $ionicSideMenuDelegate) {
     $ionicSideMenuDelegate.toggleRight();
   };
 })
-cameraApp.controller('HomeTabCtrl', function($scope) {
-});
 
 
 
 
-cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordovaFile, $ionicActionSheet, $ionicPopup ) {
+cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordovaFile, $ionicActionSheet, $ionicPopup, $state ) {
   // Scope array for ng-repeat (array of objects) to store images
   $scope.images = [];
   $scope.iOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
@@ -112,10 +113,12 @@ cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordov
     label: "Soil",
     state: false
     };
+
+    $scope.addImage();
   };
 
-  $scope.wtf = function(){
-    $state.go('card');
+  $scope.changePage = function(){
+    $state.go('card', {}, {reload:true});
   };
 
   $scope.toggle = function (buttonType) {
