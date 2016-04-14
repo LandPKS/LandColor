@@ -1,12 +1,11 @@
 <ion-view id="main" class="has-header padding"  title="Select Soil">
-  <ion-content ">
-
-    <br>
-    <canvas id="canvas2" width="100px" height="100px" ng-click="toggle(soilButton.label)"></canvas>
-    <br>
-    {{sample}}
-    <br>
-    <img class="pic" id="mainPic" ng-repeat="image in images" ng-src="{{urlForImage(image)}}" ng-click="touchMe($event,image)"/>
+  <ion-content>
+    <div ng-controller ="ImageController">
+      <img id='soilPic' ng-repeat="image in images" ng-src="data:image/jpeg;base64,{{image}}" ng-click="touchMe($event,image)" style="height:200px; padding: 5px 5px 5px 5px;"/>
+      <br>
+      <canvas id="canvas2" width="100px" height="100px"></canvas>
+      <canvas id="canvas" width="100px" height="100px"></canvas>
+    </div>
 
     <a class="button icon ion-checkmark" ui-sref="results">Done</a>
   </ion-content>
