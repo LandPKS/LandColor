@@ -1,4 +1,12 @@
 angular.module('starter')
+  .controller('NavCtrl', function($scope, $ionicSideMenuDelegate) {
+    $scope.showMenu = function () {
+      $ionicSideMenuDelegate.toggleLeft();
+    };
+    $scope.showRightMenu = function () {
+      $ionicSideMenuDelegate.toggleRight();
+    };
+  })
 
   .controller('ImageController', function($scope,$state, $cordovaDevice, $cordovaFile, $ionicPlatform, $ionicActionSheet, ImageService, FileService,CanvasService) {
 
@@ -19,6 +27,7 @@ angular.module('starter')
           $scope.addImage(index);
         }
       });
+
     };
 
     $scope.addImage = function(type) {
@@ -26,6 +35,7 @@ angular.module('starter')
       ImageService.handleMediaDialog(type).then(function() {
         $scope.$apply();
       });
+      $state.go('card', {});
     };
 
     $scope.touchMe = function(event,imageURL) {
@@ -58,8 +68,12 @@ angular.module('starter')
     }
   })
 
-.controller('resultsController',function($scope,$state, $cordovaDevice, $cordovaFile, $ionicPlatform, $ionicActionSheet, ImageService, FileService,CanvasService){
+  .controller('imageController',function(){
+    //ignore for now
+  })
 
+  .controller('resultsController',function($scope,$state, $cordovaDevice, $cordovaFile, $ionicPlatform, $ionicActionSheet, ImageService, FileService,CanvasService, ColorService){
+    $scope.soilLAB = ColorService.getColor();
   });
 
 
