@@ -68,12 +68,12 @@ This document will provide the steps on how to download, compile, and run our ap
 	- Select your devices name from the dropdown list at the top (to the right of the Run button and to the left of the center window)
 	- Press the Run button
 		- **NOTE:** Assuming your phone is unlocked this should just work.  However, I have had a few issues:
-			- Received: *Failed to code sign "LandColor".  No provisioning profile with... com.ionicframework.LandColor<number> ...*
+			- Received: *Failed to code sign "LandColor".  No provisioning profile with... com.ionicframework.LandColor012345 ...*
 				- Click *Fix Issue* -> Select your Apple ID from the drop down menu.  It should be a personal license. -> Done
 				- Received: *An app ID with Identifier...is not found...* -> Done
 			- To fix this I tried changing the Bundle Identifier:
 				- Select the LandColor Xcode Project from the left side menu
-				- While on the General tab, select the *Bundle Identifier* and replace *com.ionicframework.LandColor<number>* with something like *com.<name>.LandColor*
+				- While on the General tab, select the *Bundle Identifier* and replace *com.ionicframework.LandColor012345* with something like *com.steveclark.LandColor*
 				- This worked once but I haven't been able to replicate the results since
 			- The only thing I can think of to explain why these errors occur is the Apple ID I use.  I had a Developers License under another Apple ID and that works just fine even though the Developers License is expired.  I only get the above errors when I try to use my normal Apple ID.
 2. Android
