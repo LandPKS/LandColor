@@ -1,0 +1,83 @@
+# Compiling and Running the App (Mac)
+
+This document will provide the steps on how to download, compile, and run our application.  **NOTE:** This document will be modified once our final application is ready to be submited to our master branch.
+
+## Requirements
+1. If you have followed the `Install_Ionic.mdown` guide you can move on to **Downloading the Source Code**
+2. or check to ensure the following are installed. **NOTE:** You don't need to have the exact version numbers listed in the outputs.
+	- Node.js:
+		- `node --version` -> v4.4.2
+		- `npm --version` -> 2.15.0
+	- Git:
+		- `git --version` -> git version 2.6.4 (Apple Git-63)
+	- Command Line Tools:
+		- `gcc --version` -> ...Apple LLVM version 7.3.0 (clang-703.0.29)...
+	- Cordova:
+		- `cordova --version` -> 6.1.1
+	- Ionic:
+		- `ionic --version` -> 1.7.14
+	- Xcode:
+		- It will be in your applications folder if you have it installed
+	- Android Studio:
+		- It will be in your applications folder if you have it installed
+
+## Downloading the Source Code
+1. Open a terminal window and navigate to a directory where you would like to download the source code
+2. Clone the source code repository
+	- Run `git clone https://github.com/LandPKS/LandColor.git`
+	- Run `cd LandColor/`
+3. Checkout to branch `christina`:
+	- Run `git checkout christina`
+
+## Installing Application Components
+1. Navigate to Application
+	- Run `cd LandColor`
+2. Add Platforms
+	- Run `ionic platform add ios`
+	- Run `ionic platform add android`
+3. Install Plugins
+	- Run `ionic state reset`
+		- **NOTE:** *An error will occur trying to install `org.apache.cordova.camera`.  This happens because the backwards identifier is an old naming convention Apache used.
+	- Run `cordova plugin add cordova-plugin-camera`
+
+## Running Application on Emulator
+1. iOS
+	- Run `ionic build ios`
+	- Run `ionic emulate ios`
+		- **NOTE:** This will default to the iPhone 6s Plus emulator
+		- To specify a target emulator use the `--target` flag:
+			- `ionic emulate ios --target=iPhone-6`
+			- You can use other names like `--target=iPhone-5`, `--target=iPhone-6s`, etc.
+2. Android
+	- **NOTE:** This assumes you properly set up an AVD.  If you were able to complete the **Install_Ionic.mdown** guide then you will be all set.
+	- Run `ionic build android`
+	- Run `ionic emulate android`
+		- **NOTE:** If you have only one AVD set up it will default to that
+		- If you have multiple AVD's set up you can use the `--target` flag to specify the emulator you would like to use:
+			- `ionic emulate android --target=Nexus_5_API_21`
+			- If you used Android Studio to create your AVD you can get the name by going into the AVD manager in Android Studio:
+				- Launch Android Studio
+				- Tools -> Android -> AVD Manager
+				- The name of the emulator(s) listed are the targets you can specify.  If there are spaces they will automatically be replaced with underscores.  For example my AVD is called *Nexus 5 API 21* and will translate to *Nexus_5_API_21*
+
+## Running Application on Device
+1. iOS
+	- Plug iOS device into USB port
+	- Launch Xcode
+	- File -> Open... -> LandColor/LandColor/platforms/ios/LandColor.xcodeproj
+	- Select your devices name from the dropdown list at the top (to the right of the Run button and to the left of the center window)
+	- Press the Run button
+		- **NOTE:** Assuming your phone is unlocked this should just work.  However, I have had a few issues:
+			- Received: *Failed to code sign "LandColor".  No provisioning profile with... com.ionicframework.LandColor<number> ...*
+				- Click *Fix Issue* -> Select your Apple ID from the drop down menu.  It should be a personal license. -> Done
+				- Received: *An app ID with Identifier...is not found...* -> Done
+			- To fix this I tried changing the Bundle Identifier:
+				- Select the LandColor Xcode Project from the left side menu
+				- While on the General tab, select the *Bundle Identifier* and replace *com.ionicframework.LandColor<number>* with something like *com.<name>.LandColor*
+				- This worked once but I haven't been able to replicate the results since
+			- The only thing I can think of to explain why these errors occur is the Apple ID I use.  I had a Developers License under another Apple ID and that works just fine even though the Developers License is expired.  I only get the above errors when I try to use my normal Apple ID.
+2. Android
+	- **NOTE:** Again this assumes you followed the **Install_Ionic.mdown** guide and were able to get the Hello World application in that guide working on both Android and iOS emulators and devices
+	- Plug Android device into USB port
+	- Run `ionic build android`
+	- Run `ionic run android`
