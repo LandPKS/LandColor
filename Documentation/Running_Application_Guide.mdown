@@ -37,22 +37,22 @@ This document will provide the steps on how to download, compile, and run our ap
 	- Run `ionic platform add android`
 3. Install Plugins
 	- Run `ionic state reset`
-		- **NOTE:** *An error will occur trying to install `org.apache.cordova.camera`.  This happens because the backwards identifier is an old naming convention Apache used.
+		- An error will occur trying to install `org.apache.cordova.camera`.  This happens because the backwards identifier is an old naming convention Apache used.
 	- Run `cordova plugin add cordova-plugin-camera`
 
 ## Running Application on Emulator
 1. iOS
 	- Run `ionic build ios`
 	- Run `ionic emulate ios`
-		- **NOTE:** This will default to the iPhone 6s Plus emulator
+		- This will default to the iPhone 6s Plus emulator
 		- To specify a target emulator use the `--target` flag:
 			- `ionic emulate ios --target=iPhone-6`
 			- You can use other names like `--target=iPhone-5`, `--target=iPhone-6s`, etc.
 2. Android
-	- **NOTE:** This assumes you properly set up an AVD.  If you were able to complete the **Install_Ionic.mdown** guide then you will be all set.
+	- This assumes you properly set up an AVD.  If you were able to complete the **Install_Ionic.mdown** guide then you will be all set.
 	- Run `ionic build android`
 	- Run `ionic emulate android`
-		- **NOTE:** If you have only one AVD set up it will default to that
+		- If you have only one AVD set up it will default to that
 		- If you have multiple AVD's set up you can use the `--target` flag to specify the emulator you would like to use:
 			- `ionic emulate android --target=Nexus_5_API_21`
 			- If you used Android Studio to create your AVD you can get the name by going into the AVD manager in Android Studio:
@@ -67,7 +67,7 @@ This document will provide the steps on how to download, compile, and run our ap
 	- File -> Open... -> LandColor/LandColor/platforms/ios/LandColor.xcodeproj
 	- Select your devices name from the dropdown list at the top (to the right of the Run button and to the left of the center window)
 	- Press the Run button
-		- **NOTE:** Assuming your phone is unlocked this should just work.  However, I have had a few issues:
+		- Assuming your phone is unlocked this should just work.  However, I have had a few issues:
 			- Received: *Failed to code sign "LandColor".  No provisioning profile with... com.ionicframework.LandColor012345 ...*
 				- Click *Fix Issue* -> Select your Apple ID from the drop down menu.  It should be a personal license. -> Done
 				- Received: *An app ID with Identifier...is not found...* -> Done
@@ -77,7 +77,7 @@ This document will provide the steps on how to download, compile, and run our ap
 				- This worked once but I haven't been able to replicate the results since
 			- The only thing I can think of to explain why these errors occur is the Apple ID I use.  I had a Developers License under another Apple ID and that works just fine even though the Developers License is expired.  I only get the above errors when I try to use my normal Apple ID.
 2. Android
-	- **NOTE:** Again this assumes you followed the **Install_Ionic.mdown** guide and were able to get the Hello World application in that guide working on both Android and iOS emulators and devices
+	- Again this assumes you followed the **Install_Ionic.mdown** guide and were able to get the Hello World application in that guide working on both Android and iOS emulators and devices
 	- Plug Android device into USB port
 	- Run `ionic build android`
 	- Run `ionic run android`
