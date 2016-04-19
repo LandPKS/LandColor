@@ -4,7 +4,7 @@ This document will provide the steps on how to download, compile, and run our ap
 
 ## Requirements
 1. If you have followed the `Install_Ionic.mdown` guide you can move on to **Downloading the Source Code**
-2. or check to ensure the following are installed. **NOTE:** You don't need to have the exact version numbers listed in the outputs.
+2. Or you can do the following checks to see if you have all of the appropriate requirements installed. **NOTE:** You don't need to have the exact version numbers listed in the outputs.
 	- Node.js:
 		- `node --version` -> v4.4.2
 		- `npm --version` -> 2.15.0
