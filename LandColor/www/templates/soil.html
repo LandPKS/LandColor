@@ -3,9 +3,18 @@
     <div ng-controller ="imageController">
       <img id="soilPic" ng-src="data:image/jpeg;base64,{{mainPic}}" ng-click="touchMe($event,mainPic)" style="height:200px; padding: 5px 5px 5px 5px;"/>
       <br>
-      <canvas id="canvas2" width="100px" height="100px"></canvas>
     </div>
 
-    <a class="button icon ion-checkmark" ui-sref="results">Done</a>
+    <div class="row">
+      <div class="col col-33">
+                <a class="button button-assertive icon ion-chevron-left center" ui-sref="card">&nbsp Back</a> <!--where back button would be but not needed -->
+      </div>
+      <div class="col col-33">
+        <canvas class="center" id="canvas2" width="100px" height="100px"></canvas>
+      </div>
+      <div class="col col-33">
+        <a class="button button-balanced icon ion-checkmark center" ui-sref="results">&nbsp Done</a>
+      </div>
+    </div>
   </ion-content>
   </ion-view>
