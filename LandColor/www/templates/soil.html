@@ -1,12 +1,20 @@
-<ion-view id="main" class="has-header padding"  title="Select Soil">
+<ion-view id="main" class="has-header padding" title="LandColor">
   <ion-content>
-    <div ng-controller ="ImageController">
-      <img id='soilPic' ng-repeat="image in images" ng-src="data:image/jpeg;base64,{{image}}" ng-click="touchMe($event,image)" style="height:200px; padding: 5px 5px 5px 5px;"/>
-      <br>
-      <canvas id="canvas2" width="100px" height="100px"></canvas>
-      <canvas id="canvas" width="100px" height="100px"></canvas>
+    <div class="row" ng-controller ="imageController">
+      <img id='cardPic' ng-src="data:image/jpeg;base64,{{pic}}" ng-click="touchMe($event,pic)" style="height:200px; padding: 5px 5px 5px 5px;"/>
     </div>
 
-    <a class="button icon ion-checkmark" ui-sref="results">Done</a>
+    <div class="row">
+      <div class="col col-33">
+                <a class="button button-assertive icon ion-chevron-left center" ui-sref="card">&nbsp Back</a> <!--where back button would be but not needed -->
+      </div>
+      <div class="col col-33">
+        <canvas class="center" id="canvas2" width="100px" height="100px"></canvas>
+      </div>
+      <div class="col col-33">
+        <a class="button button-balanced icon ion-checkmark center" ui-sref="results">&nbsp Done</a>
+      </div>
+
+    </div>
   </ion-content>
-  </ion-view>
+  </ion-view> 

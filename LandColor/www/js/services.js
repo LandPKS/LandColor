@@ -1,29 +1,82 @@
 angular.module('starter')
 
-  .factory('FileService', function() {
-    var images;
-    var IMAGE_STORAGE_KEY = 'dav-images';
+.factory('FileService', function() {
+  var images;
+  var IMAGE_STORAGE_KEY = 'dav-images';
 
-    function getImages() {
-      var img = window.localStorage.getItem(IMAGE_STORAGE_KEY);
-      if (img) {
-        images = JSON.parse(img);
-      } else {
-        images = [];
-      }
-      return images;
-    };
-
-    function addImage(img) {
-      images.push(img);
-      window.localStorage.setItem(IMAGE_STORAGE_KEY, JSON.stringify(images));
-    };
-
-    return {
-      storeImage: addImage,
-      images: getImages
+  function getImages() {
+    var img = window.localStorage.getItem(IMAGE_STORAGE_KEY);
+    if (img) {
+      images = JSON.parse(img);
+    } else {
+      images = [];
     }
-  })
+    return images;
+  };
+
+  function addImage(img) {
+    images.push(img);
+    window.localStorage.setItem(IMAGE_STORAGE_KEY, JSON.stringify(images));
+  };
+
+  return {
+    storeImage: addImage,
+    images: getImages
+  }
+})
+
+
+.factory('cameraService', function($cordovaCamera, $ionicActionSheet) {
+  var mainPic = "";
+
+  function addImage(){
+
+    var options = {
+      //quality: 96 // Quality of the saved image, range of 0 - 100
+      destinationType : Camera.DestinationType.DATA_URL,
+      allowEdit : false, //Allow simple editing of image before selection
+      encodingType: Camera.EncodingType.JPEG,
+      popoverOptions: CameraPopoverOptions, // iOS-only options that specify popover location in iPad
+      //targetHeight: 2000,
+      //targetWidth: 2000
+      correctOrientation: true // correct camera captured images in case wrong orientation
+      //cameraDirection: 0 // Back = 0, Front-facing = 1
+    };
+    // prompt user for Camera or Gallery
+    $ionicActionSheet.show({
+      buttons: [
+      { text: '<i class="icon ion-camera"></i>Camera' },
+      { text: '<i class="icon ion-images"></i>Photo Gallery' }
+      ],
+      cancelText: 'Cancel',
+      cancel: function () {
+        return true;
+      },
+      buttonClicked: function (index) {
+        switch (index) {
+          case 0:
+          options.sourceType = Camera.PictureSourceType.CAMERA;
+          break;
+          case 1:
+          options.sourceType = Camera.PictureSourceType.PHOTOLIBRARY;
+          break;
+        }
+        // Call ngCordova module: cordovaCamera to bring up camera
+        mainPic = $cordovaCamera.getPicture(options);
+      }
+    });
+  }
+
+  function getImage(){
+    return mainPic;
+  }
+
+  return{
+    addImage: addImage,
+    getImage: getImage
+  }
+})
+
 
   .factory('ImageService', function($cordovaCamera, FileService, $q, $cordovaFile) {
 
@@ -31,11 +84,11 @@ angular.module('starter')
       var source;
       switch (type) {
         case 0:
-          source = Camera.PictureSourceType.CAMERA;
-          break;
+        source = Camera.PictureSourceType.CAMERA;
+        break;
         case 1:
-          source = Camera.PictureSourceType.PHOTOLIBRARY;
-          break;
+        source = Camera.PictureSourceType.PHOTOLIBRARY;
+        break;
       }
       return {
         quality: 90,
@@ -104,7 +157,7 @@ angular.module('starter')
     }
   })
 
-  .factory('ColorService',function(CanvasService){
+.factory('ColorService',function(CanvasService){
     //Need pixel array that works with quantize.js
     var pixelCard = CanvasService.getCardImageData();
     var pixelSoil = CanvasService.getSoilImageData();
