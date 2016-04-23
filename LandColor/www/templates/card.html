@@ -1,7 +1,7 @@
 <ion-view id="main" class="has-header padding" title="Select Card">
   <ion-content>
-    <div ng-controller ="ImageController">
-      <img id='cardPic' ng-repeat="image in images" ng-src="data:image/jpeg;base64,{{image}}" ng-click="touchMe($event,image)" style="height:200px; padding: 5px 5px 5px 5px;"/>
+    <div ng-controller ="imageController">
+      <img id="cardPic" ng-src="data:image/jpeg;base64,{{mainPic}}" ng-click="touchMe($event)" style="height:200px; padding: 5px 5px 5px 5px;"/>
       <canvas id="canvas" width="100px" height="100px"></canvas>
     </div>
 

@@ -8,37 +8,54 @@ angular.module('starter')
     };
   })
 
-  .controller('ImageController', function($scope,$state, $cordovaDevice, $cordovaFile, $ionicPlatform, $ionicActionSheet, ImageService, FileService,CanvasService) {
+  .controller('imageController',function($scope,$state, $cordovaCamera,$cordovaDevice, $cordovaFile, $ionicPlatform, $ionicActionSheet,ImageService,CanvasService){
 
-    $ionicPlatform.ready(function() {
-      $scope.images = FileService.images();
-      $scope.$apply();
+    $scope.addImage = function(){
+        var options = {
+          //quality: 96 // Quality of the saved image, range of 0 - 100
+          destinationType : Camera.DestinationType.DATA_URL,
+          allowEdit : false, //Allow simple editing of image before selection
+          encodingType: Camera.EncodingType.JPEG,
+          popoverOptions: CameraPopoverOptions, // iOS-only options that specify popover location in iPad
+          //targetHeight: 2000,
+          //targetWidth: 2000
+          correctOrientation: $scope.iOS // correct camera captured images in case wrong orientation
+          //cameraDirection: 0 // Back = 0, Front-facing = 1
+        };
+        // prompt user for Camera or Gallery
+        $ionicActionSheet.show({
+          buttons: [
+            { text: '<i class="icon ion-camera"></i>Camera' },
+            { text: '<i class="icon ion-images"></i>Photo Gallery' }
+          ],
+          cancelText: 'Cancel',
+          cancel: function () {
+            return true;
+          },
+          buttonClicked: function (index) {
+            switch (index) {
+              case 0:
+                options.sourceType = Camera.PictureSourceType.CAMERA;
+                break;
+              case 1:
+                options.sourceType = Camera.PictureSourceType.PHOTOLIBRARY;
+                break;
+            }
+            // Call ngCordova module: cordovaCamera to bring up camera
+            $cordovaCamera.getPicture(options).then(function(imageBase64) {
+              ImageService.setMainPic(imageBase64);
+            });
+            $state.go('card', {});
+            return true;
+
+          }
+        });
+    };
+    $scope.$watch(function() {
+      $scope.mainPic = ImageService.getMainPic();
     });
-
-    $scope.addMedia = function() {
-      $scope.hideSheet = $ionicActionSheet.show({
-        buttons: [
-          { text: '<i class="icon ion-camera"></i>Camera' },
-          { text: '<i class="icon ion-images"></i>Photo Gallery' }
-        ],
-        titleText: 'Add Image',
-        cancelText: 'Cancel',
-        buttonClicked: function(index) {
-          $scope.addImage(index);
-        }
-      });
-
-    };
-
-    $scope.addImage = function(type) {
-      $scope.hideSheet();
-      ImageService.handleMediaDialog(type).then(function() {
-        $scope.$apply();
-      });
-      $state.go('card', {});
-    };
-
-    $scope.touchMe = function(event,imageURL) {
+    $scope.touchMe = function(event) {
+      var imageURL = ImageService.getMainPic();
       var img = new Image();
       img.src = "data:image/jpeg;base64,"+ imageURL;
       var ogHeight = img.height;
@@ -63,17 +80,18 @@ angular.module('starter')
         CanvasService.setSoil(xPixel,yPixel);
         CanvasService.createSoilCanvas(img);
       }
-
-
     }
   })
+  .controller('soilController',function($scope,CanvasService){
 
-  .controller('imageController',function(){
-    //ignore for now
-  })
 
-  .controller('resultsController',function($scope,$state, $cordovaDevice, $cordovaFile, $ionicPlatform, $ionicActionSheet, ImageService, FileService,CanvasService, ColorService){
-    $scope.soilLAB = ColorService.getColor();
+})
+  .controller('resultsController',function($scope,$state,ImageService,CanvasService,ColorService){
+    ColorService.getColor();
+    $scope.$watch(function() {
+      $scope.soilLAB = ColorService.getLAB();
+    });
+
   });
 
 

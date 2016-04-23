@@ -58,7 +58,7 @@ cameraApp.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvid
       views: {
         'home-tab': {
           templateUrl: "templates/home.html",
-          controller: 'ImageController'
+          controller: 'imageController'
         }
       }
     })

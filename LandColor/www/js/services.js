@@ -1,67 +1,25 @@
 angular.module('starter')
 
-  .factory('FileService', function() {
-    var images;
-    var IMAGE_STORAGE_KEY = 'dav-images';
 
-    function getImages() {
-      var img = window.localStorage.getItem(IMAGE_STORAGE_KEY);
-      if (img) {
-        images = JSON.parse(img);
-      } else {
-        images = [];
-      }
-      return images;
-    };
+  .factory('ImageService',function(){
+    var mainPic;
 
-    function addImage(img) {
-      images.push(img);
-      window.localStorage.setItem(IMAGE_STORAGE_KEY, JSON.stringify(images));
-    };
-
-    return {
-      storeImage: addImage,
-      images: getImages
-    }
-  })
-
-  .factory('ImageService', function($cordovaCamera, FileService, $q, $cordovaFile) {
-
-    function optionsForType(type) {
-      var source;
-      switch (type) {
-        case 0:
-          source = Camera.PictureSourceType.CAMERA;
-          break;
-        case 1:
-          source = Camera.PictureSourceType.PHOTOLIBRARY;
-          break;
-      }
-      return {
-        quality: 90,
-        destinationType: Camera.DestinationType.DATA_URL,
-        sourceType: source,
-        allowEdit: false,
-        encodingType: Camera.EncodingType.JPEG,
-        popoverOptions: CameraPopoverOptions,
-        saveToPhotoAlbum: false,
-        correctOrientation:true
-      };
+    function setMainPic(dataURL){
+      mainPic = dataURL;
     }
 
-    function saveMedia(type) {
-      return $q(function(resolve, reject) {
-        var options = optionsForType(type);
 
-        $cordovaCamera.getPicture(options).then(function(imageBase64) {
-          FileService.storeImage(imageBase64);
-        });
-      })
+    function getMainPic(){
+      return mainPic;
     }
-    return {
-      handleMediaDialog: saveMedia
+    return{
+      setMainPic: setMainPic,
+      getMainPic: getMainPic
     }
-  })
+
+
+})
+
 
   .factory('CanvasService',function(){
     var xCard,yCard,xSoil,ySoil,cardImageData,soilImageData;
@@ -80,7 +38,7 @@ angular.module('starter')
       cardContext.drawImage(image, xCard-100, yCard-100, 200, 200, 0, 0, 200, 200);
       var getCardImageData = cardContext.getImageData(0,0,200,200);
       cardImageData = getCardImageData.data;
-    }
+      }
     function getCardImageData(){
       return cardImageData;
     }
@@ -102,14 +60,13 @@ angular.module('starter')
       getCardImageData: getCardImageData,
       getSoilImageData: getSoilImageData
     }
+
   })
-
-  .factory('ColorService',function(CanvasService){
-    //Need pixel array that works with quantize.js
-    var pixelCard = CanvasService.getCardImageData();
-    var pixelSoil = CanvasService.getSoilImageData();
-
+  .factory('ColorService', function(CanvasService){
+    var soilLAB;
     function getColor(){
+      var pixelCard = CanvasService.getCardImageData();
+      var pixelSoil = CanvasService.getSoilImageData();
       //The size of the palette
       var colorCount = 11;
       //How "well" the median cut algorithm performs
@@ -224,9 +181,69 @@ angular.module('starter')
           // Return LAB values in an array
           return [l.toFixed(2), a.toFixed(2), b.toFixed(2)];
         }
-        xyz = RGBtoXYZ(r, g, b);
-        lab = XYZtoLAB(xyz[0], xyz[1], xyz[2]);
-        return lab;
+        function intToHue(intH) {
+          if (0 <= intH && intH < 11) {
+            return intH.toString() + "R";
+          }
+          else if (11 <= intH && intH < 21) {
+            return (intH - 10) + "YR";
+          }
+          else if (21 <= intH && intH < 31) {
+            return (intH - 20) + "Y";
+          }
+          else if (31 <= intH && intH < 41) {
+            return (intH - 30) + "GY";
+          }
+          else if (41 <= intH && intH < 51) {
+            return (intH - 40) + "G";
+          }
+          else if (51 <= intH && intH < 61) {
+            return (intH - 50) + "BG";
+          }
+          else if (61 <= intH && intH < 71) {
+            return (intH - 60) + "B";
+          }
+          else if (71 <= intH && intH < 81) {
+            return (intH - 70) + "PB";
+          }
+          else if (81 <= intH && intH < 91) {
+            return (intH - 80) + "P";
+          }
+          else if (91 <= intH && intH <= 100) {
+            return (intH - 90) + "RP";
+          }
+          else {
+            console.log('Int not between 0-100');
+          }
+        }
+        function XYZtoHVC(x,y,z){
+          var xc = 1.020*x;
+          var zc = 0.487*z;
+          xc = (11.559*(Math.pow(xc,(1/3))))-1.695;
+          zc = (11.510*(Math.pow(zc,(1/3))))-1.691;
+          var yc = (11.396*(Math.pow(y,(1/3))))-1.610;
+
+          var h1 = xc - yc;
+          var h2 = 0.4*(zc - yc);
+          var theta = Math.atan(h2/h1);
+
+          var s1 = (8.398+(0.832*Math.cos(theta)))*h1;
+          var s2 = (-6.102-(1.323*Math.cos(theta)))*h2;
+
+          var h = Math.abs(Math.atan(s2/s1)*(100/Math.PI));
+          var v = yc;
+          var c = Math.pow((Math.pow(s1,2)+Math.pow(s2,2)),(1/2));
+
+          return [intToHue(h.toFixed(2)/1), v.toFixed(2)/1, c.toFixed(2)/1];
+        }
+        var xyz = RGBtoXYZ(r, g, b);
+        var lab = XYZtoLAB(xyz[0], xyz[1], xyz[2]);
+        var hvc = XYZtoHVC(xyz[0], xyz[1], xyz[2]);
+
+        return{
+          lab: lab,
+          hvc: hvc
+        };
       }
       function cardRGBLab(palette,number){
         r = palette[number][0];
@@ -246,12 +263,14 @@ angular.module('starter')
         var r = rCorrection*paletteSample[numberSample][0];
         var g = gCorrection*paletteSample[numberSample][1];
         var b = bCorrection*paletteSample[numberSample][2];
-        var lab = RGBtoLAB(r,g,b);
+        var lab = RGBtoLAB(r,g,b).lab;
+        var hvc = RGBtoLAB(r,g,b).hvc;
         var rgb=[r.toFixed(2), g.toFixed(2), b.toFixed(2)];
         var rgbRaw=[paletteSample[numberSample][0],paletteSample[numberSample][1],paletteSample[numberSample][2]];
         return{
           rgb : rgb,
           lab : lab,
+          hvc : hvc,
           rgbRaw : rgbRaw
         };
       }
@@ -260,13 +279,16 @@ angular.module('starter')
       //$scope.card = "Lab: " + card.lab + " RGB: "+ card.rgb;
       //$scope.card = "RGB: "+ card.rgb;
       var sample = sampleRGBLab(paletteCard,0,paletteSample,0);
-      var soilLAB ="Lab: " + sample.lab;
+      soilLAB ="Lab: " + sample.lab + "HVC: "+ sample.hvc;
       //$scope.sample =  " RGB: "+ sample.rgbRaw;
       //$scope.items.push({rCard: card.rgb[0], gCard: card.rgb[1], bCard: card.rgb[2], rSample: sample.rgbRaw[0], gSample: sample.rgbRaw[1], bSample: sample.rgbRaw[2]});
+    }
+    function getLAB(){
       return soilLAB;
     }
-    return{
-      getColor: getColor
+    return {
+      getColor: getColor,
+      getLAB: getLAB
     }
 
   });
