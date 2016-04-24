@@ -3,6 +3,22 @@ button.on {
     background-color: lightgreen;
 }
 
+.pageTitle {
+  font-size: 20px;
+  padding: 10px 0px 10px 0px;
+  font-weight: 500;
+  color: #444444;
+}
+
+.padTop {
+  padding-top:4px;
+}
+
+.buttonPad{
+  padding-top:30px;
+}
+
+
 img.pic {
 	padding: 5px 5px 5px 5px;
 	width: 95%;
