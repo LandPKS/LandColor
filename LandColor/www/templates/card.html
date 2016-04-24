@@ -1,19 +1,24 @@
-<ion-view id="main" class="has-header padding" title="Select Card">
+<ion-view id="main" class="has-header padding" title="LandColor">
 	<ion-content>
-		
-		<div ng-controller ="imageController">
+
+    <div class="pageTitle center">
+      Touch Card
+      <a class="button button-icon icon-small ion-help-circled padTop"></a>
+    </div>
+
+		<div ng-controller ="imageController" class="center padding-bottom">
 			<img id="cardPic" ng-src="data:image/jpeg;base64,{{mainPic}}" ng-click="touchMe($event)" style="height:200px; padding: 5px 5px 5px 5px;"/>
 		</div>
 
-		<div class="row">
-			<div class="col col-33">
-				<p class="center">left</p> <!--where back button would be but not needed -->
+		<div class="row padding-bottom">
+      <div class="col col-33 buttonPad">
+        <a class="button button-energized icon ion-camera center" ui-sref="soil">&nbsp;&nbsp;Retake</a>
 			</div>
-			<div class="col col-33">
+			<div class="col col-33" style="padding-left:8px;">
 				<canvas class="center" id="canvas" width="100px" height="100px"></canvas>
 			</div>
-			<div class="col col-33">
-				<a class="button button-balanced icon ion-chevron-right center" ui-sref="soil">&nbsp Next</a>
+			<div class="col col-33 buttonPad">
+				<a class="button button-balanced icon ion-chevron-right center" ui-sref="soil">&nbsp;Next</a>
 			</div>
 		</div>
 
