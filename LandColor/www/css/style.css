@@ -3,11 +3,12 @@ button.on {
     background-color: lightgreen;
 }
 
-.pageTitle {
+.infoTitle {
   font-size: 20px;
-  padding: 10px 0px 10px 0px;
+  padding: 5px 0px 5px 0px;
   font-weight: 500;
   color: #444444;
+  text-align: center;
 }
 
 .padTop {
@@ -15,7 +16,14 @@ button.on {
 }
 
 .buttonPad{
-  padding-top:30px;
+  padding-top:55px;
+}
+
+.results{
+  font-size: 20px;
+  font-weight: 500;
+  color: #444444;
+  padding-left: 50px;
 }
 
 

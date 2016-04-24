@@ -1,12 +1,32 @@
-<ion-view id="main" class="has-header padding" title="Results">
+<ion-view id="main" class="has-header padding" title="LandColor">
   <ion-content>
-    <div>
-
-     {{soilLAB}}
-
+    <div class="infoTitle center">
+      Results
+      <a class="button button-icon icon-small ion-help-circled padTop"></a>
     </div>
 
+    <div class="row">
+      <div class="col center">Soil</div>
+      <div class="col center">Card</div>
+    </div>
+    <div class="row">
+      <div class="col center"><img src="img/soil.jpg" width="100px" height="100px"></div>
+      <div class="col center"><img src="img/soil.jpg" width="100px" height="100px"></canvas></div>
+    </div>
+    <br>
 
+    <div class="results">
+      <p>Lab</p>
+      <p>{{soilLAB}}</p>
+      <br>
+      <p>Munsell</p>
+      <p>coming soon</p>
+    </div>
+
+    <div class="row">
+      <div class="col"><a class="button button-balanced icon ion-trash-b center" ui-sref="tabs.home" >&nbsp;Discard</a></div>
+      <div class="col"><a class="button button-balanced icon ion-star center" >&nbsp;Save</a></div>
+    </div>
 
   </ion-content>
   </ion-view>
