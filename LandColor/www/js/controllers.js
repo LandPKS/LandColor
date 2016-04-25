@@ -8,7 +8,7 @@ angular.module('starter')
     };
   })
 
-  .controller('imageController',function($scope,$state, $cordovaCamera,$cordovaDevice, $cordovaFile, $ionicPlatform, $ionicActionSheet,ImageService,CanvasService){
+  .controller('imageController',function($scope,$state, $cordovaCamera,$cordovaDevice, $cordovaFile, $ionicPlatform, $ionicActionSheet,ImageService,CanvasService, $ionicHistory){
 
     $scope.addImage = function(){
         var options = {
@@ -54,7 +54,7 @@ angular.module('starter')
     $scope.$watch(function() {
       $scope.mainPic = ImageService.getMainPic();
     });
-    $scope.touchMe = function(event) {
+    $scope.touchMe = function(event,id) {
       var imageURL = ImageService.getMainPic();
       var img = new Image();
       img.src = "data:image/jpeg;base64,"+ imageURL;
@@ -74,24 +74,60 @@ angular.module('starter')
       var yPixel = ogHeight*(y/conHeight);
       if($state.is('card')){
         CanvasService.setCard(xPixel,yPixel);
-        CanvasService.createCardCanvas(img);
+        CanvasService.createCardCanvas(img,id);
       }
       else{
         CanvasService.setSoil(xPixel,yPixel);
-        CanvasService.createSoilCanvas(img);
+        CanvasService.createSoilCanvas(img,id);
       }
+
     }
+
   })
-  .controller('soilController',function($scope,CanvasService){
+  .controller('soilController',function($scope,$state,CanvasService){
+
+  })
 
 
+
+.controller('cardController',function($scope,$state,CanvasService){
+  $scope.startOver = function() {
+    CanvasService.refreshCanvas('cardCanvas');
+    $state.go('tabs.home');
+  }
 })
-  .controller('resultsController',function($scope,$state,ImageService,CanvasService,ColorService){
+
+
+  .controller('resultsController',function($scope,$state,ImageService,CanvasService,ColorService, $ionicHistory){
     ColorService.getColor();
+
+    var mainPic = ImageService.getMainPic();
+    var mainImg = new Image();
+    mainImg.src ='data:image/jpeg;base64,'+ mainPic;
+    CanvasService.createCardCanvas(mainImg,'resCardCanvas');
+    CanvasService.createSoilCanvas(mainImg,'resSoilCanvas');
+
     $scope.$watch(function() {
       $scope.soilLAB = ColorService.getLAB();
+      $scope.soilHVC = ColorService.getHVC();
     });
+    $scope.$on("$ionicView.afterLeave", function () {
+
+      $ionicHistory.clearCache();
+
+    });
+    $scope.startOver = function() {
+      CanvasService.refreshCanvas('cardCanvas');
+      CanvasService.refreshCanvas('soilCanvas');
+      CanvasService.refreshCanvas('resCardCanvas');
+      CanvasService.refreshCanvas('resSoilCanvas');
+      $state.go('tabs.home');
+    }
 
   });
+
+
+
+
 
 

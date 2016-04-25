@@ -32,8 +32,8 @@ angular.module('starter')
       xSoil = x;
       ySoil = y;
     }
-    function createCardCanvas(image){
-      var cardCanvas = document.getElementById('canvas');
+    function createCardCanvas(image,id){
+      var cardCanvas = document.getElementById(id);
       var cardContext = cardCanvas.getContext('2d');
       cardContext.drawImage(image, xCard-100, yCard-100, 200, 200, 0, 0, 200, 200);
       var getCardImageData = cardContext.getImageData(0,0,200,200);
@@ -42,8 +42,8 @@ angular.module('starter')
     function getCardImageData(){
       return cardImageData;
     }
-    function createSoilCanvas(image){
-      var soilCanvas = document.getElementById('canvas2');
+    function createSoilCanvas(image,id){
+      var soilCanvas = document.getElementById(id);
       var soilContext = soilCanvas.getContext('2d');
       soilContext.drawImage(image,xSoil-100, ySoil-100, 200, 200, 0, 0, 200, 200);
       var getSoilImageData = soilContext.getImageData(0,0,200,200);
@@ -52,18 +52,27 @@ angular.module('starter')
     function getSoilImageData(){
       return soilImageData;
     }
+    function refreshCanvas(id){
+      var canvas = document.getElementById(id);
+      var context = canvas.getContext('2d');
+      context.clearRect(0, 0, canvas.width, canvas.height);
+    }
+
     return {
       setCard: setCard,
       setSoil: setSoil,
       createCardCanvas: createCardCanvas,
       createSoilCanvas: createSoilCanvas,
       getCardImageData: getCardImageData,
-      getSoilImageData: getSoilImageData
+      getSoilImageData: getSoilImageData,
+      refreshCanvas: refreshCanvas
+
     }
 
   })
   .factory('ColorService', function(CanvasService){
     var soilLAB;
+    var soilHVC;
     function getColor(){
       var pixelCard = CanvasService.getCardImageData();
       var pixelSoil = CanvasService.getSoilImageData();
@@ -279,19 +288,26 @@ angular.module('starter')
       //$scope.card = "Lab: " + card.lab + " RGB: "+ card.rgb;
       //$scope.card = "RGB: "+ card.rgb;
       var sample = sampleRGBLab(paletteCard,0,paletteSample,0);
-      soilLAB ="Lab: " + sample.lab + "HVC: "+ sample.hvc;
+      soilLAB = sample.lab[0] + ",  " + sample.lab[1] + ",  " + sample.lab[2];
+      soilHVC = sample.hvc[0] + ",  " + sample.hvc[1] + ",  " + sample.hvc[2];
       //$scope.sample =  " RGB: "+ sample.rgbRaw;
       //$scope.items.push({rCard: card.rgb[0], gCard: card.rgb[1], bCard: card.rgb[2], rSample: sample.rgbRaw[0], gSample: sample.rgbRaw[1], bSample: sample.rgbRaw[2]});
     }
     function getLAB(){
       return soilLAB;
     }
+    function getHVC(){
+      return soilHVC;
+    }
     return {
       getColor: getColor,
-      getLAB: getLAB
+      getLAB: getLAB,
+      getHVC: getHVC
     }
 
   });
+
+
 
 
 

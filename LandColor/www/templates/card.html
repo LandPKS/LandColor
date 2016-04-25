@@ -7,17 +7,17 @@
     </div>
 
 		<div ng-controller ="imageController" class="center padding-bottom">
-			<img id="cardPic" ng-src="data:image/jpeg;base64,{{mainPic}}" ng-click="touchMe($event)" style="height:200px; padding: 5px 5px 5px 5px;"/>
+			<img id="cardPic" ng-src="data:image/jpeg;base64,{{mainPic}}" ng-click="touchMe($event,'cardCanvas')" style="height:200px; padding: 5px 5px 5px 5px;"/>
 		</div>
 
 		<div class="row padding-bottom">
       <div class="col col-33 buttonPad">
-        <a class="button button-energized icon ion-camera center" ui-sref="tabs.home">&nbsp;&nbsp;Retake</a>
+        <a class="button button-energized icon ion-camera center" ng-click="startOver()">&nbsp;&nbsp;Retake</a>
 			</div>
 			<div class="col col-33 infoTitle" style="padding-left:8px;">
         Preview
         <br><br>
-				<canvas class="center" id="canvas" width="100px" height="100px"></canvas>
+				<canvas class="center" id="cardCanvas" width="100px" height="100px"></canvas>
 			</div>
 			<div class="col col-33 buttonPad">
 				<a class="button button-balanced icon ion-chevron-right center" ui-sref="soil">&nbsp;Next</a>

@@ -28,6 +28,7 @@ cameraApp.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvid
   //forces navbar title to be in center
   $ionicConfigProvider.navBar.alignTitle('center');
 
+
   $stateProvider
     .state('photos', {
       url: "/photos",
@@ -36,12 +37,12 @@ cameraApp.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvid
     .state('card', {
       url: "/card",
       templateUrl: "templates/card.html",
-      controller: 'imageController'
+      controller: 'cardController'
     })
     .state('soil', {
       url: "/soil",
       templateUrl: "templates/soil.html",
-      controller: 'imageController'
+      controller: 'soilController'
     })
     .state('results', {
       url: "/results",

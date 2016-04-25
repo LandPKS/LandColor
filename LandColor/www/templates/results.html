@@ -6,12 +6,12 @@
     </div>
 
     <div class="row">
-      <div class="col center">Soil</div>
       <div class="col center">Card</div>
+      <div class="col center">Soil</div>
     </div>
     <div class="row">
-      <div class="col center"><img src="img/soil.jpg" width="100px" height="100px"></div>
-      <div class="col center"><img src="img/soil.jpg" width="100px" height="100px"></canvas></div>
+      <div class="col center"><canvas class="center" id="resCardCanvas" width="100px" height="100px"></canvas></div>
+      <div class="col center"><canvas class="center" id="resSoilCanvas" width="100px" height="100px"></canvas></div>
     </div>
     <br>
 
@@ -20,13 +20,14 @@
       <p>{{soilLAB}}</p>
       <br>
       <p>Munsell</p>
-      <p>coming soon</p>
+      <p>{{soilHVC}}</p>
     </div>
 
     <div class="row">
-      <div class="col"><a class="button button-balanced icon ion-trash-b center" ui-sref="tabs.home" >&nbsp;Discard</a></div>
+      <div class="col"><a class="button button-assertive icon ion-trash-b center" ng-click="startOver()" >&nbsp;Discard</a></div>
       <div class="col"><a class="button button-balanced icon ion-star center" >&nbsp;Save</a></div>
     </div>
+
 
   </ion-content>
   </ion-view>
