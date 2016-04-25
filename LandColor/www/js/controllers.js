@@ -8,7 +8,28 @@ angular.module('starter')
     };
   })
 
-  .controller('imageController',function($scope,$state, $cordovaCamera,$cordovaDevice, $cordovaFile, $ionicPlatform, $ionicActionSheet,ImageService,CanvasService, $ionicHistory){
+  .controller('imageController',function($scope,$state, $cordovaCamera,$cordovaDevice, $cordovaFile, $ionicPlatform, $ionicActionSheet,ImageService,CanvasService, $ionicHistory,$ionicPopup){
+       var showingText = "A flat rectangular grey object. It's often positioned next to the soil sample.";
+       $scope.info = function(){
+              
+              var alert = $ionicPopup.alert({
+                title: 'Color Card',
+                template: showingText
+                                            
+               })
+              
+         }
+        var showingText1 = "The soil sample is the dirt that was collected for analysis. To get the best results, put the soil next to the color card.";
+        $scope.warning = function(){
+        var alert = $ionicPopup.alert({
+             title: 'Soil Sample',
+             template: showingText1
+                                            
+            })
+              
+              
+        }
+
 
     $scope.addImage = function(){
         var options = {
