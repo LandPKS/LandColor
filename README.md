@@ -1,7 +1,6 @@
 # LandPKS Senior Project Group 2015/2016
 
-**Team Members:**
-
+**Team Members:**  
 Christina Matteis - Lead <br />
 Nick Nocella - Testing <br />
 Stephen Clark- Documentation <br />
@@ -25,8 +24,6 @@ You must have the following dependencies installed in order to run this applicat
 - Command Line Tools (OS X only)
 - Android SDK
 	- It is recommended to use Android Studio to install the Android SDK and set up an Android emulator.  If you prefer not to use Android Studio refer to Androids [Command Line Guide](http://developer.android.com/tools/building/building-cmdline.html)
-
-If you do not have some or any of these dependencies installed refer to the **Installing Dependencies** documentation below or click *here* (setup link later).
 
 ## Installing Dependencies (OS X)
 
