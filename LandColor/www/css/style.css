@@ -3,6 +3,30 @@ button.on {
     background-color: lightgreen;
 }
 
+.infoTitle {
+  font-size: 20px;
+  padding: 5px 0px 5px 0px;
+  font-weight: 500;
+  color: #444444;
+  text-align: center;
+}
+
+.padTop {
+  padding-top:4px;
+}
+
+.buttonPad{
+  padding-top:55px;
+}
+
+.results{
+  font-size: 20px;
+  font-weight: 500;
+  color: #444444;
+  padding-left: 50px;
+}
+
+
 img.pic {
 	padding: 5px 5px 5px 5px;
 	width: 95%;

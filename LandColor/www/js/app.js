@@ -28,11 +28,26 @@ cameraApp.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvid
   //forces navbar title to be in center
   $ionicConfigProvider.navBar.alignTitle('center');
 
+
   $stateProvider
     .state('photos', {
       url: "/photos",
-      abstract: true,
       templateUrl: "templates/photos.html"
+    })
+    .state('card', {
+      url: "/card",
+      templateUrl: "templates/card.html",
+      controller: 'cardController'
+    })
+    .state('soil', {
+      url: "/soil",
+      templateUrl: "templates/soil.html",
+      controller: 'soilController'
+    })
+    .state('results', {
+      url: "/results",
+      templateUrl: "templates/results.html",
+      controller: 'resultsController'
     })
     .state('tabs', {
       url: "/tab",
@@ -44,7 +59,7 @@ cameraApp.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvid
       views: {
         'home-tab': {
           templateUrl: "templates/home.html",
-          controller: 'HomeTabCtrl'
+          controller: 'imageController'
         }
       }
     })
@@ -67,360 +82,6 @@ cameraApp.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvid
 
   $urlRouterProvider.otherwise("/tab/home");
 
-})
-cameraApp.controller('NavCtrl', function($scope, $ionicSideMenuDelegate) {
-  $scope.showMenu = function () {
-    $ionicSideMenuDelegate.toggleLeft();
-  };
-  $scope.showRightMenu = function () {
-    $ionicSideMenuDelegate.toggleRight();
-  };
-})
-cameraApp.controller('HomeTabCtrl', function($scope) {
 });
 
 
-
-
-cameraApp.controller('imageController', function($scope, $cordovaCamera, $cordovaFile, $ionicActionSheet, $ionicPopup ) {
-  // Scope array for ng-repeat (array of objects) to store images
-  $scope.images = [];
-  $scope.iOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
-
-  $scope.init = function(){
-    $scope.xCard=100;
-    $scope.yCard=100;
-    $scope.xSoil=100;
-    $scope.ySoil=100;
-
-    $scope.cardButton = {
-    label: "Card",
-    state: true
-    };
-    $scope.soilButton = {
-    label: "Soil",
-    state: false
-    };
-  }
-
-  $scope.toggle = function (buttonType) {
-    if(buttonType === "Card"){
-      if($scope.cardButton.state === false){
-        $scope.cardButton.state = true;
-        $scope.soilButton.state = false;
-        console.log("card false to true");
-      }
-    } else {
-      if($scope.soilButton.state === false){
-        $scope.cardButton.state = false;
-        $scope.soilButton.state = true;
-        console.log("soil false to true");
-      }
-
-
-    }
-  };
-
-
-  $scope.addImage = function() {
-    var options = {
-      //quality: 96 // Quality of the saved image, range of 0 - 100
-      destinationType : Camera.DestinationType.FILE_URI,
-      allowEdit : false, //Allow simple editing of image before selection
-      encodingType: Camera.EncodingType.JPEG,
-      popoverOptions: CameraPopoverOptions, // iOS-only options that specify popover location in iPad
-      //targetHeight: 2000,
-      //targetWidth: 2000
-      correctOrientation: $scope.iOS // correct camera captured images in case wrong orientation
-      //cameraDirection: 0 // Back = 0, Front-facing = 1
-    };
-    // prompt user for Camera or Gallery
-    $ionicActionSheet.show({
-      buttons: [
-        { text: '<i class="icon ion-camera"></i>Camera' },
-        { text: '<i class="icon ion-images"></i>Photo Gallery' }
-      ],
-      cancelText: 'Cancel',
-      cancel: function () {
-        return true;
-      },
-      buttonClicked: function (index) {
-        switch (index) {
-          case 0:
-            options.sourceType = Camera.PictureSourceType.CAMERA;
-            break;
-          case 1:
-            options.sourceType = Camera.PictureSourceType.PHOTOLIBRARY;
-            break;
-        }
-        // Call ngCordova module: cordovaCamera to bring up camera
-        $cordovaCamera.getPicture(options).then(function(imageData) {
-
-          // Pass captured image and save to file system
-          onImageSuccess(imageData);
-
-          function onImageSuccess(fileURI) {
-            createFileEntry(fileURI);
-          }
-
-          function createFileEntry(fileURI) {
-            window.resolveLocalFileSystemURL(fileURI, copyFile, fail);
-          }
-
-          // Name image with date/time
-          function copyFile(fileEntry) {
-            var name = fileEntry.fullPath.substr(fileEntry.fullPath.lastIndexOf('/') + 1);
-            var newName = getDate() + name;
-
-            window.resolveLocalFileSystemURL(cordova.file.dataDirectory, function(fileSystem2) {
-                fileEntry.copyTo(
-                  fileSystem2,
-                  newName,
-                  onCopySuccess,
-                  fail
-                );
-              },
-              fail);
-          }
-
-          // Apply image to scope array of images
-          function onCopySuccess(entry) {
-            $scope.$apply(function () {
-              $scope.images.push(entry.nativeURL);
-            });
-          }
-
-          function fail(error) {
-            console.log("fail: " + error.code);
-          }
-          // **not working**
-          function getDate() {
-            var text = "";
-            var d = new Date();
-            var n = d.getTime();
-
-            return text = n;
-          }
-
-        }, function (err) {
-          console.log(err);
-        });
-        return true;
-      }
-    });
-  };
-
-  // Find path to data directory of LandColor application
-  $scope.urlForImage = function(imageName) {
-    var name = imageName.substr(imageName.lastIndexOf('/') + 1);
-    var trueOrigin = cordova.file.dataDirectory + name;
-    return trueOrigin;
-  };
-
-
-  $scope.touchMe = function(event,imageURL){
-    var img = new Image();
-    img.src = imageURL;
-    var ogHeight = img.height;
-    var ogWidth = img.width;
-    var imgContainer = document.getElementById("mainPic");
-    var conHeight= imgContainer.clientHeight;
-    var conWidth= imgContainer.clientWidth;
-
-    if($scope.cardButton.state === true){
-       var x = event.offsetX;
-       var y = event.offsetY;
-      $scope.xCard = x;
-      $scope.yCard = y;
-    } else {
-       var x = event.offsetX;
-       var y = event.offsetY;
-      $scope.xSoil = x;
-      $scope.ySoil = y;
-    }
-    $scope.xCardPixel = ogWidth*($scope.xCard/conWidth);
-    $scope.yCardPixel = ogHeight*($scope.yCard/conHeight);
-    $scope.xSoilPixel = ogWidth*($scope.xSoil/conWidth);
-    $scope.ySoilPixel = ogHeight*($scope.ySoil/conHeight);
-
-    $scope.getColor(img);
-  };
-
- $scope.getColor = function(image) {
-   var cardCanvas = document.getElementById('canvas');
-   var soilCanvas = document.getElementById('canvas2');
-   var cardContext = cardCanvas.getContext('2d');
-   var soilContext = soilCanvas.getContext('2d');
-   cardContext.drawImage(image, $scope.xCardPixel-100, $scope.yCardPixel-100, 200, 200, 0, 0, 200, 200);
-   soilContext.drawImage(image, $scope.xSoilPixel-100, $scope.ySoilPixel-100, 200, 200, 0, 0, 200, 200);
-
-  //Get Pixel Arrays of Calibration Card and Soil Sample
-   var imageDataCard = cardContext.getImageData(0,0,200,200);
-   var imageDataSample = soilContext.getImageData(0,0,200,200);
-  //The size of the palette
-   var colorCount = 11;
-  //How "well" the median cut algorithm performs
-   var quality = 1;
-  //Need pixel array that works with quantize.js
-
-   var pixelCard = imageDataCard.data;
-   var pixelSample = imageDataSample.data;
-   var pixelCount = 40000;
-   //Function to get Palette
-   var getPalette = function(pixels,pixelCount,quality,colorCount) {
-     var pixelArray =[];
-      for (var i = 0, offset, r, g, b, a; i < pixelCount; i = i + quality) {
-        offset = i * 4;
-        r = pixels[offset + 0];
-        g = pixels[offset + 1];
-        b = pixels[offset + 2];
-        a = pixels[offset + 3];
-       // If pixel is mostly opaque and not white
-        if (a >= 125) {
-          if (!(r > 250 && g > 250 && b > 250)) {
-            pixelArray.push([r, g, b]);
-         }
-       }
-     }
-     console.log(pixelArray);
-     //Quantize perform median cut algorithm, and returns a palette of the "top ten" colors in the picture
-     var cmap = MMCQ.quantize(pixelArray, colorCount);
-     var palette = cmap ? cmap.palette() : null;
-     return palette;
-   };
-
-
-   var paletteCard = getPalette(pixelCard,pixelCount,quality,colorCount);
-   var paletteSample = getPalette(pixelSample,pixelCount,quality,colorCount);
-
-
-   function RGBtoLAB(r, g, b){
-
-     function RGBtoXYZ(R, G, B){
-
-       //Observer. = 2°, Illuminant = D65
-
-       var var_R = ( R / 255 );        //R from 0 to 255
-       var var_G = ( G / 255 );        //G from 0 to 255
-       var var_B = ( B / 255 );        //B from 0 to 255
-
-
-       if ( var_R > 0.04045 )
-         var_R = Math.pow(( ( var_R + 0.055 ) / 1.055 ) , 2.4);
-       else
-         var_R = var_R / 12.92;
-
-       if ( var_G > 0.04045 )
-         var_G = Math.pow((( var_G + 0.055 ) / 1.055 ) , 2.4);
-       else
-         var_G = var_G / 12.92;
-
-       if ( var_B > 0.04045 )
-         var_B = Math.pow((( var_B + 0.055 ) / 1.055 ) , 2.4);
-       else
-         var_B = var_B / 12.92;
-
-       var_R = var_R * 100;
-       var_G = var_G * 100;
-       var_B = var_B * 100;
-
-       X = var_R * 0.4124 + var_G * 0.3576 + var_B * 0.1805;
-       Y = var_R * 0.2126 + var_G * 0.7152 + var_B * 0.0722;
-       Z = var_R * 0.0193 + var_G * 0.1192 + var_B * 0.9505;
-
-       return [X,Y,Z];
-     }
-
-
-     function XYZtoLAB (x, y, z)
-     {
-       var refX = 95.047;
-       var refY = 100.000;
-       var refZ = 108.883;
-
-       x = x/refX;
-       y = y/refY;
-       z = z/refZ;
-
-       // Modify X
-       if (x > 0.008856)
-       {
-         x = Math.pow(x, (1/3));
-       }
-       else
-       {
-         x = ((x * 7.787) + (16/116));
-       }
-
-       // Modify Y
-       if (y > 0.008856)
-       {
-         y = Math.pow(y, (1/3));
-       }
-       else
-       {
-         y = ((y * 7.787) + (16/116));
-       }
-
-       // Modify Z
-       if (z > 0.008856)
-       {
-         z = Math.pow(z, (1/3));
-       }
-       else
-       {
-         z = ((z * 7.787) + (16/116));
-       }
-
-       var l = ((116 * y) - 16);
-       var a = (500 * (x - y));
-       var b = (200 * (y - z));
-       // Return LAB values in an array
-       return [l.toFixed(2), a.toFixed(2), b.toFixed(2)];
-     }
-     xyz = RGBtoXYZ(r, g, b);
-     lab = XYZtoLAB(xyz[0], xyz[1], xyz[2]);
-     return lab;
-   }
-   function cardRGBLab(palette,number){
-     r = palette[number][0];
-     g = palette[number][1];
-     b = palette[number][2];
-     var rgb = [r,g,b];
-     var lab = RGBtoLAB(r,g,b);
-     return{
-       rgb : rgb,
-       lab : lab
-     };
-   }
-   function sampleRGBLab(paletteCard,numberCard,paletteSample,numberSample){
-     var rCorrection = 210.15/paletteCard[numberCard][0];
-     var gCorrection = 213.95/paletteCard[numberCard][1];
-     var bCorrection = 218.42/paletteCard[numberCard][2];
-     var r = rCorrection*paletteSample[numberSample][0];
-     var g = gCorrection*paletteSample[numberSample][1];
-     var b = bCorrection*paletteSample[numberSample][2];
-     var lab = RGBtoLAB(r,g,b);
-     var rgb=[r.toFixed(2), g.toFixed(2), b.toFixed(2)];
-     var rgbRaw=[paletteSample[numberSample][0],paletteSample[numberSample][1],paletteSample[numberSample][2]];
-     return{
-       rgb : rgb,
-       lab : lab,
-       rgbRaw : rgbRaw
-     };
-   }
-
-   var card = cardRGBLab(paletteCard,0);
-   //$scope.card = "Lab: " + card.lab + " RGB: "+ card.rgb;
-   //$scope.card = "RGB: "+ card.rgb;
-   var sample = sampleRGBLab(paletteCard,0,paletteSample,0);
-   $scope.sample ="Lab: " + sample.lab;
-   //$scope.sample =  " RGB: "+ sample.rgbRaw;
-   //$scope.items.push({rCard: card.rgb[0], gCard: card.rgb[1], bCard: card.rgb[2], rSample: sample.rgbRaw[0], gSample: sample.rgbRaw[1], bSample: sample.rgbRaw[2]});
-};
-
-
-
-
-
-});

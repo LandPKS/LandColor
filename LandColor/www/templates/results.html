@@ -1,0 +1,33 @@
+<ion-view id="main" class="has-header padding" title="LandColor">
+  <ion-content>
+    <div class="infoTitle center">
+      Results
+      <a class="button button-icon icon-small ion-help-circled padTop"></a>
+    </div>
+
+    <div class="row">
+      <div class="col center">Card</div>
+      <div class="col center">Soil</div>
+    </div>
+    <div class="row">
+      <div class="col center"><canvas class="center" id="resCardCanvas" width="100px" height="100px"></canvas></div>
+      <div class="col center"><canvas class="center" id="resSoilCanvas" width="100px" height="100px"></canvas></div>
+    </div>
+    <br>
+
+    <div class="results">
+      <p>Lab</p>
+      <p>{{soilLAB}}</p>
+      <br>
+      <p>Munsell</p>
+      <p>{{soilHVC}}</p>
+    </div>
+
+    <div class="row">
+      <div class="col"><a class="button button-assertive icon ion-trash-b center" ng-click="startOver()" >&nbsp;Discard</a></div>
+      <div class="col"><a class="button button-balanced icon ion-star center" >&nbsp;Save</a></div>
+    </div>
+
+
+  </ion-content>
+  </ion-view>
