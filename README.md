@@ -130,7 +130,7 @@ Below is a list of the dependencies required to build and run our application an
 	- run `ionic build android`
 	- run `ionic run android`
 
-## Licenses
+## License
 
 Copyright (c) 2016 Christina Matteis, Nick Nocella, Stephen Clark, Eddie Crawford, Anna Yudina
 
