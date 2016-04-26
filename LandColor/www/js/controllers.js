@@ -8,9 +8,7 @@ angular.module('starter')
     };
   })
 
-  .controller('imageController',function($scope,$state, $cordovaCamera,$cordovaDevice, $cordovaFile, $ionicPlatform, $ionicActionSheet,ImageService,CanvasService, $ionicHistory,$ionicPopup){
-
-
+  .controller('imageController',function($scope,$state, $cordovaCamera,$cordovaDevice, $cordovaFile, $ionicPlatform, $ionicActionSheet,ImageService,CanvasService, $ionicHistory){
 
     $scope.addImage = function(){
         var options = {
@@ -88,18 +86,14 @@ angular.module('starter')
 
   })
   .controller('soilController',function($scope,$state,CanvasService, $ionicPopup){
-        var showingText1 = "The soil sample is the dirt that was collected for analysis. To get the best results, put the soil next to the color card.";
-        $scope.warning = function(){
-         var alert = $ionicPopup.alert({
-                                            title: 'Soil Sample',
-                                            template: showingText1
-
-                                            })
-
-
-              }
+    var showingText1 = "The soil sample is the dirt that was collected for analysis. To get the best results, put the soil next to the color card.";
+    $scope.warning = function(){
+      var alert = $ionicPopup.alert({
+        title: 'Soil Sample',
+        template: showingText1
+      })
+    }
   })
-
 
 
 .controller('cardController',function($scope,$state,CanvasService, $ionicPopup){
@@ -108,24 +102,79 @@ angular.module('starter')
     $state.go('tabs.home');
   }
   var showingText = "A flat rectangular grey object. It's often positioned next to the soil sample.";
-            $scope.info = function(){
-
-            var alert = $ionicPopup.alert({
-                                          title: 'Color Card',
-                                          template: showingText
-
-                                          })
-
-            }
-
+  $scope.info = function(){
+    var alert = $ionicPopup.alert({
+      title: 'Color Card',
+      template: showingText
+    })
+  }
 })
+
+  .controller('graphController', function($scope, $state, ColorService){
+
+    var graphLabArray = ColorService.getLABArray();
+
+    var graphSeries = [];
+    for (var i=0; i < graphLabArray.length; i += 3){
+      graphSeries.push([graphLabArray[i],graphLabArray[i+1], graphLabArray[i+2]]);
+      i++
+    }
+
+    $scope.LABAvg = ColorService.getAvgLAB();
+    var chart = new Highcharts.Chart({
+      chart: {
+        renderTo: 'container',
+        margin: [70, 75, 75, 75],
+        type: 'scatter',
+        options3d: {
+          enabled: true,
+          alpha: 20,
+          beta: 30,
+          depth: 400,
+          frame: {
+            bottom: { size: 1, color: 'rgba(0,0,0,0.02)' },
+            back: { size: 1, color: 'rgba(0,0,0,0.04)' },
+            side: { size: 1, color: 'rgba(0,0,0,0.06)' }
+          }
+        }
+      },
+      title: {
+        text: 'Results'
+      },
+      subtitle: {
+        text:'LAB Average: ' + $scope.LABAvg
+      },
+      legend: {
+        enabled: false
+      },
+      yAxis: {
+        min: -128,
+        max: 127
+      },
+      xAxis: {
+        min: 0,
+        max: 100,
+        gridLineWidth: 1
+      },
+      zAxis: {
+        min: -128,
+        max: 127
+      },
+      series: [{
+        name: 'LAB (xyz)',
+        colorByPoint: true,
+        data: []
+      }]
+    });
+
+    chart.series[0].setData(graphSeries);
+
+  })
 
 
   .controller('resultsController',function($scope,$state,ImageService,CanvasService,ColorService, $ionicHistory,$ionicPopup){
     ColorService.getColor();
     $scope.LABAvg = ColorService.getAvgLAB();
-
-
 
     var mainPic = ImageService.getMainPic();
     var mainImg = new Image();
@@ -137,8 +186,6 @@ angular.module('starter')
       $scope.soilLAB = ColorService.getLAB();
       $scope.soilHVC = ColorService.getHVC();
       $scope.soilLABArray = ColorService.getLABArray();
-
-
     });
     $scope.$on("$ionicView.afterLeave", function () {
 
@@ -151,19 +198,14 @@ angular.module('starter')
       CanvasService.refreshCanvas('resCardCanvas');
       CanvasService.refreshCanvas('resSoilCanvas');
       $state.go('tabs.home');
-    }
+    };
     var showingText3 = "The soil sample is the dirt that was collected for analysis. To get the best results, put the soil next to the color card.";
     $scope.explanation = function(){
     var alert = $ionicPopup.alert({
-         title: 'Soil Sample',
-         template: showingText3
-
-          })
-
-
+      title: 'Soil Sample',
+      template: showingText3
+    })
     }
-
-
   });
 
 

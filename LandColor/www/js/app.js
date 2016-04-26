@@ -49,6 +49,11 @@ cameraApp.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvid
       templateUrl: "templates/results.html",
       controller: 'resultsController'
     })
+    .state('graphs', {
+      url: "/graphs",
+      templateUrl: "templates/graphs.html",
+      controller: 'graphController'
+    })
     .state('tabs', {
       url: "/tab",
       abstract: true,
