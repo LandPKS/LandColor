@@ -87,9 +87,9 @@ angular.module('starter')
 
   })
   .controller('soilController',function($scope,$state,CanvasService, $ionicPopup){
-              var showingText1 = "The soil sample is the dirt that was collected for analysis. To get the best results, put the soil next to the color card.";
-              $scope.warning = function(){
-              var alert = $ionicPopup.alert({
+        var showingText1 = "The soil sample is the dirt that was collected for analysis. To get the best results, put the soil next to the color card.";
+        $scope.warning = function(){
+         var alert = $ionicPopup.alert({
                                             title: 'Soil Sample',
                                             template: showingText1
                                             
@@ -106,7 +106,7 @@ angular.module('starter')
     CanvasService.refreshCanvas('cardCanvas');
     $state.go('tabs.home');
   }
-            var showingText = "A flat rectangular grey object. It's often positioned next to the soil sample.";
+  var showingText = "A flat rectangular grey object. It's often positioned next to the soil sample.";
             $scope.info = function(){
             
             var alert = $ionicPopup.alert({
@@ -120,7 +120,7 @@ angular.module('starter')
 })
 
 
-  .controller('resultsController',function($scope,$state,ImageService,CanvasService,ColorService, $ionicHistory){
+  .controller('resultsController',function($scope,$state,ImageService,CanvasService,ColorService, $ionicHistory,$ionicPopup){
     ColorService.getColor();
 
     var mainPic = ImageService.getMainPic();
@@ -145,6 +145,17 @@ angular.module('starter')
       CanvasService.refreshCanvas('resSoilCanvas');
       $state.go('tabs.home');
     }
+    var showingText3 = "The soil sample is the dirt that was collected for analysis. To get the best results, put the soil next to the color card.";
+    $scope.explanation = function(){
+    var alert = $ionicPopup.alert({
+         title: 'Soil Sample',
+         template: showingText3
+                                            
+          })
+              
+              
+    }
+
 
   });
 
