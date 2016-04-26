@@ -70,9 +70,12 @@ angular.module('starter')
     }
 
   })
+
   .factory('ColorService', function(CanvasService){
     var soilLAB;
     var soilHVC;
+    var soilLABArray = [];
+
     function getColor(){
       var pixelCard = CanvasService.getCardImageData();
       var pixelSoil = CanvasService.getSoilImageData();
@@ -188,7 +191,7 @@ angular.module('starter')
           var a = (500 * (x - y));
           var b = (200 * (y - z));
           // Return LAB values in an array
-          return [l.toFixed(2), a.toFixed(2), b.toFixed(2)];
+          return [l.toFixed(2)/1, a.toFixed(2)/1, b.toFixed(2)/1];
         }
         function intToHue(intH) {
           if (0 <= intH && intH < 11) {
@@ -254,6 +257,8 @@ angular.module('starter')
           hvc: hvc
         };
       }
+
+
       function cardRGBLab(palette,number){
         r = palette[number][0];
         g = palette[number][1];
@@ -288,10 +293,31 @@ angular.module('starter')
       //$scope.card = "Lab: " + card.lab + " RGB: "+ card.rgb;
       //$scope.card = "RGB: "+ card.rgb;
       var sample = sampleRGBLab(paletteCard,0,paletteSample,0);
+      soilLABArray.push(sample.lab[0]);
+      soilLABArray.push(sample.lab[1]);
+      soilLABArray.push(sample.lab[2]);
       soilLAB = sample.lab[0] + ",  " + sample.lab[1] + ",  " + sample.lab[2];
       soilHVC = sample.hvc[0] + ",  " + sample.hvc[1] + ",  " + sample.hvc[2];
       //$scope.sample =  " RGB: "+ sample.rgbRaw;
       //$scope.items.push({rCard: card.rgb[0], gCard: card.rgb[1], bCard: card.rgb[2], rSample: sample.rgbRaw[0], gSample: sample.rgbRaw[1], bSample: sample.rgbRaw[2]});
+    }
+
+    function getAverageLAB(){
+      var lSum = 0;
+      var aSum = 0;
+      var bSum = 0;
+      for(var i = 0; i < soilLABArray.length; i += 3)
+      {
+        lSum += soilLABArray[i];
+        aSum += soilLABArray[i + 1];
+        bSum += soilLABArray[i + 2];
+      }
+      var lAvg = (lSum/(soilLABArray.length/3));
+      var aAvg = (aSum/(soilLABArray.length/3));
+      var bAvg = (bSum/(soilLABArray.length/3));
+
+
+      return [lAvg.toFixed(2)/1,aAvg.toFixed(2)/1,bAvg.toFixed(2)/1];
     }
     function getLAB(){
       return soilLAB;
@@ -299,13 +325,22 @@ angular.module('starter')
     function getHVC(){
       return soilHVC;
     }
+    function getLABArray(){
+      return soilLABArray;
+    }
     return {
       getColor: getColor,
       getLAB: getLAB,
-      getHVC: getHVC
+      getHVC: getHVC,
+      getLABArray: getLABArray,
+      getAvgLAB: getAverageLAB
+
+
     }
 
   });
+
+
 
 
 

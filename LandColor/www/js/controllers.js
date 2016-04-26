@@ -8,7 +8,7 @@ angular.module('starter')
     };
   })
 
-  .controller('imageController',function($scope,$state, $cordovaCamera,$cordovaDevice, $cordovaFile, $ionicPlatform, $ionicActionSheet,ImageService,CanvasService, $ionicHistory){
+  .controller('imageController',function($scope,$state, $cordovaCamera,$cordovaDevice, $cordovaFile, $ionicPlatform, $ionicActionSheet,ImageService,CanvasService){
 
     $scope.addImage = function(){
         var options = {
@@ -55,16 +55,17 @@ angular.module('starter')
       $scope.mainPic = ImageService.getMainPic();
     });
     $scope.touchMe = function(event,id) {
+      var imgContainer;
       var imageURL = ImageService.getMainPic();
       var img = new Image();
       img.src = "data:image/jpeg;base64,"+ imageURL;
       var ogHeight = img.height;
       var ogWidth = img.width;
       if($state.is('card')) {
-        var imgContainer = document.getElementById("cardPic");
+         imgContainer = document.getElementById("cardPic");
       }
       else{
-        var imgContainer = document.getElementById("soilPic")
+         imgContainer = document.getElementById("soilPic")
       }
       var conHeight = imgContainer.clientHeight;
       var conWidth = imgContainer.clientWidth;
@@ -100,6 +101,9 @@ angular.module('starter')
 
   .controller('resultsController',function($scope,$state,ImageService,CanvasService,ColorService, $ionicHistory){
     ColorService.getColor();
+    $scope.LABAvg = ColorService.getAvgLAB();
+
+
 
     var mainPic = ImageService.getMainPic();
     var mainImg = new Image();
@@ -110,6 +114,9 @@ angular.module('starter')
     $scope.$watch(function() {
       $scope.soilLAB = ColorService.getLAB();
       $scope.soilHVC = ColorService.getHVC();
+      $scope.soilLABArray = ColorService.getLABArray();
+
+
     });
     $scope.$on("$ionicView.afterLeave", function () {
 
