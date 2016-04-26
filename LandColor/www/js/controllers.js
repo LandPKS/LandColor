@@ -163,11 +163,17 @@ angular.module('starter')
       series: [{
         name: 'LAB (xyz)',
         colorByPoint: true,
-        data: []
+        data: [
+          [60.2,14.56,16.53],
+          [70.14, 10.47, 26.77],
+          [65.38, 16.5, 35.07],
+          [85.38, 19.5, 15.07]
+
+        ]
       }]
     });
 
-    chart.series[0].setData(graphSeries);
+    //chart.series[0].setData(graphSeries);
 
   })
 
@@ -199,10 +205,10 @@ angular.module('starter')
       CanvasService.refreshCanvas('resSoilCanvas');
       $state.go('tabs.home');
     };
-    var showingText3 = "The soil sample is the dirt that was collected for analysis. To get the best results, put the soil next to the color card.";
+    var showingText3 = "The LAB value of dominant color is displayed. If you want more accurate results, press the Improve Results button.You will be taken back to soil page, where you can reselect the soil sample. This can be repeated as many times as needed.";
     $scope.explanation = function(){
     var alert = $ionicPopup.alert({
-      title: 'Soil Sample',
+      title: 'Results',
       template: showingText3
     })
     }
