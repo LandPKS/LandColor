@@ -54,7 +54,7 @@ angular.module('starter')
     $scope.$watch(function() {
       $scope.mainPic = ImageService.getMainPic();
     });
-
+    //Used to set (x,y) coordinates that are used in drawing the soil and card canvases
     $scope.touchMe = function(event,id) {
       var imgContainer;
       var imageURL = ImageService.getMainPic();
@@ -87,6 +87,7 @@ angular.module('starter')
 
   })
   .controller('soilController',function($scope,$state,CanvasService,ColorService, $ionicPopup){
+    //Call getColor every time one presses Done Button
     $scope.getColor = function(){
       ColorService.getColor();
     };
@@ -176,8 +177,9 @@ angular.module('starter')
 
 
   .controller('resultsController',function($scope,$state,ImageService,CanvasService,ColorService, $ionicHistory,$ionicPopup){
-    $scope.LABAvg = ColorService.getAvgLAB();
 
+    $scope.LABAvg = ColorService.getAvgLAB();
+    //Redraw the two canvases
     var mainPic = ImageService.getMainPic();
     var mainImg = new Image();
     mainImg.src ='data:image/jpeg;base64,'+ mainPic;
@@ -191,9 +193,11 @@ angular.module('starter')
     $scope.$on("$ionicView.afterLeave", function () {
       $ionicHistory.clearCache();
     });
+    //Discard Button - Erase Canvases and reset LABArray
     $scope.startOver = function() {
       CanvasService.refreshCanvas('resCardCanvas');
       CanvasService.refreshCanvas('resSoilCanvas');
+      ColorService.emptyArray();
       $state.go('tabs.home');
     };
     var showingText3 = "The LAB value of dominant color is displayed. If you want more accurate results, press the Improve Results button.You will be taken back to soil page, where you can reselect the soil sample. This can be repeated as many times as needed.";
