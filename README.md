@@ -140,6 +140,16 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+**quantize.js**
+  quantize.js Copyright 2008 Nick Rabinowitz.
+  Licensed under the MIT license: http://www.opensource.org/licenses/mit-license.php
+  Protovis: http://mbostock.github.com/protovis/
+  Copyright 2010 Stanford Visualization Group
+  Licensed under the BSD License: http://www.opensource.org/licenses/bsd-license.php
+  
+  **highcharts**
+  Licensed under Creative Commons Attribution-NonCommercial 3.0 License: http://creativecommons.org/licenses/by-nc/3.0/
+ 
 
 **Background Image:**  
 Image was retrieved from WikiMedia Commons
