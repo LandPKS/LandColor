@@ -7,7 +7,7 @@
     </div>
 
     <div ng-controller ="imageController" class="center padding-bottom" >
-      <img id="soilPic" ng-src="data:image/jpeg;base64,{{mainPic}}" ng-click="touchMe($event,'soilCanvas')" style="height:200px; padding: 5px 5px 5px 5px;"/>
+      <img id="soilPic" ng-src="{{mainPic}}" ng-click="touchMe($event,'soilCanvas')" style="height:200px; padding: 5px 5px 5px 5px;"/>
     </div>
 
     <div class="row">

@@ -8,8 +8,18 @@ angular.module('starter')
     };
   })
 
+  .controller('homeController',function($scope,ImageService,$state){
+    $scope.number;
+    $scope.addPic = function(num){
+      ImageService.setMainPic("img/soilSample/soilSample(" + num + ").jpg");
+      $state.go('card', {});
+    }
+
+    })
+
   .controller('imageController',function($scope,$state, $cordovaCamera,$cordovaDevice, $cordovaFile, $ionicPlatform, $ionicActionSheet,ImageService,CanvasService){
     //Get main picture
+
     $scope.addImage = function(){
         var options = {
           //quality: 96 // Quality of the saved image, range of 0 - 100
@@ -59,7 +69,8 @@ angular.module('starter')
       var imgContainer;
       var imageURL = ImageService.getMainPic();
       var img = new Image();
-      img.src = "data:image/jpeg;base64,"+ imageURL;
+      img.src = imageURL;
+
       var ogHeight = img.height;
       var ogWidth = img.width;
       if($state.is('card')) {
@@ -176,19 +187,28 @@ angular.module('starter')
   })
 
 
-  .controller('resultsController',function($scope,$state,ImageService,CanvasService,ColorService, $ionicHistory,$ionicPopup){
+  .controller('resultsController',function($scope,$state,ImageService,CanvasService,ColorService, $ionicHistory,$ionicPopup,CSVService){
 
-    $scope.LABAvg = ColorService.getAvgLAB();
+    $scope.LABAvg = "L: " +ColorService.getAvgLAB()[0]+ " A: "+ColorService.getAvgLAB()[1]+" B: "+ColorService.getAvgLAB()[2];
     //Redraw the two canvases
     var mainPic = ImageService.getMainPic();
     var mainImg = new Image();
-    mainImg.src ='data:image/jpeg;base64,'+ mainPic;
+    mainImg.src = mainPic;
     CanvasService.createCardCanvas(mainImg,'resCardCanvas');
     CanvasService.createSoilCanvas(mainImg,'resSoilCanvas');
 
+    $scope.pushToCSV = function(){
+      var data = {l:$scope.soilLAB[0],as:$scope.soilLAB[1],bs:$scope.soilLAB[2],al:$scope.average[0],aa:$scope.average[1],ab:$scope.average[2],r:$scope.soilRGB[0],g:$scope.soilRGB[1],b:$scope.soilRGB[2],cr:$scope.cardRGB[0],cg:$scope.cardRGB[1],cb:$scope.cardRGB[2]}
+      CSVService.pushToArray(data);
+    };
+
     $scope.$watch(function() {
       $scope.soilLAB = ColorService.getLAB();
+      $scope.soilRGB = ColorService.getRGB();
+      $scope.cardRGB = ColorService.getCardRGB();
+      $scope.average = ColorService.getAvgLAB();
       $scope.soilLABArray = ColorService.getLABArray();
+      $scope.csvArray = CSVService.getDataArray();
     });
     $scope.$on("$ionicView.afterLeave", function () {
       $ionicHistory.clearCache();

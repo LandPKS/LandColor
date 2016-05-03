@@ -1,5 +1,22 @@
 angular.module('starter')
 
+/*  .factory('noCordova',function(){
+    var imageArray = new Array(99);
+    for (var i=0;i<99;i++){
+      imageArray[i] = new Image();
+      imageArray[i].src = "img/soilSample/soilSample("+i+").jpg";
+      console.log("Image added")
+    }
+    function getImage(num){
+      return imageArray[num];
+    }
+
+    return{
+      getImage: getImage
+    }
+
+  })*/
+
 
   .factory('ImageService',function(){
     //Service to store image taken
@@ -71,9 +88,26 @@ angular.module('starter')
 
   })
 
+  .factory('CSVService', function (){
+    var dataArray = [];
+    function pushToArray(data){
+      dataArray.push(data);
+    }
+    function getDataArray() {
+      return dataArray;
+    }
+    return{
+      getDataArray: getDataArray,
+      pushToArray: pushToArray
+    }
+
+
+  })
+
   .factory('ColorService', function(CanvasService){
     var soilLAB;
-    //var soilHVC;
+    var soilRGB;
+    var cardRGB;
     var soilLABArray = [];
 
     function getColor(){
@@ -270,8 +304,9 @@ angular.module('starter')
       soilLABArray.push(sample.lab[1]);
       soilLABArray.push(sample.lab[2]);
       //
-      soilLAB = sample.lab[0] + ",  " + sample.lab[1] + ",  " + sample.lab[2];
-
+      soilLAB = sample.lab;
+      soilRGB = sample.rgb;
+      cardRGB = card.rgb;
     }
     //Average multiple soil touches to improve color
     function getAverageLAB(){
@@ -299,9 +334,17 @@ angular.module('starter')
     function getLABArray(){
       return soilLABArray;
     }
+    function getRGB(){
+      return soilRGB;
+    }
+    function getCardRGB(){
+      return cardRGB;
+    }
     return {
       getColor: getColor,
       getLAB: getLAB,
+      getRGB: getRGB,
+      getCardRGB: getCardRGB,
       getLABArray: getLABArray,
       getAvgLAB: getAverageLAB,
       emptyArray: emptyArray

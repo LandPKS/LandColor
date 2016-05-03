@@ -20,21 +20,22 @@
     </div>
 
     <div class="row results" style="padding-bottom: 30px;">
-      <div class="col col-75" style="padding-top:20px;" >{{soilLAB}}</div>
+      <div class="col col-75" style="padding-top:20px;" >{{LABAvg}}</div>
       <div class="col"><a class="button icon ion-podium" ui-sref="graphs"></a></div>
     </div>
 
 
     <div class="row">
       <div class="col"><a class="button button-assertive icon ion-trash-b center" ng-click="startOver()" >&nbsp;Discard</a></div>
-      <div class="col"><a class="button button-balanced icon ion-star center" >&nbsp;Save</a></div>
+      <div class="col"><a class="button button-balanced icon ion-star center" ng-click="pushToCSV()" >&nbsp;Save</a></div>
     </div>
 
     <div class="row">
       <div class="col"><a class="button button-energized icon ion-arrow-graph-up-right center" ui-sref="soil">&nbsp;Improve Results</a></div>
     </div>
-
-
+    <div>
+      <button type="button" ng-csv="csvArray" filename="test.csv">Export</button>
+    </div>
 
   </ion-content>
   </ion-view>

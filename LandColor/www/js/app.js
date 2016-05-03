@@ -7,7 +7,7 @@
 // camera and image saving functionality: https://devdactic.com/complete-image-guide-ionic/
 
 //cameraApp will load starter and ngCordova
-var cameraApp = angular.module('starter', ['ionic', 'ngCordova', 'ngIOS9UIWebViewPatch'])
+var cameraApp = angular.module('starter', ['ionic', 'ngCordova', 'ngIOS9UIWebViewPatch','ngSanitize', 'ngCsv'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -64,7 +64,7 @@ cameraApp.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvid
       views: {
         'home-tab': {
           templateUrl: "templates/home.html",
-          controller: 'imageController'
+          controller: 'homeController'
         }
       }
     })
